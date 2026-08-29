@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct Module: Identifiable {
     let id: String
@@ -34,24 +35,78 @@ struct ModuleListView: View {
     ]
 
     @State private var path: [String] = []
+    @AppStorage("moduleOrder") private var moduleOrderRaw = ""
+    @Environment(\.modelContext) private var context
+
+    @Query(filter: #Predicate<SavedLookup> { $0.isFavorite },
+           sort: \SavedLookup.title) private var favorites: [SavedLookup]
+    @Query(filter: #Predicate<SavedLookup> { !$0.isFavorite },
+           sort: \SavedLookup.lastUsed, order: .reverse) private var recents: [SavedLookup]
+
+    private var orderedModules: [Module] {
+        let order = moduleOrderRaw.split(separator: ",").map(String.init)
+        guard !order.isEmpty else { return modules }
+        return modules.sorted {
+            (order.firstIndex(of: $0.id) ?? .max) < (order.firstIndex(of: $1.id) ?? .max)
+        }
+    }
 
     var body: some View {
         NavigationStack(path: $path) {
-            List(modules) { module in
-                if module.available {
-                    NavigationLink(value: module.id) {
-                        ModuleRow(module: module)
+            List {
+                if !favorites.isEmpty {
+                    Section("Favorites") {
+                        ForEach(favorites) { fav in
+                            savedRow(fav, symbol: "star.fill", tint: .yellow)
+                        }
+                        .onDelete { offsets in
+                            offsets.map { favorites[$0] }.forEach(context.delete)
+                            try? context.save()
+                        }
                     }
-                } else {
-                    ModuleRow(module: module)
-                        .foregroundStyle(.secondary)
-                        .badge(Text("Soon").font(.caption2))
+                }
+
+                Section {
+                    ForEach(orderedModules) { module in
+                        if module.available {
+                            NavigationLink(value: module.id) {
+                                ModuleRow(module: module)
+                            }
+                        } else {
+                            ModuleRow(module: module)
+                                .foregroundStyle(.secondary)
+                                .badge(Text("Soon").font(.caption2))
+                        }
+                    }
+                    .onMove { source, destination in
+                        var ids = orderedModules.map(\.id)
+                        ids.move(fromOffsets: source, toOffset: destination)
+                        moduleOrderRaw = ids.joined(separator: ",")
+                    }
+                } header: {
+                    if !favorites.isEmpty || !recents.isEmpty { Text("Modules") }
+                }
+
+                if !recents.isEmpty {
+                    Section("Recent") {
+                        ForEach(recents.prefix(8)) { recent in
+                            savedRow(recent, symbol: "clock", tint: .secondary)
+                        }
+                        .onDelete { offsets in
+                            offsets.map { Array(recents.prefix(8))[$0] }.forEach(context.delete)
+                            try? context.save()
+                        }
+                    }
                 }
             }
+            .toolbar { EditButton() }
             .navigationTitle("Piping Database")
-            .navigationDestination(for: String.self) { id in
+            .navigationDestination(for: String.self) { route in
+                let parts = route.split(separator: "|", maxSplits: 1)
+                let id = String(parts.first ?? "")
+                let preselect = Self.parsePayload(parts.count > 1 ? String(parts[1]) : "")
                 switch id {
-                case "pipe": PipeScheduleView()
+                case "pipe": PipeScheduleView(preselect: preselect)
                 case "fittings": FittingsView()
                 case "flanges": FlangesView()
                 case "valves": ValvesView()
@@ -66,6 +121,25 @@ struct ModuleListView: View {
                     path = [target]
                 }
             }
+        }
+    }
+
+    private func savedRow(_ item: SavedLookup, symbol: String, tint: Color) -> some View {
+        NavigationLink(value: item.route) {
+            HStack(spacing: 12) {
+                Image(systemName: symbol).foregroundStyle(tint).frame(width: 24)
+                VStack(alignment: .leading, spacing: 1) {
+                    Text(item.title).font(.subheadline).bold()
+                    Text(item.detail).font(.caption).foregroundStyle(.secondary)
+                }
+            }
+        }
+    }
+
+    static func parsePayload(_ payload: String) -> [String: String] {
+        payload.split(separator: "&").reduce(into: [:]) { dict, pair in
+            let kv = pair.split(separator: "=", maxSplits: 1)
+            if kv.count == 2 { dict[String(kv[0])] = String(kv[1]) }
         }
     }
 }

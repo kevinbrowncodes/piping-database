@@ -29,7 +29,7 @@ struct OletsView: View {
 
     private var runRows: [OletsFile.Olet] {
         olets.filter { $0.type == selectedType && $0.class == selectedClass && $0.branch == selectedBranch }
-            .sorted { NPS.value($0.runFrom) < NPS.value($1.runFrom) }
+            .sorted { NPS.value($0.runFrom ?? "") < NPS.value($1.runFrom ?? "") }
     }
 
     private var selection: OletsFile.Olet? {
@@ -87,12 +87,12 @@ struct OletsView: View {
             if runRows.count > 1 {
                 Picker("Run range", selection: $selectedRunKey) {
                     ForEach(runRows) { row in
-                        Text("\(row.runFrom)\" – \(row.runTo)\"").tag(row.id)
+                        Text(row.runRangeText).tag(row.id)
                     }
                 }
                 .pickerStyle(.segmented)
             } else {
-                Text("\(o.runFrom)\" – \(o.runTo)\"").font(.callout.monospacedDigit()).bold()
+                Text(o.runRangeText).font(.callout.monospacedDigit()).bold()
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)

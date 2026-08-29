@@ -24,10 +24,14 @@ struct FlangesView: View {
         file?.classes.first { $0.class == selectedClass }
     }
 
-    private var sizes: [String] { NPS.sorted(classData?.sizes.map(\.nps) ?? []) }
+    private var sizeOptions: [FlangesFile.FlangeSize] {
+        (classData?.sizes ?? []).sorted {
+            (NPS.value($0.nps), $0.series ?? "") < (NPS.value($1.nps), $1.series ?? "")
+        }
+    }
 
     private var selection: FlangesFile.FlangeSize? {
-        classData?.sizes.first { $0.nps == selectedNPS }
+        sizeOptions.first { $0.key == selectedNPS } ?? sizeOptions.first
     }
 
     private var availableTypes: [(String, String)] {
@@ -70,7 +74,10 @@ struct FlangesView: View {
             }
         }
         .onChange(of: selectedClass) {
-            if !sizes.contains(selectedNPS), let first = sizes.first { selectedNPS = first }
+            if !sizeOptions.contains(where: { $0.key == selectedNPS }),
+               let first = sizeOptions.first {
+                selectedNPS = first.key
+            }
         }
     }
 
@@ -88,10 +95,13 @@ struct FlangesView: View {
                 labeled("Bolt Ø", "\(s.drilling.boltDia)\"")
                 labeled("Hole Ø", fmt(s.drilling.holeDia))
             }
-            if let w = s.weights?[selectedType] {
+            let weight = s.weights?[selectedType]
+                ?? (["TH", "SO"].contains(selectedType) ? s.weights?["THSO"] : nil)
+                ?? (selectedType == "SW" ? s.weights?["THSO"] : nil)
+            if let weight {
                 GridRow {
-                    labeled("Weight (\(selectedType))", String(format: "%.1f lb", w))
-                    labeled("Source", file?.standard ?? "ASME B16.5")
+                    labeled("Weight (\(selectedType))", String(format: "%.1f lb", weight))
+                    labeled("Source", s.series ?? file?.standard ?? "ASME B16.5")
                 }
             }
         }
@@ -149,10 +159,10 @@ struct FlangesView: View {
             .frame(width: 90)
 
             Picker("Size", selection: $selectedNPS) {
-                ForEach(sizes, id: \.self) { Text("\($0)\"").tag($0) }
+                ForEach(sizeOptions, id: \.key) { Text("\($0.label)\"").tag($0.key) }
             }
             .pickerStyle(.wheel)
-            .frame(width: 100)
+            .frame(width: 110)
         }
         .frame(height: 130)
         .frame(maxWidth: 600)

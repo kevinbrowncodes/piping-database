@@ -7,7 +7,7 @@ struct PipingDatabaseApp: App {
 
     init() {
         do {
-            container = try ModelContainer(for: NominalSize.self, PipeScheduleEntry.self)
+            container = try ModelContainer(for: NominalSize.self, PipeScheduleEntry.self, SavedLookup.self)
             try Seeder.seedIfNeeded(container: container)
         } catch {
             fatalError("Failed to set up model container: \(error)")

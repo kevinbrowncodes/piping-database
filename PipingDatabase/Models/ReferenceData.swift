@@ -42,10 +42,17 @@ struct FlangesFile: Decodable {
     }
     struct FlangeSize: Decodable {
         let nps: String
+        let series: String?      // "B16.47 Series A"/"B" for NPS ≥ 30
         let dims: [String: Double]
         let perType: [String: [String: Double]]?
         let drilling: Drilling
         let weights: [String: Double]?
+
+        var key: String { series.map { "\(nps)|\($0)" } ?? nps }
+        var label: String {
+            guard let series else { return nps }
+            return "\(nps) \(series.hasSuffix("A") ? "A" : "B")"
+        }
     }
     struct Drilling: Decodable {
         let boltCircle: Double
@@ -66,12 +73,19 @@ struct OletsFile: Decodable {
         let type: String
         let `class`: String
         let branch: String
-        let runFrom: String
-        let runTo: String
+        let runFrom: String?    // absent = "order to specific run size"
+        let runTo: String?
         let dims: [String: Double]
         let weight: Double?
 
-        var id: String { [type, `class`, branch, runFrom, runTo].joined(separator: "|") }
+        var id: String {
+            [type, `class`, branch, runFrom ?? "", runTo ?? ""].joined(separator: "|")
+        }
+
+        var runRangeText: String {
+            guard let from = runFrom, let to = runTo else { return "Order to run size" }
+            return from == to ? "\(from)\" (size on size)" : "\(from)\" – \(to)\""
+        }
     }
 }
 

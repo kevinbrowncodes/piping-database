@@ -1,0 +1,5674 @@
+{
+  "version": 1,
+  "source": "Weldbend catalog 63rd ed. (2010), pp. 84-105",
+  "standard": "ASME B16.5 (Class 125 per ASME B16.1)",
+  "legend": {
+    "O": "Outside diameter of flange (catalog O.D.), inches",
+    "C": "Minimum thickness of flange (catalog C). Inside perType.LJ (Classes 150/300) it is the separate minimum lap joint flange thickness; inside perType.WN / perType.blind of B16.47 (NPS 30-48) rows it is the printed WN / BLD thickness",
+    "W": "Diameter of hub (catalog W; Class 125: diameter at base of hub)",
+    "K": "Diameter of weld neck at weld end (catalog K; Class 125: diameter of hub at bevel)",
+    "Y1": "Length through hub, weld neck (catalog Y1)",
+    "Y2": "Length through hub, threaded / slip-on / socket weld (catalog Y2; Class 125: slip-on; Class 2500: threaded only)",
+    "Y3": "Length through hub, lap joint (catalog Y3)",
+    "T": "Thread length, minimum, threaded flanges (catalog T)",
+    "B1": "Bore of weld neck and socket weld flange (catalog B1); listed for Standard bore in Classes 150/300 and Extra-Strong bore in Class 600 unless purchaser specifies; omitted where catalog prints 'to be specified by purchaser' (Classes 125, 900, 1500, 2500)",
+    "B2": "Bore of slip-on and socket weld flange, minimum (catalog B2; Class 125: slip-on bore)",
+    "B3": "Bore of lap joint flange, minimum (catalog B3)",
+    "J": "Lap joint radius (catalog J)",
+    "Z": "Minimum counter bore of threaded flange, Class 300 and higher (catalog Z)",
+    "D": "Depth of socket, socket weld flanges (catalog D)",
+    "boltCircle": "Diameter of bolt circle (catalog M)",
+    "numHoles": "Number of bolt holes",
+    "holeDia": "Diameter of bolt holes (printed fraction expressed as exact decimal)",
+    "boltDia": "Diameter of bolts, as printed (fractional string)",
+    "WN": "weld neck flange",
+    "SO": "slip-on flange",
+    "TH": "threaded flange",
+    "SW": "socket weld flange",
+    "LJ": "lap joint flange",
+    "blind": "blind flange",
+    "THSO": "catalog combined 'Threaded & Slip-On' calculated weight column, pounds",
+    "weights": "calculated/approximate weight, pounds (Class 125: catalog 'Approx. Weight' WN and SO columns; other classes: pp. 99-104)",
+    "series": "present on NPS 30-48 rows, which conform to ASME B16.47 Series A or Series B; rows without it are ASME B16.5"
+  },
+  "classes": [
+    {
+      "class": "125",
+      "sizes": [
+        {
+          "nps": "30",
+          "dims": {
+            "O": 38.75,
+            "C": 2.13,
+            "W": 32.75,
+            "K": 30.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.13
+            },
+            "SO": {
+              "Y2": 3.5,
+              "B2": 30.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 36.0,
+            "numHoles": 28,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "WN": 340.0,
+            "SO": 305.0
+          }
+        },
+        {
+          "nps": "36",
+          "dims": {
+            "O": 46.0,
+            "C": 2.38,
+            "W": 39.25,
+            "K": 36.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.38
+            },
+            "SO": {
+              "Y2": 3.75,
+              "B2": 36.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 42.75,
+            "numHoles": 32,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "WN": 495.0,
+            "SO": 450.0
+          }
+        },
+        {
+          "nps": "42",
+          "dims": {
+            "O": 53.0,
+            "C": 2.63,
+            "W": 46.0,
+            "K": 42.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.63
+            },
+            "SO": {
+              "Y2": 4.0,
+              "B2": 42.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 49.5,
+            "numHoles": 36,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "WN": 710.0,
+            "SO": 650.0
+          }
+        },
+        {
+          "nps": "48",
+          "dims": {
+            "O": 59.5,
+            "C": 2.75,
+            "W": 52.25,
+            "K": 48.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.75
+            },
+            "SO": {
+              "Y2": 4.13,
+              "B2": 48.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 56.0,
+            "numHoles": 44,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "WN": 870.0,
+            "SO": 800.0
+          }
+        },
+        {
+          "nps": "54",
+          "dims": {
+            "O": 66.25,
+            "C": 3.0,
+            "W": 58.75,
+            "K": 54.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.0
+            },
+            "SO": {
+              "Y2": 4.34,
+              "B2": 54.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 62.75,
+            "numHoles": 44,
+            "holeDia": 2.0,
+            "boltDia": "1 3/4"
+          },
+          "weights": {
+            "WN": 1100.0,
+            "SO": 1025.0
+          }
+        },
+        {
+          "nps": "60",
+          "dims": {
+            "O": 73.0,
+            "C": 3.13,
+            "W": 65.25,
+            "K": 60.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.13
+            },
+            "SO": {
+              "Y2": 4.5,
+              "B2": 60.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 69.25,
+            "numHoles": 52,
+            "holeDia": 2.0,
+            "boltDia": "1 3/4"
+          },
+          "weights": {
+            "WN": 1350.0,
+            "SO": 1250.0
+          }
+        }
+      ]
+    },
+    {
+      "class": "150",
+      "sizes": [
+        {
+          "nps": "1/2",
+          "dims": {
+            "O": 3.5,
+            "C": 0.38,
+            "W": 1.19,
+            "K": 0.84
+          },
+          "perType": {
+            "WN": {
+              "Y1": 1.81,
+              "B1": 0.62
+            },
+            "SO": {
+              "Y2": 0.56,
+              "B2": 0.88
+            },
+            "TH": {
+              "Y2": 0.56,
+              "T": 0.62
+            },
+            "LJ": {
+              "C": 0.44,
+              "Y3": 0.62,
+              "B3": 0.9,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 0.56,
+              "B2": 0.88,
+              "D": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 2.38,
+            "numHoles": 4,
+            "holeDia": 0.625,
+            "boltDia": "1/2"
+          },
+          "weights": {
+            "THSO": 2.0,
+            "WN": 2.0,
+            "blind": 2.0,
+            "LJ": 1.0
+          }
+        },
+        {
+          "nps": "3/4",
+          "dims": {
+            "O": 3.88,
+            "C": 0.44,
+            "W": 1.5,
+            "K": 1.05
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.0,
+              "B1": 0.82
+            },
+            "SO": {
+              "Y2": 0.56,
+              "B2": 1.09
+            },
+            "TH": {
+              "Y2": 0.56,
+              "T": 0.69
+            },
+            "LJ": {
+              "C": 0.5,
+              "Y3": 0.62,
+              "B3": 1.11,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 0.56,
+              "B2": 1.09,
+              "D": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 2.75,
+            "numHoles": 4,
+            "holeDia": 0.625,
+            "boltDia": "1/2"
+          },
+          "weights": {
+            "THSO": 2.0,
+            "WN": 2.0,
+            "blind": 2.0,
+            "LJ": 2.0
+          }
+        },
+        {
+          "nps": "1",
+          "dims": {
+            "O": 4.25,
+            "C": 0.5,
+            "W": 1.94,
+            "K": 1.32
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.12,
+              "B1": 1.05
+            },
+            "SO": {
+              "Y2": 0.62,
+              "B2": 1.36
+            },
+            "TH": {
+              "Y2": 0.62,
+              "T": 0.69
+            },
+            "LJ": {
+              "C": 0.56,
+              "Y3": 0.69,
+              "B3": 1.38,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 0.62,
+              "B2": 1.36,
+              "D": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.12,
+            "numHoles": 4,
+            "holeDia": 0.625,
+            "boltDia": "1/2"
+          },
+          "weights": {
+            "THSO": 2.0,
+            "WN": 3.0,
+            "blind": 2.0,
+            "LJ": 2.0
+          }
+        },
+        {
+          "nps": "1 1/4",
+          "dims": {
+            "O": 4.62,
+            "C": 0.56,
+            "W": 2.31,
+            "K": 1.66
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.19,
+              "B1": 1.38
+            },
+            "SO": {
+              "Y2": 0.75,
+              "B2": 1.7
+            },
+            "TH": {
+              "Y2": 0.75,
+              "T": 0.81
+            },
+            "LJ": {
+              "C": 0.62,
+              "Y3": 0.81,
+              "B3": 1.72,
+              "J": 0.19
+            },
+            "SW": {
+              "Y2": 0.75,
+              "B2": 1.7,
+              "D": 0.56
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.5,
+            "numHoles": 4,
+            "holeDia": 0.625,
+            "boltDia": "1/2"
+          },
+          "weights": {
+            "THSO": 3.0,
+            "WN": 3.0,
+            "blind": 3.0,
+            "LJ": 3.0
+          }
+        },
+        {
+          "nps": "1 1/2",
+          "dims": {
+            "O": 5.0,
+            "C": 0.62,
+            "W": 2.56,
+            "K": 1.9
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.38,
+              "B1": 1.61
+            },
+            "SO": {
+              "Y2": 0.81,
+              "B2": 1.95
+            },
+            "TH": {
+              "Y2": 0.81,
+              "T": 0.88
+            },
+            "LJ": {
+              "C": 0.69,
+              "Y3": 0.88,
+              "B3": 1.97,
+              "J": 0.25
+            },
+            "SW": {
+              "Y2": 0.81,
+              "B2": 1.95,
+              "D": 0.62
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.88,
+            "numHoles": 4,
+            "holeDia": 0.625,
+            "boltDia": "1/2"
+          },
+          "weights": {
+            "THSO": 3.0,
+            "WN": 4.0,
+            "blind": 4.0,
+            "LJ": 3.0
+          }
+        },
+        {
+          "nps": "2",
+          "dims": {
+            "O": 6.0,
+            "C": 0.69,
+            "W": 3.06,
+            "K": 2.38
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.44,
+              "B1": 2.07
+            },
+            "SO": {
+              "Y2": 0.94,
+              "B2": 2.44
+            },
+            "TH": {
+              "Y2": 0.94,
+              "T": 1.0
+            },
+            "LJ": {
+              "C": 0.75,
+              "Y3": 1.0,
+              "B3": 2.46,
+              "J": 0.31
+            },
+            "SW": {
+              "Y2": 0.94,
+              "B2": 2.44,
+              "D": 0.69
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.75,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 5.0,
+            "WN": 6.0,
+            "blind": 5.0,
+            "LJ": 5.0
+          }
+        },
+        {
+          "nps": "2 1/2",
+          "dims": {
+            "O": 7.0,
+            "C": 0.81,
+            "W": 3.56,
+            "K": 2.88
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.69,
+              "B1": 2.47
+            },
+            "SO": {
+              "Y2": 1.06,
+              "B2": 2.94
+            },
+            "TH": {
+              "Y2": 1.06,
+              "T": 1.12
+            },
+            "LJ": {
+              "C": 0.88,
+              "Y3": 1.12,
+              "B3": 2.97,
+              "J": 0.31
+            },
+            "SW": {
+              "Y2": 1.06,
+              "B2": 2.94,
+              "D": 0.75
+            }
+          },
+          "drilling": {
+            "boltCircle": 5.5,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 8.0,
+            "WN": 10.0,
+            "blind": 7.0,
+            "LJ": 8.0
+          }
+        },
+        {
+          "nps": "3",
+          "dims": {
+            "O": 7.5,
+            "C": 0.88,
+            "W": 4.25,
+            "K": 3.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.69,
+              "B1": 3.07
+            },
+            "SO": {
+              "Y2": 1.12,
+              "B2": 3.57
+            },
+            "TH": {
+              "Y2": 1.12,
+              "T": 1.19
+            },
+            "LJ": {
+              "C": 0.94,
+              "Y3": 1.19,
+              "B3": 3.6,
+              "J": 0.38
+            },
+            "SW": {
+              "Y2": 1.12,
+              "B2": 3.57,
+              "D": 0.81
+            }
+          },
+          "drilling": {
+            "boltCircle": 6.0,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 9.0,
+            "WN": 11.5,
+            "blind": 9.0,
+            "LJ": 9.0
+          }
+        },
+        {
+          "nps": "3 1/2",
+          "dims": {
+            "O": 8.5,
+            "C": 0.88,
+            "W": 4.81,
+            "K": 4.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.75,
+              "B1": 3.55
+            },
+            "SO": {
+              "Y2": 1.19,
+              "B2": 4.07
+            },
+            "TH": {
+              "Y2": 1.19,
+              "T": 1.25
+            },
+            "LJ": {
+              "C": 0.94,
+              "Y3": 1.25,
+              "B3": 4.1,
+              "J": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.0,
+            "numHoles": 8,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 12.0,
+            "WN": 12.0,
+            "blind": 13.0,
+            "LJ": 11.0
+          }
+        },
+        {
+          "nps": "4",
+          "dims": {
+            "O": 9.0,
+            "C": 0.88,
+            "W": 5.31,
+            "K": 4.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.94,
+              "B1": 4.03
+            },
+            "SO": {
+              "Y2": 1.25,
+              "B2": 4.57
+            },
+            "TH": {
+              "Y2": 1.25,
+              "T": 1.31
+            },
+            "LJ": {
+              "C": 0.94,
+              "Y3": 1.31,
+              "B3": 4.6,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.5,
+            "numHoles": 8,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 13.0,
+            "WN": 16.5,
+            "blind": 17.0,
+            "LJ": 13.0
+          }
+        },
+        {
+          "nps": "5",
+          "dims": {
+            "O": 10.0,
+            "C": 0.88,
+            "W": 6.44,
+            "K": 5.56
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.44,
+              "B1": 5.05
+            },
+            "SO": {
+              "Y2": 1.38,
+              "B2": 5.66
+            },
+            "TH": {
+              "Y2": 1.38,
+              "T": 1.44
+            },
+            "LJ": {
+              "C": 0.94,
+              "Y3": 1.44,
+              "B3": 5.69,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 8.5,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 15.0,
+            "WN": 21.0,
+            "blind": 20.0,
+            "LJ": 15.0
+          }
+        },
+        {
+          "nps": "6",
+          "dims": {
+            "O": 11.0,
+            "C": 0.94,
+            "W": 7.56,
+            "K": 6.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.44,
+              "B1": 6.07
+            },
+            "SO": {
+              "Y2": 1.5,
+              "B2": 6.72
+            },
+            "TH": {
+              "Y2": 1.5,
+              "T": 1.56
+            },
+            "LJ": {
+              "C": 1.0,
+              "Y3": 1.56,
+              "B3": 6.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 9.5,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 19.0,
+            "WN": 26.0,
+            "blind": 27.0,
+            "LJ": 19.0
+          }
+        },
+        {
+          "nps": "8",
+          "dims": {
+            "O": 13.5,
+            "C": 1.06,
+            "W": 9.69,
+            "K": 8.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.94,
+              "B1": 7.98
+            },
+            "SO": {
+              "Y2": 1.69,
+              "B2": 8.72
+            },
+            "TH": {
+              "Y2": 1.69,
+              "T": 1.75
+            },
+            "LJ": {
+              "C": 1.12,
+              "Y3": 1.75,
+              "B3": 8.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 11.75,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 30.0,
+            "WN": 42.0,
+            "blind": 47.0,
+            "LJ": 30.0
+          }
+        },
+        {
+          "nps": "10",
+          "dims": {
+            "O": 16.0,
+            "C": 1.12,
+            "W": 12.0,
+            "K": 10.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.94,
+              "B1": 10.02
+            },
+            "SO": {
+              "Y2": 1.88,
+              "B2": 10.88
+            },
+            "TH": {
+              "Y2": 1.88,
+              "T": 1.94
+            },
+            "LJ": {
+              "C": 1.19,
+              "Y3": 1.94,
+              "B3": 10.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 14.25,
+            "numHoles": 12,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 43.0,
+            "WN": 54.0,
+            "blind": 70.0,
+            "LJ": 43.0
+          }
+        },
+        {
+          "nps": "12",
+          "dims": {
+            "O": 19.0,
+            "C": 1.19,
+            "W": 14.38,
+            "K": 12.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.44,
+              "B1": 12.0
+            },
+            "SO": {
+              "Y2": 2.12,
+              "B2": 12.88
+            },
+            "TH": {
+              "Y2": 2.12,
+              "T": 2.19
+            },
+            "LJ": {
+              "C": 1.25,
+              "Y3": 2.19,
+              "B3": 12.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 17.0,
+            "numHoles": 12,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 64.0,
+            "WN": 88.0,
+            "blind": 123.0,
+            "LJ": 64.0
+          }
+        },
+        {
+          "nps": "14",
+          "dims": {
+            "O": 21.0,
+            "C": 1.31,
+            "W": 15.75,
+            "K": 14.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.94,
+              "B1": 13.25
+            },
+            "SO": {
+              "Y2": 2.19,
+              "B2": 14.14
+            },
+            "TH": {
+              "Y2": 2.19,
+              "T": 2.25
+            },
+            "LJ": {
+              "C": 1.38,
+              "Y3": 3.12,
+              "B3": 14.18,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 18.75,
+            "numHoles": 12,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 90.0,
+            "WN": 114.0,
+            "blind": 140.0,
+            "LJ": 105.0
+          }
+        },
+        {
+          "nps": "16",
+          "dims": {
+            "O": 23.5,
+            "C": 1.38,
+            "W": 18.0,
+            "K": 16.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.94,
+              "B1": 15.25
+            },
+            "SO": {
+              "Y2": 2.44,
+              "B2": 16.16
+            },
+            "TH": {
+              "Y2": 2.44,
+              "T": 2.5
+            },
+            "LJ": {
+              "C": 1.44,
+              "Y3": 3.44,
+              "B3": 16.19,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 21.25,
+            "numHoles": 16,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 106.0,
+            "WN": 140.0,
+            "blind": 180.0,
+            "LJ": 140.0
+          }
+        },
+        {
+          "nps": "18",
+          "dims": {
+            "O": 25.0,
+            "C": 1.5,
+            "W": 19.88,
+            "K": 18.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.44,
+              "B1": 17.25
+            },
+            "SO": {
+              "Y2": 2.62,
+              "B2": 18.18
+            },
+            "TH": {
+              "Y2": 2.62,
+              "T": 2.69
+            },
+            "LJ": {
+              "C": 1.56,
+              "Y3": 3.81,
+              "B3": 18.2,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 22.75,
+            "numHoles": 16,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 130.0,
+            "WN": 165.0,
+            "blind": 220.0,
+            "LJ": 160.0
+          }
+        },
+        {
+          "nps": "20",
+          "dims": {
+            "O": 27.5,
+            "C": 1.62,
+            "W": 22.0,
+            "K": 20.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.62,
+              "B1": 19.25
+            },
+            "SO": {
+              "Y2": 2.81,
+              "B2": 20.2
+            },
+            "TH": {
+              "Y2": 2.81,
+              "T": 2.88
+            },
+            "LJ": {
+              "C": 1.69,
+              "Y3": 4.06,
+              "B3": 20.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 25.0,
+            "numHoles": 20,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 165.0,
+            "WN": 197.0,
+            "blind": 285.0,
+            "LJ": 195.0
+          }
+        },
+        {
+          "nps": "24",
+          "dims": {
+            "O": 32.0,
+            "C": 1.81,
+            "W": 26.12,
+            "K": 24.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.94,
+              "B1": 23.25
+            },
+            "SO": {
+              "Y2": 3.19,
+              "B2": 24.25
+            },
+            "TH": {
+              "Y2": 3.19,
+              "T": 3.25
+            },
+            "LJ": {
+              "C": 1.88,
+              "Y3": 4.38,
+              "B3": 24.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 29.5,
+            "numHoles": 20,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 220.0,
+            "WN": 268.0,
+            "blind": 430.0,
+            "LJ": 275.0
+          }
+        },
+        {
+          "nps": "30",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 38.75,
+            "W": 30.75,
+            "K": 30.0
+          },
+          "perType": {
+            "WN": {
+              "C": 2.88,
+              "Y1": 5.32
+            },
+            "blind": {
+              "C": 2.88
+            }
+          },
+          "drilling": {
+            "boltCircle": 36.0,
+            "numHoles": 28,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "WN": 400.0,
+            "blind": 982.0
+          }
+        },
+        {
+          "nps": "36",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 46.0,
+            "W": 36.75,
+            "K": 36.0
+          },
+          "perType": {
+            "WN": {
+              "C": 3.5,
+              "Y1": 6.13
+            },
+            "blind": {
+              "C": 3.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 42.75,
+            "numHoles": 32,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "WN": 640.0,
+            "blind": 1676.0
+          }
+        },
+        {
+          "nps": "42",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 53.0,
+            "W": 43.0,
+            "K": 42.0
+          },
+          "perType": {
+            "WN": {
+              "C": 3.75,
+              "Y1": 6.69
+            },
+            "blind": {
+              "C": 3.75
+            }
+          },
+          "drilling": {
+            "boltCircle": 49.5,
+            "numHoles": 36,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "WN": 890.0,
+            "blind": 2381.0
+          }
+        },
+        {
+          "nps": "48",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 59.5,
+            "W": 49.12,
+            "K": 48.0
+          },
+          "perType": {
+            "WN": {
+              "C": 4.19,
+              "Y1": 7.5
+            },
+            "blind": {
+              "C": 4.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 56.0,
+            "numHoles": 44,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "WN": 1185.0,
+            "blind": 3348.0
+          }
+        },
+        {
+          "nps": "30",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 34.94,
+            "W": 31.0,
+            "K": 30.06
+          },
+          "perType": {
+            "WN": {
+              "C": 1.69,
+              "Y1": 3.88
+            },
+            "blind": {
+              "C": 1.94
+            }
+          },
+          "drilling": {
+            "boltCircle": 33.31,
+            "numHoles": 44,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "WN": 150.0,
+            "blind": 543.0
+          }
+        },
+        {
+          "nps": "36",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 41.62,
+            "W": 37.19,
+            "K": 36.06
+          },
+          "perType": {
+            "WN": {
+              "C": 2.0,
+              "Y1": 4.57
+            },
+            "blind": {
+              "C": 2.25
+            }
+          },
+          "drilling": {
+            "boltCircle": 39.75,
+            "numHoles": 44,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "WN": 240.0,
+            "blind": 890.0
+          }
+        },
+        {
+          "nps": "42",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 48.25,
+            "W": 43.38,
+            "K": 42.12
+          },
+          "perType": {
+            "WN": {
+              "C": 2.25,
+              "Y1": 5.19
+            },
+            "blind": {
+              "C": 2.65
+            }
+          },
+          "drilling": {
+            "boltCircle": 46.12,
+            "numHoles": 48,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "WN": 345.0,
+            "blind": 1393.0
+          }
+        },
+        {
+          "nps": "48",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 54.81,
+            "W": 49.5,
+            "K": 48.12
+          },
+          "perType": {
+            "WN": {
+              "C": 2.5,
+              "Y1": 5.82
+            },
+            "blind": {
+              "C": 3.0
+            }
+          },
+          "drilling": {
+            "boltCircle": 52.56,
+            "numHoles": 44,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "WN": 480.0,
+            "blind": 2045.0
+          }
+        }
+      ]
+    },
+    {
+      "class": "300",
+      "sizes": [
+        {
+          "nps": "1/2",
+          "dims": {
+            "O": 3.75,
+            "C": 0.5,
+            "W": 1.5,
+            "K": 0.84
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.0,
+              "B1": 0.62
+            },
+            "SO": {
+              "Y2": 0.81,
+              "B2": 0.88
+            },
+            "TH": {
+              "Y2": 0.81,
+              "T": 0.62,
+              "Z": 0.93
+            },
+            "LJ": {
+              "C": 0.56,
+              "Y3": 0.88,
+              "B3": 0.9,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 0.81,
+              "B2": 0.88,
+              "D": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 2.62,
+            "numHoles": 4,
+            "holeDia": 0.625,
+            "boltDia": "1/2"
+          },
+          "weights": {
+            "THSO": 3.0,
+            "WN": 2.0,
+            "blind": 2.0,
+            "LJ": 2.0
+          }
+        },
+        {
+          "nps": "3/4",
+          "dims": {
+            "O": 4.62,
+            "C": 0.56,
+            "W": 1.88,
+            "K": 1.05
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.19,
+              "B1": 0.82
+            },
+            "SO": {
+              "Y2": 0.94,
+              "B2": 1.09
+            },
+            "TH": {
+              "Y2": 0.94,
+              "T": 0.62,
+              "Z": 1.14
+            },
+            "LJ": {
+              "C": 0.62,
+              "Y3": 1.0,
+              "B3": 1.11,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 0.94,
+              "B2": 1.09,
+              "D": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.25,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 3.0,
+            "WN": 3.0,
+            "blind": 3.0,
+            "LJ": 3.0
+          }
+        },
+        {
+          "nps": "1",
+          "dims": {
+            "O": 4.88,
+            "C": 0.62,
+            "W": 2.12,
+            "K": 1.32
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.38,
+              "B1": 1.05
+            },
+            "SO": {
+              "Y2": 1.0,
+              "B2": 1.36
+            },
+            "TH": {
+              "Y2": 1.0,
+              "T": 0.69,
+              "Z": 1.41
+            },
+            "LJ": {
+              "C": 0.69,
+              "Y3": 1.06,
+              "B3": 1.38,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 1.0,
+              "B2": 1.36,
+              "D": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.5,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 3.0,
+            "WN": 4.0,
+            "blind": 4.0,
+            "LJ": 3.0
+          }
+        },
+        {
+          "nps": "1 1/4",
+          "dims": {
+            "O": 5.25,
+            "C": 0.69,
+            "W": 2.5,
+            "K": 1.66
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.5,
+              "B1": 1.38
+            },
+            "SO": {
+              "Y2": 1.0,
+              "B2": 1.7
+            },
+            "TH": {
+              "Y2": 1.0,
+              "T": 0.81,
+              "Z": 1.75
+            },
+            "LJ": {
+              "C": 0.75,
+              "Y3": 1.06,
+              "B3": 1.72,
+              "J": 0.19
+            },
+            "SW": {
+              "Y2": 1.0,
+              "B2": 1.7,
+              "D": 0.56
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.88,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 4.5,
+            "WN": 5.0,
+            "blind": 6.0,
+            "LJ": 4.5
+          }
+        },
+        {
+          "nps": "1 1/2",
+          "dims": {
+            "O": 6.12,
+            "C": 0.75,
+            "W": 2.75,
+            "K": 1.9
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.63,
+              "B1": 1.61
+            },
+            "SO": {
+              "Y2": 1.13,
+              "B2": 1.95
+            },
+            "TH": {
+              "Y2": 1.13,
+              "T": 0.88,
+              "Z": 1.98
+            },
+            "LJ": {
+              "C": 0.81,
+              "Y3": 1.19,
+              "B3": 1.97,
+              "J": 0.25
+            },
+            "SW": {
+              "Y2": 1.13,
+              "B2": 1.95,
+              "D": 0.62
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.5,
+            "numHoles": 4,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 6.5,
+            "WN": 7.0,
+            "blind": 7.0,
+            "LJ": 6.5
+          }
+        },
+        {
+          "nps": "2",
+          "dims": {
+            "O": 6.5,
+            "C": 0.81,
+            "W": 3.31,
+            "K": 2.38
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.69,
+              "B1": 2.07
+            },
+            "SO": {
+              "Y2": 1.25,
+              "B2": 2.44
+            },
+            "TH": {
+              "Y2": 1.25,
+              "T": 1.12,
+              "Z": 2.5
+            },
+            "LJ": {
+              "C": 0.88,
+              "Y3": 1.31,
+              "B3": 2.46,
+              "J": 0.31
+            },
+            "SW": {
+              "Y2": 1.25,
+              "B2": 2.44,
+              "D": 0.69
+            }
+          },
+          "drilling": {
+            "boltCircle": 5.0,
+            "numHoles": 8,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 7.0,
+            "WN": 9.0,
+            "blind": 8.0,
+            "LJ": 7.0
+          }
+        },
+        {
+          "nps": "2 1/2",
+          "dims": {
+            "O": 7.5,
+            "C": 0.94,
+            "W": 3.94,
+            "K": 2.88
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.94,
+              "B1": 2.47
+            },
+            "SO": {
+              "Y2": 1.44,
+              "B2": 2.94
+            },
+            "TH": {
+              "Y2": 1.44,
+              "T": 1.25,
+              "Z": 3.0
+            },
+            "LJ": {
+              "C": 1.0,
+              "Y3": 1.5,
+              "B3": 2.97,
+              "J": 0.31
+            },
+            "SW": {
+              "Y2": 1.44,
+              "B2": 2.94,
+              "D": 0.75
+            }
+          },
+          "drilling": {
+            "boltCircle": 5.88,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 10.0,
+            "WN": 12.0,
+            "blind": 12.0,
+            "LJ": 10.0
+          }
+        },
+        {
+          "nps": "3",
+          "dims": {
+            "O": 8.25,
+            "C": 1.06,
+            "W": 4.62,
+            "K": 3.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.06,
+              "B1": 3.07
+            },
+            "SO": {
+              "Y2": 1.63,
+              "B2": 3.57
+            },
+            "TH": {
+              "Y2": 1.63,
+              "T": 1.25,
+              "Z": 3.63
+            },
+            "LJ": {
+              "C": 1.12,
+              "Y3": 1.69,
+              "B3": 3.6,
+              "J": 0.38
+            },
+            "SW": {
+              "Y2": 1.63,
+              "B2": 3.57,
+              "D": 0.81
+            }
+          },
+          "drilling": {
+            "boltCircle": 6.62,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 14.0,
+            "WN": 18.0,
+            "blind": 16.0,
+            "LJ": 14.0
+          }
+        },
+        {
+          "nps": "3 1/2",
+          "dims": {
+            "O": 9.0,
+            "C": 1.12,
+            "W": 5.25,
+            "K": 4.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.13,
+              "B1": 3.55
+            },
+            "SO": {
+              "Y2": 1.69,
+              "B2": 4.07
+            },
+            "TH": {
+              "Y2": 1.69,
+              "T": 1.44,
+              "Z": 4.13
+            },
+            "LJ": {
+              "C": 1.19,
+              "Y3": 1.75,
+              "B3": 4.1,
+              "J": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.25,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 17.0,
+            "WN": 20.0,
+            "blind": 21.0,
+            "LJ": 17.0
+          }
+        },
+        {
+          "nps": "4",
+          "dims": {
+            "O": 10.0,
+            "C": 1.19,
+            "W": 5.75,
+            "K": 4.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.32,
+              "B1": 4.03
+            },
+            "SO": {
+              "Y2": 1.82,
+              "B2": 4.57
+            },
+            "TH": {
+              "Y2": 1.82,
+              "T": 1.44,
+              "Z": 4.63
+            },
+            "LJ": {
+              "C": 1.25,
+              "Y3": 1.88,
+              "B3": 4.6,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.88,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 24.0,
+            "WN": 26.5,
+            "blind": 28.0,
+            "LJ": 24.0
+          }
+        },
+        {
+          "nps": "5",
+          "dims": {
+            "O": 11.0,
+            "C": 1.31,
+            "W": 7.0,
+            "K": 5.56
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.82,
+              "B1": 5.05
+            },
+            "SO": {
+              "Y2": 1.94,
+              "B2": 5.66
+            },
+            "TH": {
+              "Y2": 1.94,
+              "T": 1.69,
+              "Z": 5.69
+            },
+            "LJ": {
+              "C": 1.38,
+              "Y3": 2.0,
+              "B3": 5.69,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 9.25,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 31.0,
+            "WN": 36.0,
+            "blind": 37.0,
+            "LJ": 28.0
+          }
+        },
+        {
+          "nps": "6",
+          "dims": {
+            "O": 12.5,
+            "C": 1.38,
+            "W": 8.12,
+            "K": 6.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.82,
+              "B1": 6.07
+            },
+            "SO": {
+              "Y2": 2.0,
+              "B2": 6.72
+            },
+            "TH": {
+              "Y2": 2.0,
+              "T": 1.81,
+              "Z": 6.75
+            },
+            "LJ": {
+              "C": 1.44,
+              "Y3": 2.06,
+              "B3": 6.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 10.62,
+            "numHoles": 12,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 39.0,
+            "WN": 45.0,
+            "blind": 50.0,
+            "LJ": 39.0
+          }
+        },
+        {
+          "nps": "8",
+          "dims": {
+            "O": 15.0,
+            "C": 1.56,
+            "W": 10.25,
+            "K": 8.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.32,
+              "B1": 7.98
+            },
+            "SO": {
+              "Y2": 2.38,
+              "B2": 8.72
+            },
+            "TH": {
+              "Y2": 2.38,
+              "T": 2.0,
+              "Z": 8.75
+            },
+            "LJ": {
+              "C": 1.62,
+              "Y3": 2.44,
+              "B3": 8.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 13.0,
+            "numHoles": 12,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 58.0,
+            "WN": 69.0,
+            "blind": 81.0,
+            "LJ": 58.0
+          }
+        },
+        {
+          "nps": "10",
+          "dims": {
+            "O": 17.5,
+            "C": 1.81,
+            "W": 12.62,
+            "K": 10.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.56,
+              "B1": 10.02
+            },
+            "SO": {
+              "Y2": 2.56,
+              "B2": 10.88
+            },
+            "TH": {
+              "Y2": 2.56,
+              "T": 2.19,
+              "Z": 10.88
+            },
+            "LJ": {
+              "C": 1.88,
+              "Y3": 3.75,
+              "B3": 10.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 15.25,
+            "numHoles": 16,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 81.0,
+            "WN": 100.0,
+            "blind": 124.0,
+            "LJ": 91.0
+          }
+        },
+        {
+          "nps": "12",
+          "dims": {
+            "O": 20.5,
+            "C": 1.94,
+            "W": 14.75,
+            "K": 12.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.06,
+              "B1": 12.0
+            },
+            "SO": {
+              "Y2": 2.82,
+              "B2": 12.88
+            },
+            "TH": {
+              "Y2": 2.82,
+              "T": 2.38,
+              "Z": 12.94
+            },
+            "LJ": {
+              "C": 2.0,
+              "Y3": 4.0,
+              "B3": 12.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 17.75,
+            "numHoles": 16,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 115.0,
+            "WN": 142.0,
+            "blind": 185.0,
+            "LJ": 140.0
+          }
+        },
+        {
+          "nps": "14",
+          "dims": {
+            "O": 23.0,
+            "C": 2.06,
+            "W": 16.75,
+            "K": 14.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.56,
+              "B1": 13.25
+            },
+            "SO": {
+              "Y2": 2.94,
+              "B2": 14.14
+            },
+            "TH": {
+              "Y2": 2.94,
+              "T": 2.5,
+              "Z": 14.19
+            },
+            "LJ": {
+              "C": 2.12,
+              "Y3": 4.38,
+              "B3": 14.18,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 20.25,
+            "numHoles": 20,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 165.0,
+            "WN": 206.0,
+            "blind": 250.0,
+            "LJ": 190.0
+          }
+        },
+        {
+          "nps": "16",
+          "dims": {
+            "O": 25.5,
+            "C": 2.19,
+            "W": 19.0,
+            "K": 16.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.69,
+              "B1": 15.25
+            },
+            "SO": {
+              "Y2": 3.19,
+              "B2": 16.16
+            },
+            "TH": {
+              "Y2": 3.19,
+              "T": 2.69,
+              "Z": 16.19
+            },
+            "LJ": {
+              "C": 2.25,
+              "Y3": 4.75,
+              "B3": 16.19,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 22.5,
+            "numHoles": 20,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 220.0,
+            "WN": 250.0,
+            "blind": 315.0,
+            "LJ": 234.0
+          }
+        },
+        {
+          "nps": "18",
+          "dims": {
+            "O": 28.0,
+            "C": 2.31,
+            "W": 21.0,
+            "K": 18.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.19,
+              "B1": 17.25
+            },
+            "SO": {
+              "Y2": 3.44,
+              "B2": 18.18
+            },
+            "TH": {
+              "Y2": 3.44,
+              "T": 2.75,
+              "Z": 18.19
+            },
+            "LJ": {
+              "C": 2.38,
+              "Y3": 5.12,
+              "B3": 18.2,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 24.75,
+            "numHoles": 24,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 280.0,
+            "WN": 320.0,
+            "blind": 415.0,
+            "LJ": 305.0
+          }
+        },
+        {
+          "nps": "20",
+          "dims": {
+            "O": 30.5,
+            "C": 2.44,
+            "W": 23.12,
+            "K": 20.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.32,
+              "B1": 19.25
+            },
+            "SO": {
+              "Y2": 3.69,
+              "B2": 20.2
+            },
+            "TH": {
+              "Y2": 3.69,
+              "T": 2.88,
+              "Z": 20.19
+            },
+            "LJ": {
+              "C": 2.5,
+              "Y3": 5.5,
+              "B3": 20.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 27.0,
+            "numHoles": 24,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 325.0,
+            "WN": 400.0,
+            "blind": 515.0,
+            "LJ": 375.0
+          }
+        },
+        {
+          "nps": "24",
+          "dims": {
+            "O": 36.0,
+            "C": 2.69,
+            "W": 27.62,
+            "K": 24.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.56,
+              "B1": 23.25
+            },
+            "SO": {
+              "Y2": 4.13,
+              "B2": 24.25
+            },
+            "TH": {
+              "Y2": 4.13,
+              "T": 3.25,
+              "Z": 24.19
+            },
+            "LJ": {
+              "C": 2.75,
+              "Y3": 6.0,
+              "B3": 24.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 32.0,
+            "numHoles": 24,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "THSO": 490.0,
+            "WN": 580.0,
+            "blind": 800.0,
+            "LJ": 550.0
+          }
+        },
+        {
+          "nps": "30",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 43.0,
+            "W": 32.56,
+            "K": 30.0
+          },
+          "perType": {
+            "WN": {
+              "C": 3.57,
+              "Y1": 8.19
+            },
+            "blind": {
+              "C": 3.69
+            }
+          },
+          "drilling": {
+            "boltCircle": 39.25,
+            "numHoles": 28,
+            "holeDia": 1.875,
+            "boltDia": "1 3/4"
+          },
+          "weights": {
+            "WN": 870.0,
+            "blind": 1543.0
+          }
+        },
+        {
+          "nps": "36",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 50.0,
+            "W": 39.0,
+            "K": 36.0
+          },
+          "perType": {
+            "WN": {
+              "C": 4.07,
+              "Y1": 9.44
+            },
+            "blind": {
+              "C": 4.32
+            }
+          },
+          "drilling": {
+            "boltCircle": 46.0,
+            "numHoles": 32,
+            "holeDia": 2.125,
+            "boltDia": "2"
+          },
+          "weights": {
+            "WN": 1275.0,
+            "blind": 2436.0
+          }
+        },
+        {
+          "nps": "42",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 50.75,
+            "W": 43.25,
+            "K": 42.0
+          },
+          "perType": {
+            "WN": {
+              "C": 4.63,
+              "Y1": 7.82
+            },
+            "blind": {
+              "C": 4.63
+            }
+          },
+          "drilling": {
+            "boltCircle": 47.5,
+            "numHoles": 32,
+            "holeDia": 1.75,
+            "boltDia": "1 5/8"
+          },
+          "weights": {
+            "WN": 950.0,
+            "blind": 2688.0
+          }
+        },
+        {
+          "nps": "48",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 57.75,
+            "W": 49.38,
+            "K": 48.0
+          },
+          "perType": {
+            "WN": {
+              "C": 5.19,
+              "Y1": 8.75
+            },
+            "blind": {
+              "C": 5.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 54.0,
+            "numHoles": 32,
+            "holeDia": 2.0,
+            "boltDia": "1 7/8"
+          },
+          "weights": {
+            "WN": 1380.0,
+            "blind": 3896.0
+          }
+        },
+        {
+          "nps": "30",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 39.0,
+            "W": 32.0,
+            "K": 30.25
+          },
+          "perType": {
+            "WN": {
+              "C": 3.63,
+              "Y1": 6.16
+            },
+            "blind": {
+              "C": 3.63
+            }
+          },
+          "drilling": {
+            "boltCircle": 36.25,
+            "numHoles": 36,
+            "holeDia": 1.5,
+            "boltDia": "1 3/8"
+          },
+          "weights": {
+            "WN": 550.0,
+            "blind": 1249.0
+          }
+        },
+        {
+          "nps": "36",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 46.12,
+            "W": 38.0,
+            "K": 36.25
+          },
+          "perType": {
+            "WN": {
+              "C": 4.0,
+              "Y1": 7.06
+            },
+            "blind": {
+              "C": 4.0
+            }
+          },
+          "drilling": {
+            "boltCircle": 42.88,
+            "numHoles": 32,
+            "holeDia": 1.75,
+            "boltDia": "1 5/8"
+          },
+          "weights": {
+            "WN": 840.0,
+            "blind": 1921.0
+          }
+        },
+        {
+          "nps": "42",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 52.5,
+            "W": 44.0,
+            "K": 42.31
+          },
+          "perType": {
+            "WN": {
+              "C": 4.63,
+              "Y1": 8.0
+            },
+            "blind": {
+              "C": 4.63
+            }
+          },
+          "drilling": {
+            "boltCircle": 49.0,
+            "numHoles": 36,
+            "holeDia": 1.875,
+            "boltDia": "1 3/4"
+          },
+          "weights": {
+            "WN": 1135.0,
+            "blind": 2876.0
+          }
+        },
+        {
+          "nps": "48",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 59.5,
+            "W": 50.31,
+            "K": 48.31
+          },
+          "perType": {
+            "WN": {
+              "C": 5.0,
+              "Y1": 8.75
+            },
+            "blind": {
+              "C": 5.25
+            }
+          },
+          "drilling": {
+            "boltCircle": 55.75,
+            "numHoles": 40,
+            "holeDia": 2.0,
+            "boltDia": "1 7/8"
+          },
+          "weights": {
+            "WN": 1575.0,
+            "blind": 4183.0
+          }
+        }
+      ]
+    },
+    {
+      "class": "600",
+      "sizes": [
+        {
+          "nps": "1/2",
+          "dims": {
+            "O": 3.75,
+            "C": 0.56,
+            "W": 1.5,
+            "K": 0.84
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.06,
+              "B1": 0.55
+            },
+            "SO": {
+              "Y2": 0.88,
+              "B2": 0.88
+            },
+            "TH": {
+              "Y2": 0.88,
+              "T": 0.62,
+              "Z": 0.93
+            },
+            "LJ": {
+              "Y3": 0.88,
+              "B3": 0.9,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 0.88,
+              "B2": 0.88,
+              "D": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 2.62,
+            "numHoles": 4,
+            "holeDia": 0.625,
+            "boltDia": "1/2"
+          },
+          "weights": {
+            "THSO": 2.0,
+            "WN": 3.0,
+            "blind": 3.0,
+            "LJ": 2.0
+          }
+        },
+        {
+          "nps": "3/4",
+          "dims": {
+            "O": 4.62,
+            "C": 0.62,
+            "W": 1.88,
+            "K": 1.05
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.25,
+              "B1": 0.74
+            },
+            "SO": {
+              "Y2": 1.0,
+              "B2": 1.09
+            },
+            "TH": {
+              "Y2": 1.0,
+              "T": 0.62,
+              "Z": 1.14
+            },
+            "LJ": {
+              "Y3": 1.0,
+              "B3": 1.11,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 1.0,
+              "B2": 1.09,
+              "D": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.25,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 3.0,
+            "WN": 4.0,
+            "blind": 4.0,
+            "LJ": 3.0
+          }
+        },
+        {
+          "nps": "1",
+          "dims": {
+            "O": 4.88,
+            "C": 0.69,
+            "W": 2.12,
+            "K": 1.32
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.44,
+              "B1": 0.96
+            },
+            "SO": {
+              "Y2": 1.06,
+              "B2": 1.36
+            },
+            "TH": {
+              "Y2": 1.06,
+              "T": 0.69,
+              "Z": 1.41
+            },
+            "LJ": {
+              "Y3": 1.06,
+              "B3": 1.38,
+              "J": 0.12
+            },
+            "SW": {
+              "Y2": 1.06,
+              "B2": 1.36,
+              "D": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.5,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 4.0,
+            "WN": 4.0,
+            "blind": 4.0,
+            "LJ": 4.0
+          }
+        },
+        {
+          "nps": "1 1/4",
+          "dims": {
+            "O": 5.25,
+            "C": 0.81,
+            "W": 2.5,
+            "K": 1.66
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.62,
+              "B1": 1.28
+            },
+            "SO": {
+              "Y2": 1.12,
+              "B2": 1.7
+            },
+            "TH": {
+              "Y2": 1.12,
+              "T": 0.81,
+              "Z": 1.75
+            },
+            "LJ": {
+              "Y3": 1.12,
+              "B3": 1.72,
+              "J": 0.19
+            },
+            "SW": {
+              "Y2": 1.12,
+              "B2": 1.7,
+              "D": 0.56
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.88,
+            "numHoles": 4,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 5.0,
+            "WN": 6.0,
+            "blind": 6.0,
+            "LJ": 5.0
+          }
+        },
+        {
+          "nps": "1 1/2",
+          "dims": {
+            "O": 6.12,
+            "C": 0.88,
+            "W": 2.75,
+            "K": 1.9
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.75,
+              "B1": 1.5
+            },
+            "SO": {
+              "Y2": 1.25,
+              "B2": 1.95
+            },
+            "TH": {
+              "Y2": 1.25,
+              "T": 0.88,
+              "Z": 1.99
+            },
+            "LJ": {
+              "Y3": 1.25,
+              "B3": 1.97,
+              "J": 0.25
+            },
+            "SW": {
+              "Y2": 1.25,
+              "B2": 1.95,
+              "D": 0.62
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.5,
+            "numHoles": 4,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 7.0,
+            "WN": 8.0,
+            "blind": 8.0,
+            "LJ": 7.0
+          }
+        },
+        {
+          "nps": "2",
+          "dims": {
+            "O": 6.5,
+            "C": 1.0,
+            "W": 3.31,
+            "K": 2.38
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.88,
+              "B1": 1.94
+            },
+            "SO": {
+              "Y2": 1.44,
+              "B2": 2.44
+            },
+            "TH": {
+              "Y2": 1.44,
+              "T": 1.12,
+              "Z": 2.5
+            },
+            "LJ": {
+              "Y3": 1.44,
+              "B3": 2.46,
+              "J": 0.31
+            },
+            "SW": {
+              "Y2": 1.44,
+              "B2": 2.44,
+              "D": 0.69
+            }
+          },
+          "drilling": {
+            "boltCircle": 5.0,
+            "numHoles": 8,
+            "holeDia": 0.75,
+            "boltDia": "5/8"
+          },
+          "weights": {
+            "THSO": 9.0,
+            "WN": 12.0,
+            "blind": 10.0,
+            "LJ": 9.0
+          }
+        },
+        {
+          "nps": "2 1/2",
+          "dims": {
+            "O": 7.5,
+            "C": 1.12,
+            "W": 3.94,
+            "K": 2.88
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.12,
+              "B1": 2.32
+            },
+            "SO": {
+              "Y2": 1.62,
+              "B2": 2.94
+            },
+            "TH": {
+              "Y2": 1.62,
+              "T": 1.25,
+              "Z": 3.0
+            },
+            "LJ": {
+              "Y3": 1.62,
+              "B3": 2.97,
+              "J": 0.31
+            },
+            "SW": {
+              "Y2": 1.62,
+              "B2": 2.94,
+              "D": 0.75
+            }
+          },
+          "drilling": {
+            "boltCircle": 5.88,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 13.0,
+            "WN": 18.0,
+            "blind": 15.0,
+            "LJ": 12.0
+          }
+        },
+        {
+          "nps": "3",
+          "dims": {
+            "O": 8.25,
+            "C": 1.25,
+            "W": 4.62,
+            "K": 3.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.25,
+              "B1": 2.9
+            },
+            "SO": {
+              "Y2": 1.81,
+              "B2": 3.57
+            },
+            "TH": {
+              "Y2": 1.81,
+              "T": 1.38,
+              "Z": 3.63
+            },
+            "LJ": {
+              "Y3": 1.81,
+              "B3": 3.6,
+              "J": 0.38
+            },
+            "SW": {
+              "Y2": 1.81,
+              "B2": 3.57,
+              "D": 0.81
+            }
+          },
+          "drilling": {
+            "boltCircle": 6.62,
+            "numHoles": 8,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 16.0,
+            "WN": 23.0,
+            "blind": 20.0,
+            "LJ": 15.0
+          }
+        },
+        {
+          "nps": "3 1/2",
+          "dims": {
+            "O": 9.0,
+            "C": 1.38,
+            "W": 5.25,
+            "K": 4.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.38,
+              "B1": 3.36
+            },
+            "SO": {
+              "Y2": 1.94,
+              "B2": 4.07
+            },
+            "TH": {
+              "Y2": 1.94,
+              "T": 1.56,
+              "Z": 4.13
+            },
+            "LJ": {
+              "Y3": 1.94,
+              "B3": 4.1,
+              "J": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.25,
+            "numHoles": 8,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 21.0,
+            "WN": 26.0,
+            "blind": 29.0,
+            "LJ": 20.0
+          }
+        },
+        {
+          "nps": "4",
+          "dims": {
+            "O": 10.75,
+            "C": 1.5,
+            "W": 6.0,
+            "K": 4.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.0,
+              "B1": 3.83
+            },
+            "SO": {
+              "Y2": 2.12,
+              "B2": 4.57
+            },
+            "TH": {
+              "Y2": 2.12,
+              "T": 1.62,
+              "Z": 4.63
+            },
+            "LJ": {
+              "Y3": 2.12,
+              "B3": 4.6,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 8.5,
+            "numHoles": 8,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 37.0,
+            "WN": 42.0,
+            "blind": 41.0,
+            "LJ": 36.0
+          }
+        },
+        {
+          "nps": "5",
+          "dims": {
+            "O": 13.0,
+            "C": 1.75,
+            "W": 7.44,
+            "K": 5.56
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.5,
+              "B1": 4.81
+            },
+            "SO": {
+              "Y2": 2.38,
+              "B2": 5.66
+            },
+            "TH": {
+              "Y2": 2.38,
+              "T": 1.88,
+              "Z": 5.69
+            },
+            "LJ": {
+              "Y3": 2.38,
+              "B3": 5.69,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 10.5,
+            "numHoles": 8,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 63.0,
+            "WN": 68.0,
+            "blind": 68.0,
+            "LJ": 63.0
+          }
+        },
+        {
+          "nps": "6",
+          "dims": {
+            "O": 14.0,
+            "C": 1.88,
+            "W": 8.75,
+            "K": 6.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.62,
+              "B1": 5.76
+            },
+            "SO": {
+              "Y2": 2.62,
+              "B2": 6.72
+            },
+            "TH": {
+              "Y2": 2.62,
+              "T": 2.0,
+              "Z": 6.75
+            },
+            "LJ": {
+              "Y3": 2.62,
+              "B3": 6.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 11.5,
+            "numHoles": 12,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 80.0,
+            "WN": 81.0,
+            "blind": 86.0,
+            "LJ": 78.0
+          }
+        },
+        {
+          "nps": "8",
+          "dims": {
+            "O": 16.5,
+            "C": 2.19,
+            "W": 10.75,
+            "K": 8.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.25,
+              "B1": 7.63
+            },
+            "SO": {
+              "Y2": 3.0,
+              "B2": 8.72
+            },
+            "TH": {
+              "Y2": 3.0,
+              "T": 2.25,
+              "Z": 8.75
+            },
+            "LJ": {
+              "Y3": 3.0,
+              "B3": 8.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 13.75,
+            "numHoles": 12,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 115.0,
+            "WN": 120.0,
+            "blind": 140.0,
+            "LJ": 112.0
+          }
+        },
+        {
+          "nps": "10",
+          "dims": {
+            "O": 20.0,
+            "C": 2.5,
+            "W": 13.5,
+            "K": 10.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.0,
+              "B1": 9.75
+            },
+            "SO": {
+              "Y2": 3.38,
+              "B2": 10.88
+            },
+            "TH": {
+              "Y2": 3.38,
+              "T": 2.56,
+              "Z": 10.88
+            },
+            "LJ": {
+              "Y3": 4.38,
+              "B3": 10.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 17.0,
+            "numHoles": 16,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 177.0,
+            "WN": 190.0,
+            "blind": 231.0,
+            "LJ": 195.0
+          }
+        },
+        {
+          "nps": "12",
+          "dims": {
+            "O": 22.0,
+            "C": 2.62,
+            "W": 15.75,
+            "K": 12.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.12,
+              "B1": 11.75
+            },
+            "SO": {
+              "Y2": 3.62,
+              "B2": 12.88
+            },
+            "TH": {
+              "Y2": 3.62,
+              "T": 2.75,
+              "Z": 12.94
+            },
+            "LJ": {
+              "Y3": 4.62,
+              "B3": 12.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 19.25,
+            "numHoles": 20,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 215.0,
+            "WN": 226.0,
+            "blind": 295.0,
+            "LJ": 240.0
+          }
+        },
+        {
+          "nps": "14",
+          "dims": {
+            "O": 23.75,
+            "C": 2.75,
+            "W": 17.0,
+            "K": 14.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.5,
+              "B1": 13.0
+            },
+            "SO": {
+              "Y2": 3.69,
+              "B2": 14.14
+            },
+            "TH": {
+              "Y2": 3.69,
+              "T": 2.88,
+              "Z": 14.19
+            },
+            "LJ": {
+              "Y3": 5.0,
+              "B3": 14.18,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 20.75,
+            "numHoles": 20,
+            "holeDia": 1.5,
+            "boltDia": "1 3/8"
+          },
+          "weights": {
+            "THSO": 259.0,
+            "WN": 347.0,
+            "blind": 378.0,
+            "LJ": 290.0
+          }
+        },
+        {
+          "nps": "16",
+          "dims": {
+            "O": 27.0,
+            "C": 3.0,
+            "W": 19.5,
+            "K": 16.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 7.0,
+              "B1": 15.0
+            },
+            "SO": {
+              "Y2": 4.19,
+              "B2": 16.16
+            },
+            "TH": {
+              "Y2": 4.19,
+              "T": 3.06,
+              "Z": 16.19
+            },
+            "LJ": {
+              "Y3": 5.5,
+              "B3": 16.19,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 23.75,
+            "numHoles": 20,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "THSO": 366.0,
+            "WN": 481.0,
+            "blind": 527.0,
+            "LJ": 400.0
+          }
+        },
+        {
+          "nps": "18",
+          "dims": {
+            "O": 29.25,
+            "C": 3.25,
+            "W": 21.5,
+            "K": 18.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 7.25,
+              "B1": 17.0
+            },
+            "SO": {
+              "Y2": 4.62,
+              "B2": 18.18
+            },
+            "TH": {
+              "Y2": 4.62,
+              "T": 3.12,
+              "Z": 18.19
+            },
+            "LJ": {
+              "Y3": 6.0,
+              "B3": 18.2,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 25.75,
+            "numHoles": 20,
+            "holeDia": 1.75,
+            "boltDia": "1 5/8"
+          },
+          "weights": {
+            "THSO": 476.0,
+            "WN": 555.0,
+            "blind": 665.0,
+            "LJ": 469.0
+          }
+        },
+        {
+          "nps": "20",
+          "dims": {
+            "O": 32.0,
+            "C": 3.5,
+            "W": 24.0,
+            "K": 20.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 7.5,
+              "B1": 19.0
+            },
+            "SO": {
+              "Y2": 5.0,
+              "B2": 20.2
+            },
+            "TH": {
+              "Y2": 5.0,
+              "T": 3.25,
+              "Z": 20.19
+            },
+            "LJ": {
+              "Y3": 6.5,
+              "B3": 20.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 28.5,
+            "numHoles": 24,
+            "holeDia": 1.75,
+            "boltDia": "1 5/8"
+          },
+          "weights": {
+            "THSO": 612.0,
+            "WN": 690.0,
+            "blind": 855.0,
+            "LJ": 604.0
+          }
+        },
+        {
+          "nps": "24",
+          "dims": {
+            "O": 37.0,
+            "C": 4.0,
+            "W": 28.25,
+            "K": 24.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 8.0,
+              "B1": 23.0
+            },
+            "SO": {
+              "Y2": 5.5,
+              "B2": 24.25
+            },
+            "TH": {
+              "Y2": 5.5,
+              "T": 3.62,
+              "Z": 24.19
+            },
+            "LJ": {
+              "Y3": 7.25,
+              "B3": 24.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 33.0,
+            "numHoles": 24,
+            "holeDia": 2.0,
+            "boltDia": "1 7/8"
+          },
+          "weights": {
+            "THSO": 876.0,
+            "WN": 977.0,
+            "blind": 1250.0,
+            "LJ": 866.0
+          }
+        },
+        {
+          "nps": "30",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 44.5,
+            "W": 33.94,
+            "K": 30.0
+          },
+          "perType": {
+            "WN": {
+              "C": 4.5,
+              "Y1": 9.75
+            },
+            "blind": {
+              "C": 5.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 40.25,
+            "numHoles": 28,
+            "holeDia": 2.125,
+            "boltDia": "2"
+          },
+          "weights": {
+            "WN": 1210.0,
+            "blind": 2423.0
+          }
+        },
+        {
+          "nps": "36",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 51.75,
+            "W": 40.62,
+            "K": 36.0
+          },
+          "perType": {
+            "WN": {
+              "C": 4.88,
+              "Y1": 11.12
+            },
+            "blind": {
+              "C": 6.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 47.0,
+            "numHoles": 28,
+            "holeDia": 2.625,
+            "boltDia": "2 1/2"
+          },
+          "weights": {
+            "WN": 1705.0,
+            "blind": 3802.0
+          }
+        },
+        {
+          "nps": "42",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 55.25,
+            "W": 44.38,
+            "K": 42.0
+          },
+          "perType": {
+            "WN": {
+              "C": 6.62,
+              "Y1": 11.0
+            },
+            "blind": {
+              "C": 6.75
+            }
+          },
+          "drilling": {
+            "boltCircle": 50.5,
+            "numHoles": 28,
+            "holeDia": 2.625,
+            "boltDia": "2 1/2"
+          },
+          "weights": {
+            "WN": 2030.0,
+            "blind": 4585.0
+          }
+        },
+        {
+          "nps": "48",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 62.75,
+            "W": 50.75,
+            "K": 48.0
+          },
+          "perType": {
+            "WN": {
+              "C": 7.44,
+              "Y1": 12.44
+            },
+            "blind": {
+              "C": 7.69
+            }
+          },
+          "drilling": {
+            "boltCircle": 57.5,
+            "numHoles": 32,
+            "holeDia": 2.875,
+            "boltDia": "2 3/4"
+          },
+          "weights": {
+            "WN": 2855.0,
+            "blind": 6737.0
+          }
+        },
+        {
+          "nps": "30",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 40.25,
+            "W": 31.75,
+            "K": 30.0
+          },
+          "perType": {
+            "WN": {
+              "C": 4.94,
+              "Y1": 8.06
+            },
+            "blind": {
+              "C": 5.0
+            }
+          },
+          "drilling": {
+            "boltCircle": 36.5,
+            "numHoles": 28,
+            "holeDia": 2.0,
+            "boltDia": "1 7/8"
+          },
+          "weights": {
+            "WN": 810.0,
+            "blind": 1802.0
+          }
+        },
+        {
+          "nps": "36",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 47.75,
+            "W": 38.12,
+            "K": 36.0
+          },
+          "perType": {
+            "WN": {
+              "C": 5.75,
+              "Y1": 9.56
+            },
+            "blind": {
+              "C": 5.94
+            }
+          },
+          "drilling": {
+            "boltCircle": 43.5,
+            "numHoles": 28,
+            "holeDia": 2.375,
+            "boltDia": "2 1/4"
+          },
+          "weights": {
+            "WN": 1340.0,
+            "blind": 3013.0
+          }
+        }
+      ]
+    },
+    {
+      "class": "900",
+      "sizes": [
+        {
+          "nps": "1/2",
+          "dims": {
+            "O": 4.75,
+            "C": 0.88,
+            "W": 1.5,
+            "K": 0.84
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.38
+            },
+            "SO": {
+              "Y2": 1.25,
+              "B2": 0.88
+            },
+            "TH": {
+              "Y2": 1.25,
+              "T": 0.88,
+              "Z": 0.93
+            },
+            "SW": {
+              "Y2": 1.25,
+              "B2": 0.88,
+              "D": 0.38
+            },
+            "LJ": {
+              "Y3": 1.25,
+              "B3": 0.9,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.25,
+            "numHoles": 4,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 6.0,
+            "WN": 7.0,
+            "blind": 4.0,
+            "LJ": 6.0
+          }
+        },
+        {
+          "nps": "3/4",
+          "dims": {
+            "O": 5.12,
+            "C": 1.0,
+            "W": 1.75,
+            "K": 1.05
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.75
+            },
+            "SO": {
+              "Y2": 1.38,
+              "B2": 1.09
+            },
+            "TH": {
+              "Y2": 1.38,
+              "T": 1.0,
+              "Z": 1.14
+            },
+            "SW": {
+              "Y2": 1.38,
+              "B2": 1.09,
+              "D": 0.44
+            },
+            "LJ": {
+              "Y3": 1.38,
+              "B3": 1.11,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.5,
+            "numHoles": 4,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 6.0,
+            "WN": 7.0,
+            "blind": 6.0,
+            "LJ": 6.0
+          }
+        },
+        {
+          "nps": "1",
+          "dims": {
+            "O": 5.88,
+            "C": 1.12,
+            "W": 2.06,
+            "K": 1.32
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.88
+            },
+            "SO": {
+              "Y2": 1.62,
+              "B2": 1.36
+            },
+            "TH": {
+              "Y2": 1.62,
+              "T": 1.12,
+              "Z": 1.41
+            },
+            "SW": {
+              "Y2": 1.62,
+              "B2": 1.36,
+              "D": 0.5
+            },
+            "LJ": {
+              "Y3": 1.62,
+              "B3": 1.38,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.0,
+            "numHoles": 4,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 7.5,
+            "WN": 8.5,
+            "blind": 9.0,
+            "LJ": 7.5
+          }
+        },
+        {
+          "nps": "1 1/4",
+          "dims": {
+            "O": 6.25,
+            "C": 1.12,
+            "W": 2.5,
+            "K": 1.66
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.88
+            },
+            "SO": {
+              "Y2": 1.62,
+              "B2": 1.7
+            },
+            "TH": {
+              "Y2": 1.62,
+              "T": 1.19,
+              "Z": 1.75
+            },
+            "SW": {
+              "Y2": 1.62,
+              "B2": 1.7,
+              "D": 0.56
+            },
+            "LJ": {
+              "Y3": 1.62,
+              "B3": 1.72,
+              "J": 0.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.38,
+            "numHoles": 4,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 10.0,
+            "WN": 10.0,
+            "blind": 10.0,
+            "LJ": 10.0
+          }
+        },
+        {
+          "nps": "1 1/2",
+          "dims": {
+            "O": 7.0,
+            "C": 1.25,
+            "W": 2.75,
+            "K": 1.9
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.25
+            },
+            "SO": {
+              "Y2": 1.75,
+              "B2": 1.95
+            },
+            "TH": {
+              "Y2": 1.75,
+              "T": 1.25,
+              "Z": 1.99
+            },
+            "SW": {
+              "Y2": 1.75,
+              "B2": 1.95,
+              "D": 0.62
+            },
+            "LJ": {
+              "Y3": 1.75,
+              "B3": 1.97,
+              "J": 0.25
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.88,
+            "numHoles": 4,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 14.0,
+            "WN": 14.0,
+            "blind": 14.0,
+            "LJ": 14.0
+          }
+        },
+        {
+          "nps": "2",
+          "dims": {
+            "O": 8.5,
+            "C": 1.5,
+            "W": 4.12,
+            "K": 2.38
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.0
+            },
+            "SO": {
+              "Y2": 2.25,
+              "B2": 2.44
+            },
+            "TH": {
+              "Y2": 2.25,
+              "T": 1.5,
+              "Z": 2.5
+            },
+            "SW": {
+              "Y2": 2.25,
+              "B2": 2.44,
+              "D": 0.69
+            },
+            "LJ": {
+              "Y3": 2.25,
+              "B3": 2.46,
+              "J": 0.31
+            }
+          },
+          "drilling": {
+            "boltCircle": 6.5,
+            "numHoles": 8,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 22.0,
+            "WN": 24.0,
+            "blind": 25.0,
+            "LJ": 21.0
+          }
+        },
+        {
+          "nps": "2 1/2",
+          "dims": {
+            "O": 9.62,
+            "C": 1.62,
+            "W": 4.88,
+            "K": 2.88
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.12
+            },
+            "SO": {
+              "Y2": 2.5,
+              "B2": 2.94
+            },
+            "TH": {
+              "Y2": 2.5,
+              "T": 1.88,
+              "Z": 3.0
+            },
+            "SW": {
+              "Y2": 2.5,
+              "B2": 2.94,
+              "D": 0.75
+            },
+            "LJ": {
+              "Y3": 2.5,
+              "B3": 2.97,
+              "J": 0.31
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.5,
+            "numHoles": 8,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 31.0,
+            "WN": 31.0,
+            "blind": 32.0,
+            "LJ": 25.0
+          }
+        },
+        {
+          "nps": "3",
+          "dims": {
+            "O": 9.5,
+            "C": 1.5,
+            "W": 5.0,
+            "K": 3.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.0
+            },
+            "SO": {
+              "Y2": 2.12,
+              "B2": 3.57
+            },
+            "TH": {
+              "Y2": 2.12,
+              "T": 1.62,
+              "Z": 3.63
+            },
+            "LJ": {
+              "Y3": 2.12,
+              "B3": 3.6,
+              "J": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.5,
+            "numHoles": 8,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 36.0,
+            "WN": 36.0,
+            "blind": 35.0,
+            "LJ": 29.0
+          }
+        },
+        {
+          "nps": "4",
+          "dims": {
+            "O": 11.5,
+            "C": 1.75,
+            "W": 6.25,
+            "K": 4.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.5
+            },
+            "SO": {
+              "Y2": 2.75,
+              "B2": 4.57
+            },
+            "TH": {
+              "Y2": 2.75,
+              "T": 1.88,
+              "Z": 4.63
+            },
+            "LJ": {
+              "Y3": 2.75,
+              "B3": 4.6,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 9.25,
+            "numHoles": 8,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 53.0,
+            "WN": 53.0,
+            "blind": 54.0,
+            "LJ": 51.0
+          }
+        },
+        {
+          "nps": "5",
+          "dims": {
+            "O": 13.75,
+            "C": 2.0,
+            "W": 7.5,
+            "K": 5.56
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.0
+            },
+            "SO": {
+              "Y2": 3.12,
+              "B2": 5.66
+            },
+            "TH": {
+              "Y2": 3.12,
+              "T": 2.12,
+              "Z": 5.69
+            },
+            "LJ": {
+              "Y3": 3.12,
+              "B3": 5.69,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 11.0,
+            "numHoles": 8,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 83.0,
+            "WN": 86.0,
+            "blind": 87.0,
+            "LJ": 81.0
+          }
+        },
+        {
+          "nps": "6",
+          "dims": {
+            "O": 15.0,
+            "C": 2.19,
+            "W": 9.25,
+            "K": 6.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.5
+            },
+            "SO": {
+              "Y2": 3.38,
+              "B2": 6.72
+            },
+            "TH": {
+              "Y2": 3.38,
+              "T": 2.25,
+              "Z": 6.75
+            },
+            "LJ": {
+              "Y3": 3.38,
+              "B3": 6.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 12.5,
+            "numHoles": 12,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 110.0,
+            "WN": 110.0,
+            "blind": 115.0,
+            "LJ": 105.0
+          }
+        },
+        {
+          "nps": "8",
+          "dims": {
+            "O": 18.5,
+            "C": 2.5,
+            "W": 11.75,
+            "K": 8.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.38
+            },
+            "SO": {
+              "Y2": 4.0,
+              "B2": 8.72
+            },
+            "TH": {
+              "Y2": 4.0,
+              "T": 2.5,
+              "Z": 8.75
+            },
+            "LJ": {
+              "Y3": 4.5,
+              "B3": 8.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 15.5,
+            "numHoles": 12,
+            "holeDia": 1.5,
+            "boltDia": "1 3/8"
+          },
+          "weights": {
+            "THSO": 172.0,
+            "WN": 187.0,
+            "blind": 200.0,
+            "LJ": 190.0
+          }
+        },
+        {
+          "nps": "10",
+          "dims": {
+            "O": 21.5,
+            "C": 2.75,
+            "W": 14.5,
+            "K": 10.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 7.25
+            },
+            "SO": {
+              "Y2": 4.25,
+              "B2": 10.88
+            },
+            "TH": {
+              "Y2": 4.25,
+              "T": 2.81,
+              "Z": 10.88
+            },
+            "LJ": {
+              "Y3": 5.0,
+              "B3": 10.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 18.5,
+            "numHoles": 16,
+            "holeDia": 1.5,
+            "boltDia": "1 3/8"
+          },
+          "weights": {
+            "THSO": 245.0,
+            "WN": 268.0,
+            "blind": 290.0,
+            "LJ": 277.0
+          }
+        },
+        {
+          "nps": "12",
+          "dims": {
+            "O": 24.0,
+            "C": 3.12,
+            "W": 16.5,
+            "K": 12.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 7.88
+            },
+            "SO": {
+              "Y2": 4.62,
+              "B2": 12.88
+            },
+            "TH": {
+              "Y2": 4.62,
+              "T": 3.0,
+              "Z": 12.94
+            },
+            "LJ": {
+              "Y3": 5.62,
+              "B3": 12.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 21.0,
+            "numHoles": 20,
+            "holeDia": 1.5,
+            "boltDia": "1 3/8"
+          },
+          "weights": {
+            "THSO": 326.0,
+            "WN": 372.0,
+            "blind": 415.0,
+            "LJ": 371.0
+          }
+        },
+        {
+          "nps": "14",
+          "dims": {
+            "O": 25.25,
+            "C": 3.38,
+            "W": 17.75,
+            "K": 14.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 8.38
+            },
+            "SO": {
+              "Y2": 5.12,
+              "B2": 14.14
+            },
+            "TH": {
+              "Y2": 5.12,
+              "T": 3.25,
+              "Z": 14.19
+            },
+            "LJ": {
+              "Y3": 6.12,
+              "B3": 14.18,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 22.0,
+            "numHoles": 20,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "THSO": 400.0,
+            "WN": 562.0,
+            "blind": 520.0,
+            "LJ": 415.0
+          }
+        },
+        {
+          "nps": "16",
+          "dims": {
+            "O": 27.75,
+            "C": 3.5,
+            "W": 20.0,
+            "K": 16.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 8.5
+            },
+            "SO": {
+              "Y2": 5.25,
+              "B2": 16.16
+            },
+            "TH": {
+              "Y2": 5.25,
+              "T": 3.38,
+              "Z": 16.19
+            },
+            "LJ": {
+              "Y3": 6.5,
+              "B3": 16.19,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 24.25,
+            "numHoles": 20,
+            "holeDia": 1.75,
+            "boltDia": "1 5/8"
+          },
+          "weights": {
+            "THSO": 459.0,
+            "WN": 685.0,
+            "blind": 619.0,
+            "LJ": 488.0
+          }
+        },
+        {
+          "nps": "18",
+          "dims": {
+            "O": 31.0,
+            "C": 4.0,
+            "W": 22.25,
+            "K": 18.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 9.0
+            },
+            "SO": {
+              "Y2": 6.0,
+              "B2": 18.18
+            },
+            "TH": {
+              "Y2": 6.0,
+              "T": 3.5,
+              "Z": 18.19
+            },
+            "LJ": {
+              "Y3": 7.5,
+              "B3": 18.2,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 27.0,
+            "numHoles": 20,
+            "holeDia": 2.0,
+            "boltDia": "1 7/8"
+          },
+          "weights": {
+            "THSO": 647.0,
+            "WN": 924.0,
+            "blind": 880.0,
+            "LJ": 670.0
+          }
+        },
+        {
+          "nps": "20",
+          "dims": {
+            "O": 33.75,
+            "C": 4.25,
+            "W": 24.5,
+            "K": 20.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 9.75
+            },
+            "SO": {
+              "Y2": 6.5,
+              "B2": 20.2
+            },
+            "TH": {
+              "Y2": 6.5,
+              "T": 3.62,
+              "Z": 20.19
+            },
+            "LJ": {
+              "Y3": 8.25,
+              "B3": 20.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 29.5,
+            "numHoles": 20,
+            "holeDia": 2.125,
+            "boltDia": "2"
+          },
+          "weights": {
+            "THSO": 792.0,
+            "WN": 1164.0,
+            "blind": 1107.0,
+            "LJ": 868.0
+          }
+        },
+        {
+          "nps": "24",
+          "dims": {
+            "O": 41.0,
+            "C": 5.5,
+            "W": 29.5,
+            "K": 24.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 11.5
+            },
+            "SO": {
+              "Y2": 8.0,
+              "B2": 24.25
+            },
+            "TH": {
+              "Y2": 8.0,
+              "T": 4.0,
+              "Z": 24.19
+            },
+            "LJ": {
+              "Y3": 10.5,
+              "B3": 24.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 35.5,
+            "numHoles": 20,
+            "holeDia": 2.625,
+            "boltDia": "2 1/2"
+          },
+          "weights": {
+            "THSO": 1480.0,
+            "WN": 2107.0,
+            "blind": 2099.0,
+            "LJ": 1659.0
+          }
+        },
+        {
+          "nps": "30",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 48.5,
+            "W": 35.0,
+            "K": 30.0
+          },
+          "perType": {
+            "WN": {
+              "C": 5.88,
+              "Y1": 12.25
+            },
+            "blind": {
+              "C": 7.18
+            }
+          },
+          "drilling": {
+            "boltCircle": 42.75,
+            "numHoles": 20,
+            "holeDia": 3.125,
+            "boltDia": "3"
+          },
+          "weights": {
+            "WN": 2120.0,
+            "blind": 3758.0
+          }
+        },
+        {
+          "nps": "36",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 57.5,
+            "W": 41.88,
+            "K": 36.0
+          },
+          "perType": {
+            "WN": {
+              "C": 6.75,
+              "Y1": 14.25
+            },
+            "blind": {
+              "C": 8.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 50.75,
+            "numHoles": 20,
+            "holeDia": 3.625,
+            "boltDia": "3 1/2"
+          },
+          "weights": {
+            "WN": 3395.0,
+            "blind": 6209.0
+          }
+        },
+        {
+          "nps": "42",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 61.5,
+            "W": 46.31,
+            "K": 42.0
+          },
+          "perType": {
+            "WN": {
+              "C": 8.12,
+              "Y1": 14.62
+            },
+            "blind": {
+              "C": 9.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 54.75,
+            "numHoles": 24,
+            "holeDia": 3.625,
+            "boltDia": "3 1/2"
+          },
+          "weights": {
+            "WN": 3960.0,
+            "blind": 7675.0
+          }
+        },
+        {
+          "nps": "48",
+          "series": "B16.47 Series A",
+          "dims": {
+            "O": 70.25,
+            "W": 52.88,
+            "K": 48.0
+          },
+          "perType": {
+            "WN": {
+              "C": 9.19,
+              "Y1": 16.5
+            },
+            "blind": {
+              "C": 10.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 62.5,
+            "numHoles": 24,
+            "holeDia": 4.125,
+            "boltDia": "4"
+          },
+          "weights": {
+            "WN": 4980.0,
+            "blind": 11398.0
+          }
+        },
+        {
+          "nps": "30",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 46.5,
+            "W": 33.5,
+            "K": 30.0
+          },
+          "perType": {
+            "WN": {
+              "C": 6.12,
+              "Y1": 11.38
+            },
+            "blind": {
+              "C": 6.93
+            }
+          },
+          "drilling": {
+            "boltCircle": 40.75,
+            "numHoles": 20,
+            "holeDia": 3.125,
+            "boltDia": "3"
+          },
+          "weights": {
+            "WN": 1820.0,
+            "blind": 3334.0
+          }
+        },
+        {
+          "nps": "36",
+          "series": "B16.47 Series B",
+          "dims": {
+            "O": 53.0,
+            "W": 40.0,
+            "K": 36.0
+          },
+          "perType": {
+            "WN": {
+              "C": 6.81,
+              "Y1": 12.81
+            },
+            "blind": {
+              "C": 7.94
+            }
+          },
+          "drilling": {
+            "boltCircle": 47.25,
+            "numHoles": 24,
+            "holeDia": 3.125,
+            "boltDia": "3"
+          },
+          "weights": {
+            "WN": 2520.0,
+            "blind": 4963.0
+          }
+        }
+      ]
+    },
+    {
+      "class": "1500",
+      "sizes": [
+        {
+          "nps": "1/2",
+          "dims": {
+            "O": 4.75,
+            "C": 0.88,
+            "W": 1.5,
+            "K": 0.84
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.38
+            },
+            "SO": {
+              "Y2": 1.25,
+              "B2": 0.88
+            },
+            "TH": {
+              "Y2": 1.25,
+              "T": 0.88,
+              "Z": 0.93
+            },
+            "SW": {
+              "Y2": 1.25,
+              "B2": 0.88,
+              "D": 0.38
+            },
+            "LJ": {
+              "Y3": 1.25,
+              "B3": 0.9,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.25,
+            "numHoles": 4,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 6.0,
+            "WN": 7.0,
+            "blind": 4.0,
+            "LJ": 6.0
+          }
+        },
+        {
+          "nps": "3/4",
+          "dims": {
+            "O": 5.12,
+            "C": 1.0,
+            "W": 1.75,
+            "K": 1.05
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.75
+            },
+            "SO": {
+              "Y2": 1.38,
+              "B2": 1.09
+            },
+            "TH": {
+              "Y2": 1.38,
+              "T": 1.0,
+              "Z": 1.14
+            },
+            "SW": {
+              "Y2": 1.38,
+              "B2": 1.09,
+              "D": 0.44
+            },
+            "LJ": {
+              "Y3": 1.38,
+              "B3": 1.11,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.5,
+            "numHoles": 4,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 6.0,
+            "WN": 7.0,
+            "blind": 6.0,
+            "LJ": 6.0
+          }
+        },
+        {
+          "nps": "1",
+          "dims": {
+            "O": 5.88,
+            "C": 1.12,
+            "W": 2.06,
+            "K": 1.32
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.88
+            },
+            "SO": {
+              "Y2": 1.62,
+              "B2": 1.36
+            },
+            "TH": {
+              "Y2": 1.62,
+              "T": 1.12,
+              "Z": 1.41
+            },
+            "SW": {
+              "Y2": 1.62,
+              "B2": 1.36,
+              "D": 0.5
+            },
+            "LJ": {
+              "Y3": 1.62,
+              "B3": 1.38,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.0,
+            "numHoles": 4,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 8.0,
+            "WN": 9.0,
+            "blind": 9.0,
+            "LJ": 8.0
+          }
+        },
+        {
+          "nps": "1 1/4",
+          "dims": {
+            "O": 6.25,
+            "C": 1.12,
+            "W": 2.5,
+            "K": 1.66
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.88
+            },
+            "SO": {
+              "Y2": 1.62,
+              "B2": 1.7
+            },
+            "TH": {
+              "Y2": 1.62,
+              "T": 1.19,
+              "Z": 1.75
+            },
+            "SW": {
+              "Y2": 1.62,
+              "B2": 1.7,
+              "D": 0.56
+            },
+            "LJ": {
+              "Y3": 1.62,
+              "B3": 1.72,
+              "J": 0.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.38,
+            "numHoles": 4,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 10.0,
+            "WN": 10.0,
+            "blind": 10.0,
+            "LJ": 10.0
+          }
+        },
+        {
+          "nps": "1 1/2",
+          "dims": {
+            "O": 7.0,
+            "C": 1.25,
+            "W": 2.75,
+            "K": 1.9
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.25
+            },
+            "SO": {
+              "Y2": 1.75,
+              "B2": 1.95
+            },
+            "TH": {
+              "Y2": 1.75,
+              "T": 1.25,
+              "Z": 1.99
+            },
+            "SW": {
+              "Y2": 1.75,
+              "B2": 1.95,
+              "D": 0.62
+            },
+            "LJ": {
+              "Y3": 1.75,
+              "B3": 1.97,
+              "J": 0.25
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.88,
+            "numHoles": 4,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 14.0,
+            "WN": 14.0,
+            "blind": 14.0,
+            "LJ": 14.0
+          }
+        },
+        {
+          "nps": "2",
+          "dims": {
+            "O": 8.5,
+            "C": 1.5,
+            "W": 4.12,
+            "K": 2.38
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.0
+            },
+            "SO": {
+              "Y2": 2.25,
+              "B2": 2.44
+            },
+            "TH": {
+              "Y2": 2.25,
+              "T": 1.5,
+              "Z": 2.5
+            },
+            "SW": {
+              "Y2": 2.25,
+              "B2": 2.44,
+              "D": 0.69
+            },
+            "LJ": {
+              "Y3": 2.25,
+              "B3": 2.46,
+              "J": 0.31
+            }
+          },
+          "drilling": {
+            "boltCircle": 6.5,
+            "numHoles": 8,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 25.0,
+            "WN": 25.0,
+            "blind": 25.0,
+            "LJ": 25.0
+          }
+        },
+        {
+          "nps": "2 1/2",
+          "dims": {
+            "O": 9.62,
+            "C": 1.62,
+            "W": 4.88,
+            "K": 2.88
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.12
+            },
+            "SO": {
+              "Y2": 2.5,
+              "B2": 2.94
+            },
+            "TH": {
+              "Y2": 2.5,
+              "T": 1.88,
+              "Z": 3.0
+            },
+            "SW": {
+              "Y2": 2.5,
+              "B2": 2.94,
+              "D": 0.75
+            },
+            "LJ": {
+              "Y3": 2.5,
+              "B3": 2.97,
+              "J": 0.31
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.5,
+            "numHoles": 8,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 36.0,
+            "WN": 36.0,
+            "blind": 35.0,
+            "LJ": 35.0
+          }
+        },
+        {
+          "nps": "3",
+          "dims": {
+            "O": 10.5,
+            "C": 1.88,
+            "W": 5.25,
+            "K": 3.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.62
+            },
+            "LJ": {
+              "Y3": 2.88,
+              "B3": 3.6,
+              "J": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 8.0,
+            "numHoles": 8,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 48.0,
+            "WN": 48.0,
+            "blind": 48.0,
+            "LJ": 47.0
+          }
+        },
+        {
+          "nps": "4",
+          "dims": {
+            "O": 12.25,
+            "C": 2.12,
+            "W": 6.38,
+            "K": 4.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.88
+            },
+            "LJ": {
+              "Y3": 3.56,
+              "B3": 4.6,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 9.5,
+            "numHoles": 8,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 73.0,
+            "WN": 73.0,
+            "blind": 73.0,
+            "LJ": 75.0
+          }
+        },
+        {
+          "nps": "5",
+          "dims": {
+            "O": 14.75,
+            "C": 2.88,
+            "W": 7.75,
+            "K": 5.56
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.12
+            },
+            "LJ": {
+              "Y3": 4.12,
+              "B3": 5.69,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 11.5,
+            "numHoles": 8,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "THSO": 132.0,
+            "WN": 132.0,
+            "blind": 140.0,
+            "LJ": 140.0
+          }
+        },
+        {
+          "nps": "6",
+          "dims": {
+            "O": 15.5,
+            "C": 3.25,
+            "W": 9.0,
+            "K": 6.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.75
+            },
+            "LJ": {
+              "Y3": 4.69,
+              "B3": 6.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 12.5,
+            "numHoles": 12,
+            "holeDia": 1.5,
+            "boltDia": "1 3/8"
+          },
+          "weights": {
+            "THSO": 165.0,
+            "WN": 165.0,
+            "blind": 160.0,
+            "LJ": 170.0
+          }
+        },
+        {
+          "nps": "8",
+          "dims": {
+            "O": 19.0,
+            "C": 3.62,
+            "W": 11.5,
+            "K": 8.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 8.38
+            },
+            "LJ": {
+              "Y3": 5.62,
+              "B3": 8.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 15.5,
+            "numHoles": 12,
+            "holeDia": 1.75,
+            "boltDia": "1 5/8"
+          },
+          "weights": {
+            "THSO": 260.0,
+            "WN": 275.0,
+            "blind": 302.0,
+            "LJ": 286.0
+          }
+        },
+        {
+          "nps": "10",
+          "dims": {
+            "O": 23.0,
+            "C": 4.25,
+            "W": 14.5,
+            "K": 10.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 10.0
+            },
+            "LJ": {
+              "Y3": 7.0,
+              "B3": 10.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 19.0,
+            "numHoles": 12,
+            "holeDia": 2.0,
+            "boltDia": "1 7/8"
+          },
+          "weights": {
+            "THSO": 436.0,
+            "WN": 455.0,
+            "blind": 510.0,
+            "LJ": 485.0
+          }
+        },
+        {
+          "nps": "12",
+          "dims": {
+            "O": 26.5,
+            "C": 4.88,
+            "W": 17.75,
+            "K": 12.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 11.12
+            },
+            "LJ": {
+              "Y3": 8.62,
+              "B3": 12.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 22.5,
+            "numHoles": 16,
+            "holeDia": 2.125,
+            "boltDia": "2"
+          },
+          "weights": {
+            "THSO": 667.0,
+            "WN": 690.0,
+            "blind": 775.0,
+            "LJ": 749.0
+          }
+        },
+        {
+          "nps": "14",
+          "dims": {
+            "O": 29.5,
+            "C": 5.25,
+            "W": 19.5,
+            "K": 14.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 11.75
+            },
+            "LJ": {
+              "Y3": 9.5,
+              "B3": 14.18,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 25.0,
+            "numHoles": 16,
+            "holeDia": 2.375,
+            "boltDia": "2 1/4"
+          },
+          "weights": {
+            "THSO": 940.0,
+            "WN": 940.0,
+            "blind": 975.0,
+            "LJ": 890.0
+          }
+        },
+        {
+          "nps": "16",
+          "dims": {
+            "O": 32.5,
+            "C": 5.75,
+            "W": 21.75,
+            "K": 16.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 12.25
+            },
+            "LJ": {
+              "Y3": 10.25,
+              "B3": 16.19,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 27.75,
+            "numHoles": 16,
+            "holeDia": 2.625,
+            "boltDia": "2 1/2"
+          },
+          "weights": {
+            "THSO": 1250.0,
+            "WN": 1250.0,
+            "blind": 1300.0,
+            "LJ": 1250.0
+          }
+        },
+        {
+          "nps": "18",
+          "dims": {
+            "O": 36.0,
+            "C": 6.38,
+            "W": 23.5,
+            "K": 18.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 12.88
+            },
+            "LJ": {
+              "Y3": 10.88,
+              "B3": 18.2,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 30.5,
+            "numHoles": 16,
+            "holeDia": 2.875,
+            "boltDia": "2 3/4"
+          },
+          "weights": {
+            "THSO": 1625.0,
+            "WN": 1625.0,
+            "blind": 1750.0,
+            "LJ": 1475.0
+          }
+        },
+        {
+          "nps": "20",
+          "dims": {
+            "O": 38.75,
+            "C": 7.0,
+            "W": 25.25,
+            "K": 20.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 14.0
+            },
+            "LJ": {
+              "Y3": 11.5,
+              "B3": 20.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 32.75,
+            "numHoles": 16,
+            "holeDia": 3.125,
+            "boltDia": "3"
+          },
+          "weights": {
+            "THSO": 2050.0,
+            "WN": 2050.0,
+            "blind": 2225.0,
+            "LJ": 1775.0
+          }
+        },
+        {
+          "nps": "24",
+          "dims": {
+            "O": 46.0,
+            "C": 8.0,
+            "W": 30.0,
+            "K": 24.0
+          },
+          "perType": {
+            "WN": {
+              "Y1": 16.0
+            },
+            "LJ": {
+              "Y3": 13.0,
+              "B3": 24.25,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 39.0,
+            "numHoles": 16,
+            "holeDia": 3.625,
+            "boltDia": "3 1/2"
+          },
+          "weights": {
+            "THSO": 2825.0,
+            "WN": 3325.0,
+            "blind": 3625.0,
+            "LJ": 2825.0
+          }
+        }
+      ]
+    },
+    {
+      "class": "2500",
+      "sizes": [
+        {
+          "nps": "1/2",
+          "dims": {
+            "O": 5.25,
+            "C": 1.19,
+            "W": 1.69,
+            "K": 0.84
+          },
+          "perType": {
+            "WN": {
+              "Y1": 2.88
+            },
+            "TH": {
+              "Y2": 1.56,
+              "T": 1.12,
+              "Z": 0.93
+            },
+            "LJ": {
+              "Y3": 1.56,
+              "B3": 0.9,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.5,
+            "numHoles": 4,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 7.0,
+            "WN": 8.0,
+            "blind": 7.0,
+            "LJ": 7.0
+          }
+        },
+        {
+          "nps": "3/4",
+          "dims": {
+            "O": 5.5,
+            "C": 1.25,
+            "W": 2.0,
+            "K": 1.05
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.12
+            },
+            "TH": {
+              "Y2": 1.69,
+              "T": 1.25,
+              "Z": 1.14
+            },
+            "LJ": {
+              "Y3": 1.69,
+              "B3": 1.11,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 3.75,
+            "numHoles": 4,
+            "holeDia": 0.875,
+            "boltDia": "3/4"
+          },
+          "weights": {
+            "THSO": 9.0,
+            "WN": 9.0,
+            "blind": 10.0,
+            "LJ": 8.0
+          }
+        },
+        {
+          "nps": "1",
+          "dims": {
+            "O": 6.25,
+            "C": 1.38,
+            "W": 2.25,
+            "K": 1.32
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.5
+            },
+            "TH": {
+              "Y2": 1.88,
+              "T": 1.38,
+              "Z": 1.41
+            },
+            "LJ": {
+              "Y3": 1.88,
+              "B3": 1.38,
+              "J": 0.12
+            }
+          },
+          "drilling": {
+            "boltCircle": 4.25,
+            "numHoles": 4,
+            "holeDia": 1.0,
+            "boltDia": "7/8"
+          },
+          "weights": {
+            "THSO": 12.0,
+            "WN": 13.0,
+            "blind": 12.0,
+            "LJ": 12.0
+          }
+        },
+        {
+          "nps": "1 1/4",
+          "dims": {
+            "O": 7.25,
+            "C": 1.5,
+            "W": 2.88,
+            "K": 1.66
+          },
+          "perType": {
+            "WN": {
+              "Y1": 3.75
+            },
+            "TH": {
+              "Y2": 2.06,
+              "T": 1.5,
+              "Z": 1.75
+            },
+            "LJ": {
+              "Y3": 2.06,
+              "B3": 1.72,
+              "J": 0.19
+            }
+          },
+          "drilling": {
+            "boltCircle": 5.12,
+            "numHoles": 4,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 18.0,
+            "WN": 20.0,
+            "blind": 18.0,
+            "LJ": 17.0
+          }
+        },
+        {
+          "nps": "1 1/2",
+          "dims": {
+            "O": 8.0,
+            "C": 1.75,
+            "W": 3.12,
+            "K": 1.9
+          },
+          "perType": {
+            "WN": {
+              "Y1": 4.38
+            },
+            "TH": {
+              "Y2": 2.38,
+              "T": 1.75,
+              "Z": 1.99
+            },
+            "LJ": {
+              "Y3": 2.38,
+              "B3": 1.97,
+              "J": 0.25
+            }
+          },
+          "drilling": {
+            "boltCircle": 5.75,
+            "numHoles": 4,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 25.0,
+            "WN": 28.0,
+            "blind": 25.0,
+            "LJ": 24.0
+          }
+        },
+        {
+          "nps": "2",
+          "dims": {
+            "O": 9.25,
+            "C": 2.0,
+            "W": 3.75,
+            "K": 2.38
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.0
+            },
+            "TH": {
+              "Y2": 2.75,
+              "T": 2.0,
+              "Z": 2.5
+            },
+            "LJ": {
+              "Y3": 2.75,
+              "B3": 2.46,
+              "J": 0.31
+            }
+          },
+          "drilling": {
+            "boltCircle": 6.75,
+            "numHoles": 8,
+            "holeDia": 1.125,
+            "boltDia": "1"
+          },
+          "weights": {
+            "THSO": 38.0,
+            "WN": 42.0,
+            "blind": 39.0,
+            "LJ": 37.0
+          }
+        },
+        {
+          "nps": "2 1/2",
+          "dims": {
+            "O": 10.5,
+            "C": 2.25,
+            "W": 4.5,
+            "K": 2.88
+          },
+          "perType": {
+            "WN": {
+              "Y1": 5.62
+            },
+            "TH": {
+              "Y2": 3.12,
+              "T": 2.25,
+              "Z": 3.0
+            },
+            "LJ": {
+              "Y3": 3.12,
+              "B3": 2.97,
+              "J": 0.31
+            }
+          },
+          "drilling": {
+            "boltCircle": 7.75,
+            "numHoles": 8,
+            "holeDia": 1.25,
+            "boltDia": "1 1/8"
+          },
+          "weights": {
+            "THSO": 55.0,
+            "WN": 52.0,
+            "blind": 56.0,
+            "LJ": 53.0
+          }
+        },
+        {
+          "nps": "3",
+          "dims": {
+            "O": 12.0,
+            "C": 2.62,
+            "W": 5.25,
+            "K": 3.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 6.62
+            },
+            "LJ": {
+              "Y3": 3.62,
+              "B3": 3.6,
+              "J": 0.38
+            }
+          },
+          "drilling": {
+            "boltCircle": 9.0,
+            "numHoles": 8,
+            "holeDia": 1.375,
+            "boltDia": "1 1/4"
+          },
+          "weights": {
+            "THSO": 83.0,
+            "WN": 94.0,
+            "blind": 86.0,
+            "LJ": 80.0
+          }
+        },
+        {
+          "nps": "4",
+          "dims": {
+            "O": 14.0,
+            "C": 3.0,
+            "W": 6.5,
+            "K": 4.5
+          },
+          "perType": {
+            "WN": {
+              "Y1": 7.5
+            },
+            "LJ": {
+              "Y3": 4.25,
+              "B3": 4.6,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 10.75,
+            "numHoles": 8,
+            "holeDia": 1.625,
+            "boltDia": "1 1/2"
+          },
+          "weights": {
+            "THSO": 127.0,
+            "WN": 146.0,
+            "blind": 133.0,
+            "LJ": 122.0
+          }
+        },
+        {
+          "nps": "5",
+          "dims": {
+            "O": 16.5,
+            "C": 3.62,
+            "W": 8.0,
+            "K": 5.56
+          },
+          "perType": {
+            "WN": {
+              "Y1": 9.0
+            },
+            "LJ": {
+              "Y3": 5.12,
+              "B3": 5.69,
+              "J": 0.44
+            }
+          },
+          "drilling": {
+            "boltCircle": 12.75,
+            "numHoles": 8,
+            "holeDia": 1.875,
+            "boltDia": "1 3/4"
+          },
+          "weights": {
+            "THSO": 210.0,
+            "WN": 244.0,
+            "blind": 223.0,
+            "LJ": 204.0
+          }
+        },
+        {
+          "nps": "6",
+          "dims": {
+            "O": 19.0,
+            "C": 4.25,
+            "W": 9.25,
+            "K": 6.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 10.75
+            },
+            "LJ": {
+              "Y3": 6.0,
+              "B3": 6.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 14.5,
+            "numHoles": 8,
+            "holeDia": 2.125,
+            "boltDia": "2"
+          },
+          "weights": {
+            "THSO": 323.0,
+            "WN": 378.0,
+            "blind": 345.0,
+            "LJ": 314.0
+          }
+        },
+        {
+          "nps": "8",
+          "dims": {
+            "O": 21.75,
+            "C": 5.0,
+            "W": 12.0,
+            "K": 8.63
+          },
+          "perType": {
+            "WN": {
+              "Y1": 12.5
+            },
+            "LJ": {
+              "Y3": 7.0,
+              "B3": 8.75,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 17.25,
+            "numHoles": 12,
+            "holeDia": 2.125,
+            "boltDia": "2"
+          },
+          "weights": {
+            "THSO": 485.0,
+            "WN": 576.0,
+            "blind": 533.0,
+            "LJ": 471.0
+          }
+        },
+        {
+          "nps": "10",
+          "dims": {
+            "O": 26.5,
+            "C": 6.5,
+            "W": 14.75,
+            "K": 10.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 16.5
+            },
+            "LJ": {
+              "Y3": 9.0,
+              "B3": 10.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 21.25,
+            "numHoles": 12,
+            "holeDia": 2.625,
+            "boltDia": "2 1/2"
+          },
+          "weights": {
+            "THSO": 925.0,
+            "WN": 1068.0,
+            "blind": 1025.0,
+            "LJ": 897.0
+          }
+        },
+        {
+          "nps": "12",
+          "dims": {
+            "O": 30.0,
+            "C": 7.25,
+            "W": 17.38,
+            "K": 12.75
+          },
+          "perType": {
+            "WN": {
+              "Y1": 18.25
+            },
+            "LJ": {
+              "Y3": 10.0,
+              "B3": 12.92,
+              "J": 0.5
+            }
+          },
+          "drilling": {
+            "boltCircle": 24.38,
+            "numHoles": 12,
+            "holeDia": 2.875,
+            "boltDia": "2 3/4"
+          },
+          "weights": {
+            "THSO": 1300.0,
+            "WN": 1608.0,
+            "blind": 1464.0,
+            "LJ": 1262.0
+          }
+        }
+      ]
+    }
+  ],
+  "reducingFlanges": {
+    "source": "p. 98, Reducing Slip-On and Threaded Flanges - All Classes",
+    "smallestReducingOutletRequiringHubFlanges": [
+      {
+        "nps": "1",
+        "group": "I",
+        "smallestOutlet": "1/2"
+      },
+      {
+        "nps": "1 1/4",
+        "group": "I",
+        "smallestOutlet": "1/2"
+      },
+      {
+        "nps": "1 1/2",
+        "group": "I",
+        "smallestOutlet": "1/2"
+      },
+      {
+        "nps": "2",
+        "group": "I",
+        "smallestOutlet": "1"
+      },
+      {
+        "nps": "2 1/2",
+        "group": "I",
+        "smallestOutlet": "1 1/4"
+      },
+      {
+        "nps": "3",
+        "group": "I",
+        "smallestOutlet": "1 1/4"
+      },
+      {
+        "nps": "3 1/2",
+        "group": "II",
+        "smallestOutlet": "1 1/2"
+      },
+      {
+        "nps": "4",
+        "group": "II",
+        "smallestOutlet": "1 1/2"
+      },
+      {
+        "nps": "5",
+        "group": "II",
+        "smallestOutlet": "1 1/2"
+      },
+      {
+        "nps": "6",
+        "group": "II",
+        "smallestOutlet": "2 1/2"
+      },
+      {
+        "nps": "8",
+        "group": "II",
+        "smallestOutlet": "3"
+      },
+      {
+        "nps": "10",
+        "group": "II",
+        "smallestOutlet": "3 1/2"
+      },
+      {
+        "nps": "12",
+        "group": "III",
+        "smallestOutlet": "3 1/2"
+      },
+      {
+        "nps": "14",
+        "group": "III",
+        "smallestOutlet": "3 1/2"
+      },
+      {
+        "nps": "16",
+        "group": "III",
+        "smallestOutlet": "4"
+      },
+      {
+        "nps": "18",
+        "group": "III",
+        "smallestOutlet": "4"
+      },
+      {
+        "nps": "20",
+        "group": "III",
+        "smallestOutlet": "4"
+      },
+      {
+        "nps": "24",
+        "group": "III",
+        "smallestOutlet": "4"
+      }
+    ],
+    "notes": [
+      "Hub dimensions shall be at least as large as those of the standard flange of the size being reduced to; flanges reducing to sizes smaller than Groups I, II and III may be made from blind flanges.",
+      "Class 150 reducing flanges have no counter bore. Class 300 and higher have counter bore depth (q) 0.25 in. for NPS 2 and smaller tapping, 0.38 in. for NPS 2 1/2 and larger; counter bore diameter (Q) equals Z of the corresponding threaded flange.",
+      "Minimum effective thread length is at least dimension T of the corresponding pressure class threaded flange."
+    ]
+  }
+}

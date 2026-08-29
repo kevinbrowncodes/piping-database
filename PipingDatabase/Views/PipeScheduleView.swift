@@ -4,16 +4,30 @@ import SwiftData
 struct PipeScheduleView: View {
     @Query(sort: \NominalSize.sortValue) private var sizes: [NominalSize]
     @Environment(\.horizontalSizeClass) private var hSize
+    @Environment(\.modelContext) private var context
+
+    init(preselect: [String: String] = [:]) {
+        _selectedNPS = State(initialValue: preselect["nps"] ?? "1/2")
+        _selectedDesignation = State(initialValue: preselect["s"] ?? "40")
+    }
 
     @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
     @AppStorage("nominalStyle") private var nominalRaw = NominalStyle.nps.rawValue
     @AppStorage("fractionDisplay") private var showFractions = false
     @AppStorage("volumeUnit") private var volumeRaw = VolumeUnit.cubicFeet.rawValue
 
-    @State private var selectedNPS = "1/2"
-    @State private var selectedDesignation = "40"
+    @State private var selectedNPS: String
+    @State private var selectedDesignation: String
     @State private var lengthFt = 1.0
+    @State private var isFavorite = false
     @FocusState private var lengthFocused: Bool
+
+    private var payload: String { "nps=\(selectedNPS)&s=\(selectedDesignation)" }
+    private var lookupTitle: String { "\(selectedNPS)\" Sch \(selectedDesignation) Pipe" }
+    private var lookupDetail: String {
+        guard let e = entry else { return "" }
+        return "OD \(String(format: "%.3f", e.odInches)) · Wall \(String(format: "%.3f", e.wallInches))"
+    }
 
     private var unit: UnitSystem { UnitSystem(rawValue: unitRaw) ?? .imperial }
     private var nominalStyle: NominalStyle { NominalStyle(rawValue: nominalRaw) ?? .nps }
@@ -72,6 +86,17 @@ struct PipeScheduleView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    LookupStore.toggleFavorite(context, moduleID: "pipe", payload: payload,
+                                               title: lookupTitle, detail: lookupDetail)
+                    isFavorite.toggle()
+                } label: {
+                    Image(systemName: isFavorite ? "star.fill" : "star")
+                        .foregroundStyle(isFavorite ? .yellow : .secondary)
+                }
+                .accessibilityLabel(isFavorite ? "Remove favorite" : "Add favorite")
+            }
+            ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     Picker("Nominal size", selection: $nominalRaw) {
                         Text("NPS (inches)").tag(NominalStyle.nps.rawValue)
@@ -97,6 +122,14 @@ struct PipeScheduleView: View {
             if !designations.contains(selectedDesignation), let first = designations.first {
                 selectedDesignation = first
             }
+        }
+        .task(id: payload) {
+            isFavorite = LookupStore.isFavorite(context, moduleID: "pipe", payload: payload)
+            // Debounce so wheel scrolling doesn't spam recents.
+            try? await Task.sleep(for: .seconds(1.5))
+            guard !Task.isCancelled, entry != nil else { return }
+            LookupStore.recordRecent(context, moduleID: "pipe", payload: payload,
+                                     title: lookupTitle, detail: lookupDetail)
         }
     }
 

@@ -1,0 +1,2529 @@
+{
+  "version": 1,
+  "source": "Bonney Forge Branch Connections catalog",
+  "standard": "MSS SP-97",
+  "legend": {
+    "A": "Height from the branch (outlet) end of the fitting to the crotch at the run pipe, inches. Installed height per catalog: L = A + (run pipe OD)/2 + root gap.",
+    "B": "Width across the fitting at the branch end (upper body), per catalog diagram, inches.",
+    "C": "Width across the fitting at the base/crotch where it meets the run pipe, per catalog diagram, inches.",
+    "D": "Size-on-size tables only: opening (bore) diameter shown on the catalog end view, inches. For sockolet class 3000 size-on-size the catalog prints D as a decimal bore matching pipe ID.",
+    "E": "Sockolet only: socket depth per catalog diagram, inches."
+  },
+  "notes": [
+    "Printed fractional inches were converted to decimals exactly (e.g. 1 5/16 -> 1.3125).",
+    "class 'XXS' is printed in the catalog as 'DBL. EXTRA STRONG & SCH. 160'.",
+    "Rows with runFrom == runTo == branch are from the catalog's SIZE ON SIZE tables; other rows are from the REDUCING tables, whose single set of dimensions applies to all run sizes in runFrom-runTo (run ranges taken from the catalog's RUN SIZE CONSOLIDATIONS grids; a FLAT version covers runs larger than NPS 36, welding caps, elliptical heads and flat surfaces).",
+    "runFrom/runTo omitted where the catalog prints no run range: weldolet STD/XS branches NPS 8 and larger and weldolet XXS branches NPS 5 and larger ('order to specific run size required'), and thredolet 6000 branches 1/4 and 3/8 (not in the class 6000 consolidation grid).",
+    "Weights are pounds as printed; sockolet class 9000 weights are not published in the catalog.",
+    "Weldolet STD reducing NPS 36 dimension C is printed 26 1/2 in the catalog (suspected misprint of 36 1/2); transcribed as printed.",
+    "Thredolet 3000 reducing NPS 1 1/2 dimension B is printed 2 7/16 (sockolet/weldolet equivalents print 2 7/8); transcribed as printed."
+  ],
+  "olets": [
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1/8",
+      "runFrom": "3/8",
+      "runTo": "36",
+      "dims": {
+        "A": 0.625,
+        "B": 1.0,
+        "C": 0.625
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1/4",
+      "runFrom": "3/8",
+      "runTo": "36",
+      "dims": {
+        "A": 0.625,
+        "B": 1.0,
+        "C": 0.625
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "3/8",
+      "runFrom": "1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 0.75,
+        "B": 1.25,
+        "C": 0.75
+      },
+      "weight": 0.15
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1/2",
+      "runFrom": "3/4",
+      "runTo": "36",
+      "dims": {
+        "A": 0.75,
+        "B": 1.375,
+        "C": 0.9375
+      },
+      "weight": 0.2
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "3/4",
+      "runFrom": "1",
+      "runTo": "36",
+      "dims": {
+        "A": 0.875,
+        "B": 1.75,
+        "C": 1.1875
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1",
+      "runFrom": "1 1/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.0625,
+        "B": 2.125,
+        "C": 1.4375
+      },
+      "weight": 0.5
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1 1/4",
+      "runFrom": "1 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.25,
+        "B": 2.5625,
+        "C": 1.75
+      },
+      "weight": 0.8
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1 1/2",
+      "runFrom": "2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.875,
+        "C": 2.0
+      },
+      "weight": 1.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "2",
+      "runFrom": "2 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.5,
+        "B": 3.5,
+        "C": 2.5625
+      },
+      "weight": 1.75
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "2 1/2",
+      "runFrom": "3",
+      "runTo": "36",
+      "dims": {
+        "A": 1.625,
+        "B": 4.0625,
+        "C": 3.0
+      },
+      "weight": 2.5
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "3",
+      "runFrom": "3 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.75,
+        "B": 4.8125,
+        "C": 3.6875
+      },
+      "weight": 4.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "3 1/2",
+      "runFrom": "4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.875,
+        "B": 5.25,
+        "C": 4.0
+      },
+      "weight": 5.5
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "4",
+      "runFrom": "5",
+      "runTo": "36",
+      "dims": {
+        "A": 2.0,
+        "B": 6.0,
+        "C": 4.75
+      },
+      "weight": 6.3
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "5",
+      "runFrom": "6",
+      "runTo": "36",
+      "dims": {
+        "A": 2.25,
+        "B": 7.0625,
+        "C": 5.5625
+      },
+      "weight": 10.25
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "6",
+      "runFrom": "8",
+      "runTo": "36",
+      "dims": {
+        "A": 2.375,
+        "B": 8.1875,
+        "C": 6.6875
+      },
+      "weight": 12.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "8",
+      "dims": {
+        "A": 2.75,
+        "B": 10.25,
+        "C": 8.6875
+      },
+      "weight": 23.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "10",
+      "dims": {
+        "A": 3.0625,
+        "B": 12.6875,
+        "C": 10.8125
+      },
+      "weight": 36.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "12",
+      "dims": {
+        "A": 3.375,
+        "B": 14.875,
+        "C": 12.8125
+      },
+      "weight": 59.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "14",
+      "dims": {
+        "A": 3.5,
+        "B": 16.5625,
+        "C": 14.0625
+      },
+      "weight": 66.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "16",
+      "dims": {
+        "A": 3.6875,
+        "B": 18.25,
+        "C": 16.0625
+      },
+      "weight": 75.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "18",
+      "dims": {
+        "A": 3.8125,
+        "B": 21.0625,
+        "C": 18.0625
+      },
+      "weight": 97.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "20",
+      "dims": {
+        "A": 4.0,
+        "B": 23.1875,
+        "C": 20.0
+      },
+      "weight": 118.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "24",
+      "dims": {
+        "A": 4.5625,
+        "B": 27.75,
+        "C": 24.1875
+      },
+      "weight": 220.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "26",
+      "dims": {
+        "A": 4.6875,
+        "B": 29.875,
+        "C": 26.25
+      },
+      "weight": 265.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "30",
+      "dims": {
+        "A": 5.375,
+        "B": 34.5,
+        "C": 30.4375
+      },
+      "weight": 430.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "36",
+      "dims": {
+        "A": 5.375,
+        "B": 40.5,
+        "C": 26.5
+      },
+      "weight": 900.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1/2",
+      "runFrom": "1/2",
+      "runTo": "1/2",
+      "dims": {
+        "A": 0.75,
+        "B": 1.375,
+        "C": 0.9375,
+        "D": 0.625
+      },
+      "weight": 0.15
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "3/4",
+      "runFrom": "3/4",
+      "runTo": "3/4",
+      "dims": {
+        "A": 0.875,
+        "B": 1.625,
+        "C": 1.1875,
+        "D": 0.8125
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1",
+      "runFrom": "1",
+      "runTo": "1",
+      "dims": {
+        "A": 1.0625,
+        "B": 2.125,
+        "C": 1.4375,
+        "D": 1.03125
+      },
+      "weight": 0.4
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1 1/4",
+      "runFrom": "1 1/4",
+      "runTo": "1 1/4",
+      "dims": {
+        "A": 1.25,
+        "B": 2.375,
+        "C": 1.75,
+        "D": 1.375
+      },
+      "weight": 0.7
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "1 1/2",
+      "runFrom": "1 1/2",
+      "runTo": "1 1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.875,
+        "C": 2.0,
+        "D": 1.625
+      },
+      "weight": 0.8
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "2",
+      "runFrom": "2",
+      "runTo": "2",
+      "dims": {
+        "A": 1.5,
+        "B": 3.5,
+        "C": 2.5625,
+        "D": 2.0625
+      },
+      "weight": 1.5
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "2 1/2",
+      "runFrom": "2 1/2",
+      "runTo": "2 1/2",
+      "dims": {
+        "A": 1.625,
+        "B": 4.0625,
+        "C": 3.0,
+        "D": 2.4375
+      },
+      "weight": 2.25
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "3",
+      "runFrom": "3",
+      "runTo": "3",
+      "dims": {
+        "A": 1.75,
+        "B": 4.8125,
+        "C": 3.6875,
+        "D": 3.0625
+      },
+      "weight": 3.75
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "3 1/2",
+      "runFrom": "3 1/2",
+      "runTo": "3 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 5.375,
+        "C": 3.875,
+        "D": 3.5625
+      },
+      "weight": 5.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "4",
+      "runFrom": "4",
+      "runTo": "4",
+      "dims": {
+        "A": 2.0,
+        "B": 6.0,
+        "C": 4.75,
+        "D": 4.0
+      },
+      "weight": 6.7
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "5",
+      "runFrom": "5",
+      "runTo": "5",
+      "dims": {
+        "A": 2.25,
+        "B": 7.125,
+        "C": 5.5625,
+        "D": 5.0625
+      },
+      "weight": 8.5
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "6",
+      "runFrom": "6",
+      "runTo": "6",
+      "dims": {
+        "A": 2.375,
+        "B": 7.75,
+        "C": 6.6875,
+        "D": 6.0625
+      },
+      "weight": 14.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "8",
+      "runFrom": "8",
+      "runTo": "8",
+      "dims": {
+        "A": 2.75,
+        "B": 10.375,
+        "C": 8.6875,
+        "D": 7.9375
+      },
+      "weight": 28.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "10",
+      "runFrom": "10",
+      "runTo": "10",
+      "dims": {
+        "A": 3.0625,
+        "B": 13.0,
+        "C": 10.8125,
+        "D": 10.0
+      },
+      "weight": 39.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "12",
+      "runFrom": "12",
+      "runTo": "12",
+      "dims": {
+        "A": 3.375,
+        "B": 15.25,
+        "C": 12.8125,
+        "D": 12.0
+      },
+      "weight": 65.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "14",
+      "runFrom": "14",
+      "runTo": "14",
+      "dims": {
+        "A": 3.5,
+        "B": 16.5,
+        "C": 14.0625,
+        "D": 13.25
+      },
+      "weight": 70.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "16",
+      "runFrom": "16",
+      "runTo": "16",
+      "dims": {
+        "A": 3.6875,
+        "B": 18.875,
+        "C": 16.0625,
+        "D": 15.25
+      },
+      "weight": 92.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "18",
+      "runFrom": "18",
+      "runTo": "18",
+      "dims": {
+        "A": 4.0625,
+        "B": 20.75,
+        "C": 18.625,
+        "D": 17.25
+      },
+      "weight": 125.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "20",
+      "runFrom": "20",
+      "runTo": "20",
+      "dims": {
+        "A": 4.625,
+        "B": 23.0625,
+        "C": 20.0625,
+        "D": 19.25
+      },
+      "weight": 175.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "24",
+      "runFrom": "24",
+      "runTo": "24",
+      "dims": {
+        "A": 5.375,
+        "B": 27.875,
+        "C": 25.125,
+        "D": 23.25
+      },
+      "weight": 280.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "30",
+      "runFrom": "30",
+      "runTo": "30",
+      "dims": {
+        "A": 5.375,
+        "B": 34.0625,
+        "C": 30.4375,
+        "D": 29.25
+      },
+      "weight": 440.0
+    },
+    {
+      "type": "weldolet",
+      "class": "STD",
+      "branch": "36",
+      "runFrom": "36",
+      "runTo": "36",
+      "dims": {
+        "A": 5.375,
+        "B": 40.5,
+        "C": 36.5,
+        "D": 35.25
+      },
+      "weight": 1180.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1/8",
+      "runFrom": "3/8",
+      "runTo": "36",
+      "dims": {
+        "A": 0.625,
+        "B": 1.0,
+        "C": 0.625
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1/4",
+      "runFrom": "3/8",
+      "runTo": "36",
+      "dims": {
+        "A": 0.625,
+        "B": 1.0,
+        "C": 0.625
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "3/8",
+      "runFrom": "1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 0.75,
+        "B": 1.25,
+        "C": 0.75
+      },
+      "weight": 0.15
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1/2",
+      "runFrom": "3/4",
+      "runTo": "36",
+      "dims": {
+        "A": 0.75,
+        "B": 1.375,
+        "C": 0.9375
+      },
+      "weight": 0.2
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "3/4",
+      "runFrom": "1",
+      "runTo": "36",
+      "dims": {
+        "A": 0.875,
+        "B": 1.75,
+        "C": 1.1875
+      },
+      "weight": 0.3
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1",
+      "runFrom": "1 1/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.0625,
+        "B": 2.125,
+        "C": 1.4375
+      },
+      "weight": 0.5
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1 1/4",
+      "runFrom": "1 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.25,
+        "B": 2.5625,
+        "C": 1.75
+      },
+      "weight": 0.9
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1 1/2",
+      "runFrom": "2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.875,
+        "C": 2.0
+      },
+      "weight": 1.1
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "2",
+      "runFrom": "2 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.5,
+        "B": 3.5,
+        "C": 2.5625
+      },
+      "weight": 1.75
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "2 1/2",
+      "runFrom": "3",
+      "runTo": "36",
+      "dims": {
+        "A": 1.625,
+        "B": 4.0625,
+        "C": 3.0
+      },
+      "weight": 2.6
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "3",
+      "runFrom": "3 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.75,
+        "B": 4.8125,
+        "C": 3.6875
+      },
+      "weight": 4.1
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "3 1/2",
+      "runFrom": "4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.875,
+        "B": 5.25,
+        "C": 4.0
+      },
+      "weight": 5.6
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "4",
+      "runFrom": "5",
+      "runTo": "36",
+      "dims": {
+        "A": 2.0,
+        "B": 6.0,
+        "C": 4.75
+      },
+      "weight": 6.4
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "5",
+      "runFrom": "6",
+      "runTo": "36",
+      "dims": {
+        "A": 2.25,
+        "B": 7.0625,
+        "C": 5.5625
+      },
+      "weight": 10.4
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "6",
+      "runFrom": "8",
+      "runTo": "36",
+      "dims": {
+        "A": 3.0625,
+        "B": 8.3125,
+        "C": 6.6875
+      },
+      "weight": 23.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "8",
+      "dims": {
+        "A": 3.875,
+        "B": 11.5,
+        "C": 8.6875
+      },
+      "weight": 37.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "10",
+      "dims": {
+        "A": 3.6875,
+        "B": 13.1875,
+        "C": 10.4375
+      },
+      "weight": 46.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "12",
+      "dims": {
+        "A": 4.0625,
+        "B": 15.625,
+        "C": 12.5
+      },
+      "weight": 61.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "14",
+      "dims": {
+        "A": 3.9375,
+        "B": 16.0,
+        "C": 13.0
+      },
+      "weight": 70.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "16",
+      "dims": {
+        "A": 4.1875,
+        "B": 18.375,
+        "C": 15.0
+      },
+      "weight": 102.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "18",
+      "dims": {
+        "A": 4.375,
+        "B": 20.375,
+        "C": 17.0
+      },
+      "weight": 130.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "20",
+      "dims": {
+        "A": 4.6875,
+        "B": 22.9375,
+        "C": 19.0
+      },
+      "weight": 158.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "24",
+      "dims": {
+        "A": 5.5,
+        "B": 28.5,
+        "C": 24.1875
+      },
+      "weight": 290.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "26",
+      "dims": {
+        "A": 5.75,
+        "B": 30.125,
+        "C": 27.25
+      },
+      "weight": 350.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1/2",
+      "runFrom": "1/2",
+      "runTo": "1/2",
+      "dims": {
+        "A": 0.75,
+        "B": 1.375,
+        "C": 0.9375,
+        "D": 0.625
+      },
+      "weight": 0.15
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "3/4",
+      "runFrom": "3/4",
+      "runTo": "3/4",
+      "dims": {
+        "A": 0.875,
+        "B": 1.625,
+        "C": 1.1875,
+        "D": 0.8125
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1",
+      "runFrom": "1",
+      "runTo": "1",
+      "dims": {
+        "A": 1.0625,
+        "B": 2.125,
+        "C": 1.4375,
+        "D": 1.03125
+      },
+      "weight": 0.4
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1 1/4",
+      "runFrom": "1 1/4",
+      "runTo": "1 1/4",
+      "dims": {
+        "A": 1.25,
+        "B": 2.375,
+        "C": 1.75,
+        "D": 1.375
+      },
+      "weight": 0.7
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "1 1/2",
+      "runFrom": "1 1/2",
+      "runTo": "1 1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.875,
+        "C": 2.0,
+        "D": 1.625
+      },
+      "weight": 0.9
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "2",
+      "runFrom": "2",
+      "runTo": "2",
+      "dims": {
+        "A": 1.5,
+        "B": 3.5,
+        "C": 2.5625,
+        "D": 2.0625
+      },
+      "weight": 1.6
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "2 1/2",
+      "runFrom": "2 1/2",
+      "runTo": "2 1/2",
+      "dims": {
+        "A": 1.625,
+        "B": 4.0625,
+        "C": 3.0,
+        "D": 2.4375
+      },
+      "weight": 2.5
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "3",
+      "runFrom": "3",
+      "runTo": "3",
+      "dims": {
+        "A": 1.75,
+        "B": 4.8125,
+        "C": 3.6875,
+        "D": 3.0625
+      },
+      "weight": 4.1
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "3 1/2",
+      "runFrom": "3 1/2",
+      "runTo": "3 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 5.375,
+        "C": 3.875,
+        "D": 3.5625
+      },
+      "weight": 5.1
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "4",
+      "runFrom": "4",
+      "runTo": "4",
+      "dims": {
+        "A": 2.0,
+        "B": 6.0,
+        "C": 4.75,
+        "D": 4.0
+      },
+      "weight": 7.5
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "5",
+      "runFrom": "5",
+      "runTo": "5",
+      "dims": {
+        "A": 2.25,
+        "B": 7.125,
+        "C": 5.5625,
+        "D": 5.0625
+      },
+      "weight": 9.5
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "6",
+      "runFrom": "6",
+      "runTo": "6",
+      "dims": {
+        "A": 3.0625,
+        "B": 8.3125,
+        "C": 6.6875,
+        "D": 6.0625
+      },
+      "weight": 15.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "8",
+      "runFrom": "8",
+      "runTo": "8",
+      "dims": {
+        "A": 3.875,
+        "B": 10.625,
+        "C": 8.6875,
+        "D": 7.625
+      },
+      "weight": 32.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "10",
+      "runFrom": "10",
+      "runTo": "10",
+      "dims": {
+        "A": 3.5,
+        "B": 13.125,
+        "C": 10.4375,
+        "D": 9.75
+      },
+      "weight": 46.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "12",
+      "runFrom": "12",
+      "runTo": "12",
+      "dims": {
+        "A": 3.9375,
+        "B": 15.1875,
+        "C": 13.0,
+        "D": 11.75
+      },
+      "weight": 61.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "14",
+      "runFrom": "14",
+      "runTo": "14",
+      "dims": {
+        "A": 4.125,
+        "B": 16.0,
+        "C": 13.0,
+        "D": 13.0
+      },
+      "weight": 75.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "16",
+      "runFrom": "16",
+      "runTo": "16",
+      "dims": {
+        "A": 4.4375,
+        "B": 18.25,
+        "C": 15.0,
+        "D": 15.0
+      },
+      "weight": 115.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "18",
+      "runFrom": "18",
+      "runTo": "18",
+      "dims": {
+        "A": 4.6875,
+        "B": 20.375,
+        "C": 17.0,
+        "D": 17.0
+      },
+      "weight": 130.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "20",
+      "runFrom": "20",
+      "runTo": "20",
+      "dims": {
+        "A": 5.0,
+        "B": 22.625,
+        "C": 19.0,
+        "D": 19.0
+      },
+      "weight": 187.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XS",
+      "branch": "24",
+      "runFrom": "24",
+      "runTo": "24",
+      "dims": {
+        "A": 5.5,
+        "B": 28.75,
+        "C": 25.125,
+        "D": 23.0
+      },
+      "weight": 316.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "1/2",
+      "runFrom": "3/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.125,
+        "B": 1.375,
+        "C": 0.5625
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "3/4",
+      "runFrom": "1",
+      "runTo": "36",
+      "dims": {
+        "A": 1.25,
+        "B": 1.75,
+        "C": 0.75
+      },
+      "weight": 0.7
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "1",
+      "runFrom": "1 1/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.5,
+        "B": 2.0,
+        "C": 1.0
+      },
+      "weight": 0.85
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "1 1/4",
+      "runFrom": "1 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.75,
+        "B": 2.4375,
+        "C": 1.3125
+      },
+      "weight": 1.25
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "1 1/2",
+      "runFrom": "2",
+      "runTo": "36",
+      "dims": {
+        "A": 2.0,
+        "B": 2.75,
+        "C": 1.5
+      },
+      "weight": 1.75
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "2",
+      "runFrom": "2 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 2.1875,
+        "B": 3.1875,
+        "C": 1.6875
+      },
+      "weight": 2.15
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "2 1/2",
+      "runFrom": "3",
+      "runTo": "36",
+      "dims": {
+        "A": 2.4375,
+        "B": 3.8125,
+        "C": 2.125
+      },
+      "weight": 3.4
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "3",
+      "runFrom": "3 1/2",
+      "runTo": "24",
+      "dims": {
+        "A": 2.875,
+        "B": 4.75,
+        "C": 2.875
+      },
+      "weight": 6.3
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "4",
+      "runFrom": "6",
+      "runTo": "24",
+      "dims": {
+        "A": 3.3125,
+        "B": 6.0,
+        "C": 3.875
+      },
+      "weight": 10.5
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "5",
+      "dims": {
+        "A": 3.6875,
+        "B": 7.375,
+        "C": 4.8125
+      },
+      "weight": 14.25
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "6",
+      "dims": {
+        "A": 4.125,
+        "B": 9.3125,
+        "C": 5.75
+      },
+      "weight": 28.0
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "1/2",
+      "runFrom": "1/2",
+      "runTo": "1/2",
+      "dims": {
+        "A": 1.125,
+        "B": 1.375,
+        "C": 0.5625,
+        "D": 0.4375
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "3/4",
+      "runFrom": "3/4",
+      "runTo": "3/4",
+      "dims": {
+        "A": 1.25,
+        "B": 1.75,
+        "C": 0.75,
+        "D": 0.625
+      },
+      "weight": 0.7
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "1",
+      "runFrom": "1",
+      "runTo": "1",
+      "dims": {
+        "A": 1.5,
+        "B": 2.0,
+        "C": 1.0,
+        "D": 0.8125
+      },
+      "weight": 0.8
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "1 1/4",
+      "runFrom": "1 1/4",
+      "runTo": "1 1/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.4375,
+        "C": 1.3125,
+        "D": 1.1875
+      },
+      "weight": 1.25
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "1 1/2",
+      "runFrom": "1 1/2",
+      "runTo": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 2.75,
+        "C": 1.5,
+        "D": 1.3125
+      },
+      "weight": 1.75
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "2",
+      "runFrom": "2",
+      "runTo": "2",
+      "dims": {
+        "A": 2.1875,
+        "B": 3.1875,
+        "C": 1.6875,
+        "D": 1.5
+      },
+      "weight": 2.15
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "2 1/2",
+      "runFrom": "2 1/2",
+      "runTo": "2 1/2",
+      "dims": {
+        "A": 2.4375,
+        "B": 3.8125,
+        "C": 2.125,
+        "D": 1.75
+      },
+      "weight": 3.4
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "3",
+      "runFrom": "3",
+      "runTo": "3",
+      "dims": {
+        "A": 2.875,
+        "B": 4.75,
+        "C": 2.875,
+        "D": 2.625
+      },
+      "weight": 6.35
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "4",
+      "runFrom": "4",
+      "runTo": "4",
+      "dims": {
+        "A": 3.3125,
+        "B": 6.0,
+        "C": 3.875,
+        "D": 3.4375
+      },
+      "weight": 10.5
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "5",
+      "runFrom": "5",
+      "runTo": "5",
+      "dims": {
+        "A": 3.6875,
+        "B": 7.375,
+        "C": 4.8125,
+        "D": 4.3125
+      },
+      "weight": 14.25
+    },
+    {
+      "type": "weldolet",
+      "class": "XXS",
+      "branch": "6",
+      "runFrom": "6",
+      "runTo": "6",
+      "dims": {
+        "A": 4.125,
+        "B": 8.6875,
+        "C": 5.75,
+        "D": 5.1875
+      },
+      "weight": 30.25
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1/8",
+      "runFrom": "3/8",
+      "runTo": "36",
+      "dims": {
+        "A": 0.75,
+        "B": 1.0,
+        "C": 0.625,
+        "E": 0.3125
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1/4",
+      "runFrom": "3/8",
+      "runTo": "36",
+      "dims": {
+        "A": 0.75,
+        "B": 1.0,
+        "C": 0.625,
+        "E": 0.3125
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "3/8",
+      "runFrom": "1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 0.8125,
+        "B": 1.25,
+        "C": 0.75,
+        "E": 0.4375
+      },
+      "weight": 0.2
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1/2",
+      "runFrom": "3/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.0,
+        "B": 1.4375,
+        "C": 0.9375,
+        "E": 0.5625
+      },
+      "weight": 0.3
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "3/4",
+      "runFrom": "1",
+      "runTo": "36",
+      "dims": {
+        "A": 1.0625,
+        "B": 1.75,
+        "C": 1.1875,
+        "E": 0.5625
+      },
+      "weight": 0.35
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1",
+      "runFrom": "1 1/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.125,
+        "C": 1.4375,
+        "E": 0.8125
+      },
+      "weight": 0.6
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1 1/4",
+      "runFrom": "1 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.5625,
+        "C": 1.75,
+        "E": 0.75
+      },
+      "weight": 0.85
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1 1/2",
+      "runFrom": "2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.375,
+        "B": 2.875,
+        "C": 2.0,
+        "E": 0.75
+      },
+      "weight": 1.0
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "2",
+      "runFrom": "2 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.5,
+        "B": 3.5,
+        "C": 2.5625,
+        "E": 0.8125
+      },
+      "weight": 1.6
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "2 1/2",
+      "runFrom": "3",
+      "runTo": "36",
+      "dims": {
+        "A": 1.8125,
+        "B": 4.0625,
+        "C": 3.0,
+        "E": 0.75
+      },
+      "weight": 2.75
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "3",
+      "runFrom": "3 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 2.0,
+        "B": 4.8125,
+        "C": 3.6875,
+        "E": 0.9375
+      },
+      "weight": 3.8
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "3 1/2",
+      "runFrom": "4",
+      "runTo": "36",
+      "dims": {
+        "A": 2.125,
+        "B": 5.375,
+        "C": 4.0,
+        "E": 1.0
+      },
+      "weight": 4.3
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "4",
+      "runFrom": "5",
+      "runTo": "36",
+      "dims": {
+        "A": 2.25,
+        "B": 6.0,
+        "C": 4.75,
+        "E": 1.0625
+      },
+      "weight": 7.25
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "5",
+      "runFrom": "6",
+      "runTo": "36",
+      "dims": {
+        "A": 2.625,
+        "B": 7.0,
+        "C": 5.5625,
+        "E": 1.375
+      },
+      "weight": 12.0
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "6",
+      "runFrom": "8",
+      "runTo": "36",
+      "dims": {
+        "A": 2.75,
+        "B": 8.625,
+        "C": 6.6875,
+        "E": 1.4375
+      },
+      "weight": 14.5
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1/2",
+      "runFrom": "1/2",
+      "runTo": "1/2",
+      "dims": {
+        "A": 1.0,
+        "B": 1.375,
+        "C": 0.9375,
+        "D": 0.622,
+        "E": 0.5625
+      },
+      "weight": 0.15
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "3/4",
+      "runFrom": "3/4",
+      "runTo": "3/4",
+      "dims": {
+        "A": 1.0625,
+        "B": 1.625,
+        "C": 1.1875,
+        "D": 0.824,
+        "E": 0.5
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1",
+      "runFrom": "1",
+      "runTo": "1",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.125,
+        "C": 1.4375,
+        "D": 1.049,
+        "E": 0.75
+      },
+      "weight": 0.45
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1 1/4",
+      "runFrom": "1 1/4",
+      "runTo": "1 1/4",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.4375,
+        "C": 1.75,
+        "D": 1.38,
+        "E": 0.5625
+      },
+      "weight": 0.65
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "1 1/2",
+      "runFrom": "1 1/2",
+      "runTo": "1 1/2",
+      "dims": {
+        "A": 1.375,
+        "B": 2.875,
+        "C": 2.0,
+        "D": 1.61,
+        "E": 0.6875
+      },
+      "weight": 0.85
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "2",
+      "runFrom": "2",
+      "runTo": "2",
+      "dims": {
+        "A": 1.5,
+        "B": 3.5,
+        "C": 2.5625,
+        "D": 2.067,
+        "E": 0.9375
+      },
+      "weight": 1.4
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "2 1/2",
+      "runFrom": "2 1/2",
+      "runTo": "2 1/2",
+      "dims": {
+        "A": 1.5625,
+        "B": 4.0625,
+        "C": 3.0,
+        "D": 2.469,
+        "E": 0.75
+      },
+      "weight": 2.25
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "3",
+      "runFrom": "3",
+      "runTo": "3",
+      "dims": {
+        "A": 1.75,
+        "B": 4.8125,
+        "C": 3.6875,
+        "D": 3.068,
+        "E": 0.9375
+      },
+      "weight": 3.75
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "3 1/2",
+      "runFrom": "3 1/2",
+      "runTo": "3 1/2",
+      "dims": {
+        "A": 1.6875,
+        "B": 5.375,
+        "C": 4.4375,
+        "D": 3.548,
+        "E": 0.6875
+      },
+      "weight": 4.3
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "4",
+      "runFrom": "4",
+      "runTo": "4",
+      "dims": {
+        "A": 1.875,
+        "B": 6.0625,
+        "C": 4.75,
+        "D": 4.026,
+        "E": 1.0625
+      },
+      "weight": 6.6
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "5",
+      "runFrom": "5",
+      "runTo": "5",
+      "dims": {
+        "A": 2.4375,
+        "B": 7.25,
+        "C": 5.25,
+        "D": 5.047,
+        "E": 1.0
+      },
+      "weight": 9.0
+    },
+    {
+      "type": "sockolet",
+      "class": "3000",
+      "branch": "6",
+      "runFrom": "6",
+      "runTo": "6",
+      "dims": {
+        "A": 2.6875,
+        "B": 8.6875,
+        "C": 6.0625,
+        "D": 6.065,
+        "E": 1.1875
+      },
+      "weight": 15.5
+    },
+    {
+      "type": "sockolet",
+      "class": "6000",
+      "branch": "1/2",
+      "runFrom": "3/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.25,
+        "B": 1.75,
+        "C": 0.75,
+        "E": 0.875
+      },
+      "weight": 0.5
+    },
+    {
+      "type": "sockolet",
+      "class": "6000",
+      "branch": "3/4",
+      "runFrom": "1",
+      "runTo": "36",
+      "dims": {
+        "A": 1.4375,
+        "B": 2.0,
+        "C": 1.0,
+        "E": 0.875
+      },
+      "weight": 0.8
+    },
+    {
+      "type": "sockolet",
+      "class": "6000",
+      "branch": "1",
+      "runFrom": "1 1/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.5625,
+        "B": 2.4375,
+        "C": 1.3125,
+        "E": 0.9375
+      },
+      "weight": 1.3
+    },
+    {
+      "type": "sockolet",
+      "class": "6000",
+      "branch": "1 1/4",
+      "runFrom": "1 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.625,
+        "B": 2.75,
+        "C": 1.5,
+        "E": 0.8125
+      },
+      "weight": 1.6
+    },
+    {
+      "type": "sockolet",
+      "class": "6000",
+      "branch": "1 1/2",
+      "runFrom": "2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.6875,
+        "B": 3.25,
+        "C": 1.9375,
+        "E": 0.875
+      },
+      "weight": 2.0
+    },
+    {
+      "type": "sockolet",
+      "class": "6000",
+      "branch": "2",
+      "runFrom": "2 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 2.0625,
+        "B": 4.0625,
+        "C": 2.75,
+        "E": 1.1875
+      },
+      "weight": 5.15
+    },
+    {
+      "type": "sockolet",
+      "class": "9000",
+      "branch": "1/2",
+      "runFrom": "3/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.25,
+        "B": 1.6875,
+        "C": 0.75,
+        "E": 0.8125
+      }
+    },
+    {
+      "type": "sockolet",
+      "class": "9000",
+      "branch": "3/4",
+      "runFrom": "1",
+      "runTo": "36",
+      "dims": {
+        "A": 1.4375,
+        "B": 1.9375,
+        "C": 0.9375,
+        "E": 0.875
+      }
+    },
+    {
+      "type": "sockolet",
+      "class": "9000",
+      "branch": "1",
+      "runFrom": "1 1/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.5625,
+        "B": 2.5625,
+        "C": 1.1875,
+        "E": 0.9375
+      }
+    },
+    {
+      "type": "sockolet",
+      "class": "9000",
+      "branch": "1 1/4",
+      "runFrom": "1 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.625,
+        "B": 2.6875,
+        "C": 1.5,
+        "E": 0.8125
+      }
+    },
+    {
+      "type": "sockolet",
+      "class": "9000",
+      "branch": "1 1/2",
+      "runFrom": "2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.6875,
+        "B": 3.25,
+        "C": 1.9375,
+        "E": 0.9375
+      }
+    },
+    {
+      "type": "sockolet",
+      "class": "9000",
+      "branch": "2",
+      "runFrom": "2 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 2.0625,
+        "B": 4.0625,
+        "C": 2.75,
+        "E": 1.25
+      }
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1/8",
+      "runFrom": "3/8",
+      "runTo": "36",
+      "dims": {
+        "A": 0.75,
+        "B": 1.0,
+        "C": 0.625
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1/4",
+      "runFrom": "3/8",
+      "runTo": "36",
+      "dims": {
+        "A": 0.75,
+        "B": 1.0,
+        "C": 0.625
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "3/8",
+      "runFrom": "1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 0.8125,
+        "B": 1.25,
+        "C": 0.75
+      },
+      "weight": 0.2
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1/2",
+      "runFrom": "3/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.0,
+        "B": 1.4375,
+        "C": 0.9375
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "3/4",
+      "runFrom": "1",
+      "runTo": "36",
+      "dims": {
+        "A": 1.0625,
+        "B": 1.75,
+        "C": 1.1875
+      },
+      "weight": 0.35
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1",
+      "runFrom": "1 1/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.125,
+        "C": 1.4375
+      },
+      "weight": 0.6
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1 1/4",
+      "runFrom": "1 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.5625,
+        "C": 1.75
+      },
+      "weight": 0.9
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1 1/2",
+      "runFrom": "2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.375,
+        "B": 2.4375,
+        "C": 2.0
+      },
+      "weight": 1.0
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "2",
+      "runFrom": "2 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.5,
+        "B": 3.5,
+        "C": 2.5625
+      },
+      "weight": 1.75
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "2 1/2",
+      "runFrom": "3",
+      "runTo": "36",
+      "dims": {
+        "A": 1.8125,
+        "B": 4.0625,
+        "C": 3.0
+      },
+      "weight": 3.0
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "3",
+      "runFrom": "3 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 2.0,
+        "B": 4.8125,
+        "C": 3.6875
+      },
+      "weight": 4.35
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "3 1/2",
+      "runFrom": "4",
+      "runTo": "36",
+      "dims": {
+        "A": 2.125,
+        "B": 5.25,
+        "C": 4.0
+      },
+      "weight": 5.75
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "4",
+      "runFrom": "5",
+      "runTo": "36",
+      "dims": {
+        "A": 2.25,
+        "B": 6.0,
+        "C": 4.75
+      },
+      "weight": 7.1
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "5",
+      "runFrom": "6",
+      "runTo": "36",
+      "dims": {
+        "A": 2.625,
+        "B": 7.3125,
+        "C": 5.5625
+      },
+      "weight": 12.0
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "6",
+      "runFrom": "8",
+      "runTo": "36",
+      "dims": {
+        "A": 2.75,
+        "B": 8.625,
+        "C": 6.6875
+      },
+      "weight": 15.3
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1/2",
+      "runFrom": "1/2",
+      "runTo": "1/2",
+      "dims": {
+        "A": 1.0,
+        "B": 1.375,
+        "C": 0.9375,
+        "D": 0.625
+      },
+      "weight": 0.15
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "3/4",
+      "runFrom": "3/4",
+      "runTo": "3/4",
+      "dims": {
+        "A": 1.0625,
+        "B": 1.6875,
+        "C": 1.1875,
+        "D": 0.8125
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1",
+      "runFrom": "1",
+      "runTo": "1",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.125,
+        "C": 1.4375,
+        "D": 1.0625
+      },
+      "weight": 0.45
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1 1/4",
+      "runFrom": "1 1/4",
+      "runTo": "1 1/4",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.375,
+        "C": 1.75,
+        "D": 1.375
+      },
+      "weight": 0.7
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "1 1/2",
+      "runFrom": "1 1/2",
+      "runTo": "1 1/2",
+      "dims": {
+        "A": 1.375,
+        "B": 2.875,
+        "C": 2.0,
+        "D": 1.625
+      },
+      "weight": 0.9
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "2",
+      "runFrom": "2",
+      "runTo": "2",
+      "dims": {
+        "A": 1.5,
+        "B": 3.5,
+        "C": 2.5625,
+        "D": 2.0625
+      },
+      "weight": 1.4
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "2 1/2",
+      "runFrom": "2 1/2",
+      "runTo": "2 1/2",
+      "dims": {
+        "A": 1.9375,
+        "B": 4.0625,
+        "C": 3.0,
+        "D": 2.5
+      },
+      "weight": 2.5
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "3",
+      "runFrom": "3",
+      "runTo": "3",
+      "dims": {
+        "A": 2.0,
+        "B": 4.8125,
+        "C": 3.6875,
+        "D": 3.0625
+      },
+      "weight": 4.3
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "3 1/2",
+      "runFrom": "3 1/2",
+      "runTo": "3 1/2",
+      "dims": {
+        "A": 2.125,
+        "B": 5.375,
+        "C": 4.4375,
+        "D": 3.5625
+      },
+      "weight": 4.5
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "4",
+      "runFrom": "4",
+      "runTo": "4",
+      "dims": {
+        "A": 2.25,
+        "B": 6.0,
+        "C": 4.75,
+        "D": 4.0625
+      },
+      "weight": 6.8
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "5",
+      "runFrom": "5",
+      "runTo": "5",
+      "dims": {
+        "A": 2.4375,
+        "B": 7.25,
+        "C": 5.25,
+        "D": 5.25
+      },
+      "weight": 9.2
+    },
+    {
+      "type": "thredolet",
+      "class": "3000",
+      "branch": "6",
+      "runFrom": "6",
+      "runTo": "6",
+      "dims": {
+        "A": 2.75,
+        "B": 8.6875,
+        "C": 5.75,
+        "D": 5.75
+      },
+      "weight": 15.7
+    },
+    {
+      "type": "thredolet",
+      "class": "6000",
+      "branch": "1/4",
+      "dims": {
+        "A": 1.125,
+        "B": 1.375,
+        "C": 0.5625
+      },
+      "weight": 0.3
+    },
+    {
+      "type": "thredolet",
+      "class": "6000",
+      "branch": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.375,
+        "C": 0.5625
+      },
+      "weight": 0.3
+    },
+    {
+      "type": "thredolet",
+      "class": "6000",
+      "branch": "1/2",
+      "runFrom": "3/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.25,
+        "B": 1.75,
+        "C": 0.75
+      },
+      "weight": 0.45
+    },
+    {
+      "type": "thredolet",
+      "class": "6000",
+      "branch": "3/4",
+      "runFrom": "1",
+      "runTo": "36",
+      "dims": {
+        "A": 1.4375,
+        "B": 2.0,
+        "C": 1.0
+      },
+      "weight": 0.75
+    },
+    {
+      "type": "thredolet",
+      "class": "6000",
+      "branch": "1",
+      "runFrom": "1 1/4",
+      "runTo": "36",
+      "dims": {
+        "A": 1.5625,
+        "B": 2.4375,
+        "C": 1.3125
+      },
+      "weight": 1.25
+    },
+    {
+      "type": "thredolet",
+      "class": "6000",
+      "branch": "1 1/4",
+      "runFrom": "1 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.625,
+        "B": 2.75,
+        "C": 1.5
+      },
+      "weight": 1.6
+    },
+    {
+      "type": "thredolet",
+      "class": "6000",
+      "branch": "1 1/2",
+      "runFrom": "2",
+      "runTo": "36",
+      "dims": {
+        "A": 1.6875,
+        "B": 3.25,
+        "C": 1.9375
+      },
+      "weight": 1.95
+    },
+    {
+      "type": "thredolet",
+      "class": "6000",
+      "branch": "2",
+      "runFrom": "2 1/2",
+      "runTo": "36",
+      "dims": {
+        "A": 2.0625,
+        "B": 4.0625,
+        "C": 2.75
+      },
+      "weight": 5.0
+    }
+  ]
+}
