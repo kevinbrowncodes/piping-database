@@ -16,8 +16,24 @@ struct PipingDatabaseApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ModuleListView()
+            RootView()
         }
         .modelContainer(container)
+    }
+}
+
+struct RootView: View {
+    var body: some View {
+        TabView {
+            Tab("Modules", systemImage: "square.grid.2x2") {
+                ModuleListView()
+            }
+            Tab("Calculator", systemImage: "plus.forwardslash.minus") {
+                NavigationStack { TradeCalcView() }
+            }
+            Tab("Settings", systemImage: "gearshape") {
+                NavigationStack { SettingsView() }
+            }
+        }
     }
 }

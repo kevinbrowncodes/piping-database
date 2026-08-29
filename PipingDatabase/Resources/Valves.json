@@ -1,0 +1,5754 @@
+{
+  "version": 1,
+  "source": "Global Supply Line ASME B16.10 chart",
+  "standard": "ASME B16.10",
+  "valves": [
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 7.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 8.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 7.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 7.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 9.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 8.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 8.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 11.125
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 8.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 9.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 12.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 9.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 10.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 15.875
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 11.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 11.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 12.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 13.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 18.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 13.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 14.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 19.75
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 14.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 15.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 22.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 15.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 16.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 24.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 17.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 26.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 17.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 18.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 28.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 18.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 20.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 32.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 20.5
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 22.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 34.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 24.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 36.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 24.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 36.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "RF",
+      "nps": "36",
+      "inches": 28.0
+    },
+    {
+      "type": "gate",
+      "class": "150",
+      "facing": "BW",
+      "nps": "36",
+      "inches": 40.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 8.5
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 8.5
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 9.125
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 9.5
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 9.5
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 10.125
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 11.125
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 11.125
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 11.75
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 12.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 12.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 12.625
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 15.875
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 15.875
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 17.125
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 18.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 18.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 18.625
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 19.75
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 19.75
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 20.375
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 30.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 30.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 30.625
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 33.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 33.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 33.625
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 36.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 36.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 36.625
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 39.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 39.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 39.75
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "22",
+      "inches": 43.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "22",
+      "inches": 43.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "22",
+      "inches": 43.875
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 45.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 45.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 45.875
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 49.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 49.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "26",
+      "inches": 50.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 53.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 53.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "28",
+      "inches": 54.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 55.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 55.0
+    },
+    {
+      "type": "gate",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "30",
+      "inches": 56.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 11.5
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 11.5
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 11.625
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 13.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 13.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 13.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 14.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 14.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 14.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 17.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 17.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 17.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 22.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 22.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 22.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 26.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 26.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 26.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 31.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 31.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 31.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 33.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 33.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 33.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 35.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 35.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 35.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 39.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 39.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 39.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 43.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 43.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 43.125
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 47.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 47.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 47.25
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "22",
+      "inches": 51.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "22",
+      "inches": 51.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "22",
+      "inches": 51.375
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 55.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 55.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 55.375
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 57.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 57.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "26",
+      "inches": 57.5
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 61.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 61.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "28",
+      "inches": 61.5
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 65.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 65.0
+    },
+    {
+      "type": "gate",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "30",
+      "inches": 65.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 14.625
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 15.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 15.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 15.125
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 16.625
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 18.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 18.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 18.125
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 24.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 24.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 24.125
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 29.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 29.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 29.125
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 33.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 33.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 33.125
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 38.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 38.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 38.125
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 40.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 40.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 40.875
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 44.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 44.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 44.875
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 48.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 48.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 48.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 52.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 52.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 52.5
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 61.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 61.0
+    },
+    {
+      "type": "gate",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 61.75
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 14.625
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 16.625
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 18.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 18.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 18.625
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 21.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 21.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 21.625
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 27.75
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 27.75
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 28.0
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 32.75
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 32.75
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 33.125
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 39.0
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 39.0
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 39.375
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 44.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 44.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 45.125
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 49.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 49.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 50.25
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 54.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 54.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 55.375
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 60.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 60.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 61.375
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 65.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 65.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 66.375
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 76.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 76.5
+    },
+    {
+      "type": "gate",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 77.625
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 17.75
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 17.75
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 17.875
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 20.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 20.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 20.25
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 22.75
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 22.75
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 23.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 26.5
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 26.5
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 26.875
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 36.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 36.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 36.5
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 40.25
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 40.25
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 40.875
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 50.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 50.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 50.875
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 56.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 56.0
+    },
+    {
+      "type": "gate",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 56.875
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 8.0
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 8.5
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 9.5
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 11.5
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 16.0
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 19.5
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 24.5
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 27.5
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 31.0
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 36.0
+    },
+    {
+      "type": "globe",
+      "class": "150",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 38.5
+    },
+    {
+      "type": "globe",
+      "class": "300",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 10.5
+    },
+    {
+      "type": "globe",
+      "class": "300",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 11.5
+    },
+    {
+      "type": "globe",
+      "class": "300",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 12.5
+    },
+    {
+      "type": "globe",
+      "class": "300",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 14.0
+    },
+    {
+      "type": "globe",
+      "class": "300",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 17.5
+    },
+    {
+      "type": "globe",
+      "class": "300",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 22.0
+    },
+    {
+      "type": "globe",
+      "class": "300",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 24.5
+    },
+    {
+      "type": "globe",
+      "class": "300",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 28.0
+    },
+    {
+      "type": "globe",
+      "class": "400",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 19.0
+    },
+    {
+      "type": "globe",
+      "class": "400",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 26.0
+    },
+    {
+      "type": "globe",
+      "class": "600",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 11.5
+    },
+    {
+      "type": "globe",
+      "class": "600",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 13.0
+    },
+    {
+      "type": "globe",
+      "class": "600",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 14.0
+    },
+    {
+      "type": "globe",
+      "class": "600",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 17.0
+    },
+    {
+      "type": "globe",
+      "class": "600",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 22.0
+    },
+    {
+      "type": "globe",
+      "class": "600",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 26.0
+    },
+    {
+      "type": "globe",
+      "class": "600",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 31.0
+    },
+    {
+      "type": "globe",
+      "class": "600",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 33.0
+    },
+    {
+      "type": "globe",
+      "class": "900",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "globe",
+      "class": "900",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "globe",
+      "class": "900",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 15.0
+    },
+    {
+      "type": "globe",
+      "class": "900",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 18.0
+    },
+    {
+      "type": "globe",
+      "class": "900",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 24.0
+    },
+    {
+      "type": "globe",
+      "class": "900",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 29.0
+    },
+    {
+      "type": "globe",
+      "class": "900",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 33.0
+    },
+    {
+      "type": "globe",
+      "class": "900",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 38.0
+    },
+    {
+      "type": "globe",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "globe",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "globe",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 18.5
+    },
+    {
+      "type": "globe",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 21.5
+    },
+    {
+      "type": "globe",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 27.75
+    },
+    {
+      "type": "globe",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 32.75
+    },
+    {
+      "type": "globe",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 17.75
+    },
+    {
+      "type": "globe",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 20.0
+    },
+    {
+      "type": "globe",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 22.75
+    },
+    {
+      "type": "globe",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 26.5
+    },
+    {
+      "type": "globe",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 36.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 8.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 8.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 8.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 8.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 8.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 9.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 9.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 9.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 10.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 11.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 11.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 12.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 14.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 14.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 14.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 19.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 19.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 20.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 24.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 24.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 25.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 27.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 27.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 28.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 31.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 31.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 31.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 34.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 34.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 34.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 38.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 38.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 39.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 38.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 38.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 39.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "22",
+      "inches": 42.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "22",
+      "inches": 42.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "22",
+      "inches": 42.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 51.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 51.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 51.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 51.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 51.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 57.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 57.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 60.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 60.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "RF",
+      "nps": "36",
+      "inches": 77.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "150",
+      "facing": "BW",
+      "nps": "36",
+      "inches": 77.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 10.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 10.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 11.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 11.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 11.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 12.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 12.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 12.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 13.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 14.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 14.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 14.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 17.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 17.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 18.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 21.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 21.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 21.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 24.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 24.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 25.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 28.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 28.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 28.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 33.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 33.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 33.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 34.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 34.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 34.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 38.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 38.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 39.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 40.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 40.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 40.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "22",
+      "inches": 44.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "22",
+      "inches": 44.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "22",
+      "inches": 44.875
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 53.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 53.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 53.875
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 53.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 53.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "26",
+      "inches": 54.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 59.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 59.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "28",
+      "inches": 60.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 62.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 62.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "30",
+      "inches": 63.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "RF",
+      "nps": "36",
+      "inches": 82.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "300",
+      "facing": "BW",
+      "nps": "36",
+      "inches": 82.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 11.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 11.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 11.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 13.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 13.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 13.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 14.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 14.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 14.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 17.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 17.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 17.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 22.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 22.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 22.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 26.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 26.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 26.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 31.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 31.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 31.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 33.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 33.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 33.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 35.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 35.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 35.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 39.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 39.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 39.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 43.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 43.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 43.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 47.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 47.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 47.25
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "22",
+      "inches": 51.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "22",
+      "inches": 51.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "22",
+      "inches": 51.375
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 55.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 55.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 55.375
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 57.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 57.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "26",
+      "inches": 57.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 63.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 63.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "28",
+      "inches": 63.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 65.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 65.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "30",
+      "inches": 65.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "RF",
+      "nps": "36",
+      "inches": 82.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "600",
+      "facing": "BW",
+      "nps": "36",
+      "inches": 82.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 14.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 15.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 15.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 15.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 16.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 16.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 16.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 18.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 18.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 18.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 24.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 24.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 24.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 29.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 29.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 29.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 33.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 33.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 33.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 38.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 38.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 38.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 40.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 40.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 40.875
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 44.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 44.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 44.875
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 48.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 48.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 48.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 52.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 52.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 52.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 61.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 61.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 61.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 14.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 16.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 18.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 18.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 18.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 21.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 21.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 21.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 27.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 27.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 28.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 32.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 32.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 33.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 39.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 39.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 39.375
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 44.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 44.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 45.125
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 49.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 49.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 50.25
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 54.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 54.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 55.375
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 60.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 60.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 61.375
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 65.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 65.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 66.375
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 76.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 76.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 77.625
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 17.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 17.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 17.875
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 20.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 20.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 20.25
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 22.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 22.75
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 23.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 26.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 26.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 26.875
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 36.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 36.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 36.5
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 40.25
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 40.25
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 40.875
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 50.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 50.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 50.875
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 56.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 56.0
+    },
+    {
+      "type": "swingCheck",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 56.875
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 7.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 8.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 7.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 7.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 9.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 8.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 8.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 11.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 8.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 9.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 12.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 9.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 15.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 18.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 16.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 18.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 20.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 18.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 21.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 22.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 21.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 24.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 25.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 24.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 27.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 30.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 27.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 30.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 33.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 30.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 34.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 36.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 34.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 36.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 39.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 36.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 42.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 45.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 42.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 45.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 49.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 49.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 53.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 51.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 55.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "32",
+      "inches": 54.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "32",
+      "inches": 60.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "34",
+      "inches": 58.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "34",
+      "inches": 64.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "RF",
+      "nps": "36",
+      "inches": 60.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "150",
+      "facing": "BW",
+      "nps": "36",
+      "inches": 68.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 8.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 8.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 9.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 9.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 9.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 10.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 11.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 11.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 11.75
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 12.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 12.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 12.625
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 15.875
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 18.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 16.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 19.75
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 20.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 20.375
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 22.375
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 22.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 23.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 25.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 25.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 26.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 30.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 30.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 30.625
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 33.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 33.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 33.625
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 36.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 36.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 36.625
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 39.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 39.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 39.75
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "22",
+      "inches": 43.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "22",
+      "inches": 43.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "22",
+      "inches": 43.875
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 45.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 45.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 45.875
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 49.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 49.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "26",
+      "inches": 50.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 53.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 53.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "28",
+      "inches": 54.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 55.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 55.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "30",
+      "inches": 56.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "32",
+      "inches": 60.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "32",
+      "inches": 60.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "32",
+      "inches": 61.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "34",
+      "inches": 64.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "34",
+      "inches": 64.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "34",
+      "inches": 65.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RF",
+      "nps": "36",
+      "inches": 68.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "BW",
+      "nps": "36",
+      "inches": 68.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "300",
+      "facing": "RTJ",
+      "nps": "36",
+      "inches": 69.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 11.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 11.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 11.625
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 13.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 13.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 13.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 14.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 14.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 14.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 17.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 17.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 17.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 22.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 22.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 22.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 26.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 26.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 26.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 31.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 31.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 31.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 33.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 33.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 33.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 35.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 35.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 35.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 39.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 39.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 39.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 43.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 43.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 43.125
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 47.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 47.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 47.25
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "22",
+      "inches": 51.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "22",
+      "inches": 51.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "22",
+      "inches": 51.375
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 55.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 55.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 55.375
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "26",
+      "inches": 57.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "26",
+      "inches": 57.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "26",
+      "inches": 57.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "28",
+      "inches": 61.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "28",
+      "inches": 61.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "28",
+      "inches": 61.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "30",
+      "inches": 65.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "30",
+      "inches": 65.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "30",
+      "inches": 65.5
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "32",
+      "inches": 70.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "32",
+      "inches": 70.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "32",
+      "inches": 70.625
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "34",
+      "inches": 76.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "34",
+      "inches": 76.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "34",
+      "inches": 76.625
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RF",
+      "nps": "36",
+      "inches": 82.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "BW",
+      "nps": "36",
+      "inches": 82.0
+    },
+    {
+      "type": "ballFullReduced",
+      "class": "600",
+      "facing": "RTJ",
+      "nps": "36",
+      "inches": 82.625
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 14.625
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 16.625
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 15.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 15.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 15.125
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 18.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 18.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 18.125
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 24.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 24.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 24.125
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 29.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 29.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 29.125
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 33.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 33.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 33.125
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 38.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 38.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 38.125
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 40.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 40.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 40.875
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 44.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 44.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 44.875
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "18",
+      "inches": 48.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "18",
+      "inches": 48.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "18",
+      "inches": 48.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "20",
+      "inches": 52.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "20",
+      "inches": 52.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "20",
+      "inches": 52.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RF",
+      "nps": "24",
+      "inches": 61.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "BW",
+      "nps": "24",
+      "inches": 61.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "900",
+      "facing": "RTJ",
+      "nps": "24",
+      "inches": 61.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 14.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 14.625
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 16.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 16.625
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 18.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 18.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 18.625
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 21.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 21.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 21.625
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 27.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 27.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 28.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 32.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 32.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 33.125
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 39.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 39.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 39.375
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 44.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 44.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 45.125
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "14",
+      "inches": 49.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "14",
+      "inches": 49.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "14",
+      "inches": 50.25
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RF",
+      "nps": "16",
+      "inches": 54.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "BW",
+      "nps": "16",
+      "inches": 54.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "1500",
+      "facing": "RTJ",
+      "nps": "16",
+      "inches": 55.375
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "2",
+      "inches": 17.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "2",
+      "inches": 17.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "2",
+      "inches": 17.875
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "2 1/2",
+      "inches": 20.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "2 1/2",
+      "inches": 20.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "2 1/2",
+      "inches": 21.25
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "3",
+      "inches": 22.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "3",
+      "inches": 22.75
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "3",
+      "inches": 23.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "4",
+      "inches": 26.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "4",
+      "inches": 26.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "4",
+      "inches": 26.875
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "6",
+      "inches": 36.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "6",
+      "inches": 36.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "6",
+      "inches": 36.5
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "8",
+      "inches": 40.25
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "8",
+      "inches": 40.25
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "8",
+      "inches": 40.875
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "10",
+      "inches": 50.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "10",
+      "inches": 50.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "10",
+      "inches": 50.875
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RF",
+      "nps": "12",
+      "inches": 56.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "BW",
+      "nps": "12",
+      "inches": 56.0
+    },
+    {
+      "type": "ballFullBore",
+      "class": "2500",
+      "facing": "RTJ",
+      "nps": "12",
+      "inches": 56.875
+    }
+  ]
+}

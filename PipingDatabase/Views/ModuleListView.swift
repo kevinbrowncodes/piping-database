@@ -15,19 +15,19 @@ struct ModuleListView: View {
                symbol: "circle.circle", available: true),
         Module(id: "fittings", title: "Fittings",
                subtitle: "B16.9 · B16.11 — elbows, tees, reducers, caps",
-               symbol: "point.topleft.down.curvedto.point.bottomright.up", available: false),
+               symbol: "point.topleft.down.curvedto.point.bottomright.up", available: true),
         Module(id: "flanges", title: "Flanges",
                subtitle: "B16.5 · B16.47 — dimensions, drilling, bolting",
-               symbol: "circle.hexagongrid", available: false),
+               symbol: "circle.hexagongrid", available: true),
         Module(id: "valves", title: "Valves",
                subtitle: "B16.10 — face-to-face, end-to-end",
-               symbol: "triangle.lefthalf.filled", available: false),
+               symbol: "triangle.lefthalf.filled", available: true),
         Module(id: "olets", title: "Branch Connections",
                subtitle: "MSS SP-97 — weldolet, sockolet, thredolet",
-               symbol: "arrow.triangle.branch", available: false),
+               symbol: "arrow.triangle.branch", available: true),
         Module(id: "blanks", title: "Line Blanks",
                subtitle: "B16.48 — figure-8, paddle blank, spacer",
-               symbol: "8.circle", available: false),
+               symbol: "8.circle", available: true),
         Module(id: "gaskets", title: "Gaskets",
                subtitle: "B16.21 — flat ring, full face, drilling",
                symbol: "circle.dashed", available: false),
@@ -52,6 +52,11 @@ struct ModuleListView: View {
             .navigationDestination(for: String.self) { id in
                 switch id {
                 case "pipe": PipeScheduleView()
+                case "fittings": FittingsView()
+                case "flanges": FlangesView()
+                case "valves": ValvesView()
+                case "olets": OletsView()
+                case "blanks": LineBlanksView()
                 default: EmptyView()
                 }
             }

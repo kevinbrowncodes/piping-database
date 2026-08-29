@@ -1,0 +1,3906 @@
+{
+ "version": 1,
+ "source": "Weldbend catalog 63rd ed. (2010), pp. 62-81",
+ "standard": "ASME B16.9",
+ "legend": {
+  "OD": "outside diameter of fitting (large end for reducers), inches",
+  "OD2": "outside diameter of reducer small end, inches",
+  "L": "overall length of reducer, inches",
+  "E": "length (height) of cap, inches (printed as H in catalog; Schedule STD table value)",
+  "OD_max": "stub end outside diameter, maximum, inches",
+  "OD_min": "stub end outside diameter, minimum, inches",
+  "K": "lap diameter of stub end, inches",
+  "N": "fillet radius of stub end, inches",
+  "J": "overall length of stub end, inches"
+ },
+ "fittings": [
+  {
+   "type": "reducer_concentric",
+   "nps": "3/4",
+   "nps2": "1/2",
+   "dims": {
+    "OD": 1.05,
+    "OD2": 0.84,
+    "L": 1.5
+   },
+   "weights": {
+    "STD": 0.21,
+    "XS": 0.25,
+    "160": 0.37,
+    "XXS": 0.39
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3/4",
+   "nps2": "1/2",
+   "dims": {
+    "OD": 1.05,
+    "OD2": 0.84,
+    "L": 1.5
+   },
+   "weights": {
+    "STD": 0.21,
+    "XS": 0.25,
+    "160": 0.37,
+    "XXS": 0.39
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1",
+   "nps2": "3/4",
+   "dims": {
+    "OD": 1.32,
+    "OD2": 1.05,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.36,
+    "XS": 0.43,
+    "160": 0.45,
+    "XXS": 0.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1",
+   "nps2": "3/4",
+   "dims": {
+    "OD": 1.32,
+    "OD2": 1.05,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.36,
+    "XS": 0.43,
+    "160": 0.45,
+    "XXS": 0.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1",
+   "nps2": "1/2",
+   "dims": {
+    "OD": 1.32,
+    "OD2": 0.84,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.36,
+    "XS": 0.42,
+    "160": 0.45,
+    "XXS": 0.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1",
+   "nps2": "1/2",
+   "dims": {
+    "OD": 1.32,
+    "OD2": 0.84,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.36,
+    "XS": 0.42,
+    "160": 0.45,
+    "XXS": 0.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1 1/4",
+   "nps2": "1",
+   "dims": {
+    "OD": 1.66,
+    "OD2": 1.32,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.48,
+    "XS": 0.57,
+    "160": 0.7,
+    "XXS": 0.75
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1 1/4",
+   "nps2": "1",
+   "dims": {
+    "OD": 1.66,
+    "OD2": 1.32,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.48,
+    "XS": 0.57,
+    "160": 0.7,
+    "XXS": 0.75
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1 1/4",
+   "nps2": "3/4",
+   "dims": {
+    "OD": 1.66,
+    "OD2": 1.05,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.42,
+    "XS": 0.53,
+    "160": 0.7,
+    "XXS": 0.75
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1 1/4",
+   "nps2": "3/4",
+   "dims": {
+    "OD": 1.66,
+    "OD2": 1.05,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.42,
+    "XS": 0.53,
+    "160": 0.7,
+    "XXS": 0.75
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1 1/4",
+   "nps2": "1/2",
+   "dims": {
+    "OD": 1.66,
+    "OD2": 0.84,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.42,
+    "XS": 0.5,
+    "160": 0.7,
+    "XXS": 0.75
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1 1/4",
+   "nps2": "1/2",
+   "dims": {
+    "OD": 1.66,
+    "OD2": 0.84,
+    "L": 2.0
+   },
+   "weights": {
+    "STD": 0.42,
+    "XS": 0.5,
+    "160": 0.7,
+    "XXS": 0.75
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1 1/2",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 1.9,
+    "OD2": 1.66,
+    "L": 2.5
+   },
+   "weights": {
+    "STD": 0.65,
+    "XS": 0.78,
+    "160": 0.9,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1 1/2",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 1.9,
+    "OD2": 1.66,
+    "L": 2.5
+   },
+   "weights": {
+    "STD": 0.65,
+    "XS": 0.78,
+    "160": 0.9,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1 1/2",
+   "nps2": "1",
+   "dims": {
+    "OD": 1.9,
+    "OD2": 1.32,
+    "L": 2.5
+   },
+   "weights": {
+    "STD": 0.57,
+    "XS": 0.72,
+    "160": 0.9,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1 1/2",
+   "nps2": "1",
+   "dims": {
+    "OD": 1.9,
+    "OD2": 1.32,
+    "L": 2.5
+   },
+   "weights": {
+    "STD": 0.57,
+    "XS": 0.72,
+    "160": 0.9,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1 1/2",
+   "nps2": "3/4",
+   "dims": {
+    "OD": 1.9,
+    "OD2": 1.05,
+    "L": 2.5
+   },
+   "weights": {
+    "STD": 0.56,
+    "XS": 0.65,
+    "160": 0.9,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1 1/2",
+   "nps2": "3/4",
+   "dims": {
+    "OD": 1.9,
+    "OD2": 1.05,
+    "L": 2.5
+   },
+   "weights": {
+    "STD": 0.56,
+    "XS": 0.65,
+    "160": 0.9,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "1 1/2",
+   "nps2": "1/2",
+   "dims": {
+    "OD": 1.9,
+    "OD2": 0.84,
+    "L": 2.5
+   },
+   "weights": {
+    "STD": 0.56,
+    "XS": 0.65,
+    "160": 0.9,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "1 1/2",
+   "nps2": "1/2",
+   "dims": {
+    "OD": 1.9,
+    "OD2": 0.84,
+    "L": 2.5
+   },
+   "weights": {
+    "STD": 0.56,
+    "XS": 0.65,
+    "160": 0.9,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "2",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 2.38,
+    "OD2": 1.9,
+    "L": 3.0
+   },
+   "weights": {
+    "STD": 0.94,
+    "XS": 1.2,
+    "160": 1.85,
+    "XXS": 2.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "2",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 2.38,
+    "OD2": 1.9,
+    "L": 3.0
+   },
+   "weights": {
+    "STD": 0.94,
+    "XS": 1.2,
+    "160": 1.85,
+    "XXS": 2.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "2",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 2.38,
+    "OD2": 1.66,
+    "L": 3.0
+   },
+   "weights": {
+    "STD": 0.88,
+    "XS": 1.1,
+    "160": 1.85,
+    "XXS": 2.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "2",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 2.38,
+    "OD2": 1.66,
+    "L": 3.0
+   },
+   "weights": {
+    "STD": 0.88,
+    "XS": 1.1,
+    "160": 1.85,
+    "XXS": 2.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "2",
+   "nps2": "1",
+   "dims": {
+    "OD": 2.38,
+    "OD2": 1.32,
+    "L": 3.0
+   },
+   "weights": {
+    "STD": 0.81,
+    "XS": 1.0,
+    "160": 1.85,
+    "XXS": 2.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "2",
+   "nps2": "1",
+   "dims": {
+    "OD": 2.38,
+    "OD2": 1.32,
+    "L": 3.0
+   },
+   "weights": {
+    "STD": 0.81,
+    "XS": 1.0,
+    "160": 1.85,
+    "XXS": 2.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "2",
+   "nps2": "3/4",
+   "dims": {
+    "OD": 2.38,
+    "OD2": 1.05,
+    "L": 3.0
+   },
+   "weights": {
+    "STD": 0.74,
+    "XS": 0.94,
+    "160": 1.5,
+    "XXS": 1.75
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "2",
+   "nps2": "3/4",
+   "dims": {
+    "OD": 2.38,
+    "OD2": 1.05,
+    "L": 3.0
+   },
+   "weights": {
+    "STD": 0.74,
+    "XS": 0.94,
+    "160": 1.5,
+    "XXS": 1.75
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "2 1/2",
+   "nps2": "2",
+   "dims": {
+    "OD": 2.88,
+    "OD2": 2.38,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.6,
+    "XS": 2.1,
+    "160": 3.0,
+    "XXS": 4.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "2 1/2",
+   "nps2": "2",
+   "dims": {
+    "OD": 2.88,
+    "OD2": 2.38,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.6,
+    "XS": 2.1,
+    "160": 3.0,
+    "XXS": 4.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "2 1/2",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 2.88,
+    "OD2": 1.9,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.5,
+    "XS": 1.9,
+    "160": 3.0,
+    "XXS": 4.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "2 1/2",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 2.88,
+    "OD2": 1.9,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.5,
+    "XS": 1.9,
+    "160": 3.0,
+    "XXS": 4.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "2 1/2",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 2.88,
+    "OD2": 1.66,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.4,
+    "XS": 1.7,
+    "160": 2.8,
+    "XXS": 3.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "2 1/2",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 2.88,
+    "OD2": 1.66,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.4,
+    "XS": 1.7,
+    "160": 2.8,
+    "XXS": 3.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "2 1/2",
+   "nps2": "1",
+   "dims": {
+    "OD": 2.88,
+    "OD2": 1.32,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.3,
+    "XS": 1.5,
+    "160": 2.8,
+    "XXS": 3.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "2 1/2",
+   "nps2": "1",
+   "dims": {
+    "OD": 2.88,
+    "OD2": 1.32,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.3,
+    "XS": 1.5,
+    "160": 2.8,
+    "XXS": 3.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 2.88,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 2.2,
+    "XS": 2.8,
+    "160": 4.0,
+    "XXS": 5.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 2.88,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 2.2,
+    "XS": 2.8,
+    "160": 4.0,
+    "XXS": 5.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3",
+   "nps2": "2",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 2.38,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 2.0,
+    "XS": 2.6,
+    "160": 4.0,
+    "XXS": 5.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3",
+   "nps2": "2",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 2.38,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 2.0,
+    "XS": 2.6,
+    "160": 4.0,
+    "XXS": 5.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 1.9,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.9,
+    "XS": 2.4,
+    "160": 4.0,
+    "XXS": 5.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 1.9,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.9,
+    "XS": 2.4,
+    "160": 4.0,
+    "XXS": 5.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 1.66,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.8,
+    "XS": 2.3,
+    "160": 3.5,
+    "XXS": 4.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 1.66,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.8,
+    "XS": 2.3,
+    "160": 3.5,
+    "XXS": 4.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3",
+   "nps2": "1",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 1.32,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.7,
+    "XS": 2.2,
+    "160": 3.5,
+    "XXS": 4.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3",
+   "nps2": "1",
+   "dims": {
+    "OD": 3.5,
+    "OD2": 1.32,
+    "L": 3.5
+   },
+   "weights": {
+    "STD": 1.7,
+    "XS": 2.2,
+    "160": 3.5,
+    "XXS": 4.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3 1/2",
+   "nps2": "3",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 3.5,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.8,
+    "XS": 3.7
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3 1/2",
+   "nps2": "3",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 3.5,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.8,
+    "XS": 3.7
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3 1/2",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 2.88,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.7,
+    "XS": 3.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3 1/2",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 2.88,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.7,
+    "XS": 3.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3 1/2",
+   "nps2": "2",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 2.38,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.6,
+    "XS": 3.3
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3 1/2",
+   "nps2": "2",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 2.38,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.6,
+    "XS": 3.3
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3 1/2",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 1.9,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.6,
+    "XS": 3.2
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3 1/2",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 1.9,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.6,
+    "XS": 3.2
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "3 1/2",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 1.66,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.5,
+    "XS": 3.2
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "3 1/2",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 4.0,
+    "OD2": 1.66,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.5,
+    "XS": 3.2
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "4",
+   "nps2": "3 1/2",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 4.0,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.5,
+    "XS": 4.9
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "4",
+   "nps2": "3 1/2",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 4.0,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.5,
+    "XS": 4.9
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "4",
+   "nps2": "3",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 3.5,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.3,
+    "XS": 4.7,
+    "160": 6.0,
+    "XXS": 8.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "4",
+   "nps2": "3",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 3.5,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.3,
+    "XS": 4.7,
+    "160": 6.0,
+    "XXS": 8.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "4",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 2.88,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.2,
+    "XS": 4.6,
+    "160": 6.0,
+    "XXS": 8.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "4",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 2.88,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.2,
+    "XS": 4.6,
+    "160": 6.0,
+    "XXS": 8.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "4",
+   "nps2": "2",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 2.38,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.1,
+    "XS": 4.3,
+    "160": 5.0,
+    "XXS": 7.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "4",
+   "nps2": "2",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 2.38,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.1,
+    "XS": 4.3,
+    "160": 5.0,
+    "XXS": 7.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "4",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 1.9,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.0,
+    "XS": 4.2,
+    "160": 5.0,
+    "XXS": 7.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "4",
+   "nps2": "1 1/2",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 1.9,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.0,
+    "XS": 4.2,
+    "160": 5.0,
+    "XXS": 7.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "4",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 1.66,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.0,
+    "XS": 4.1,
+    "160": 5.0,
+    "XXS": 7.5
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "4",
+   "nps2": "1 1/4",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 1.66,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 3.0,
+    "XS": 4.1,
+    "160": 5.0,
+    "XXS": 7.5
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "4",
+   "nps2": "1",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 1.32,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.8,
+    "XS": 4.0,
+    "160": 5.0,
+    "XXS": 7.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "4",
+   "nps2": "1",
+   "dims": {
+    "OD": 4.5,
+    "OD2": 1.32,
+    "L": 4.0
+   },
+   "weights": {
+    "STD": 2.8,
+    "XS": 4.0,
+    "160": 5.0,
+    "XXS": 7.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "5",
+   "nps2": "4",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 4.5,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 5.5,
+    "XS": 7.5,
+    "160": 14.0,
+    "XXS": 16.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "5",
+   "nps2": "4",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 4.5,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 5.5,
+    "XS": 7.5,
+    "160": 14.0,
+    "XXS": 16.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "5",
+   "nps2": "3 1/2",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 4.0,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 5.3,
+    "XS": 6.9
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "5",
+   "nps2": "3 1/2",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 4.0,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 5.3,
+    "XS": 6.9
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "5",
+   "nps2": "3",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 3.5,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 5.1,
+    "XS": 6.3,
+    "160": 14.0,
+    "XXS": 16.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "5",
+   "nps2": "3",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 3.5,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 5.1,
+    "XS": 6.3,
+    "160": 14.0,
+    "XXS": 16.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "5",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 2.88,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 4.8,
+    "XS": 6.1,
+    "160": 14.0,
+    "XXS": 16.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "5",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 2.88,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 4.8,
+    "XS": 6.1,
+    "160": 14.0,
+    "XXS": 16.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "5",
+   "nps2": "2",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 2.38,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 4.7,
+    "XS": 6.0,
+    "160": 14.0,
+    "XXS": 16.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "5",
+   "nps2": "2",
+   "dims": {
+    "OD": 5.56,
+    "OD2": 2.38,
+    "L": 5.0
+   },
+   "weights": {
+    "STD": 4.7,
+    "XS": 6.0,
+    "160": 14.0,
+    "XXS": 16.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "6",
+   "nps2": "5",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 5.56,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 7.6,
+    "XS": 11.5,
+    "160": 18.0,
+    "XXS": 23.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "6",
+   "nps2": "5",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 5.56,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 7.6,
+    "XS": 11.5,
+    "160": 18.0,
+    "XXS": 23.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "6",
+   "nps2": "4",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 4.5,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 7.4,
+    "XS": 10.7,
+    "160": 18.0,
+    "XXS": 23.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "6",
+   "nps2": "4",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 4.5,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 7.4,
+    "XS": 10.7,
+    "160": 18.0,
+    "XXS": 23.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "6",
+   "nps2": "3 1/2",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 4.0,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 7.1,
+    "XS": 10.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "6",
+   "nps2": "3 1/2",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 4.0,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 7.1,
+    "XS": 10.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "6",
+   "nps2": "3",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 3.5,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 6.9,
+    "XS": 9.7,
+    "160": 15.5,
+    "XXS": 20.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "6",
+   "nps2": "3",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 3.5,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 6.9,
+    "XS": 9.7,
+    "160": 15.5,
+    "XXS": 20.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "6",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 2.88,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 6.6,
+    "XS": 9.1,
+    "160": 15.5,
+    "XXS": 20.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "6",
+   "nps2": "2 1/2",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 2.88,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 6.6,
+    "XS": 9.1,
+    "160": 15.5,
+    "XXS": 20.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "6",
+   "nps2": "2",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 2.38,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 6.5,
+    "XS": 8.6,
+    "160": 15.0,
+    "XXS": 19.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "6",
+   "nps2": "2",
+   "dims": {
+    "OD": 6.62,
+    "OD2": 2.38,
+    "L": 5.5
+   },
+   "weights": {
+    "STD": 6.5,
+    "XS": 8.6,
+    "160": 15.0,
+    "XXS": 19.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "8",
+   "nps2": "6",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 6.62,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 12.3,
+    "XS": 18.8,
+    "160": 31.5,
+    "XXS": 36.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "8",
+   "nps2": "6",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 6.62,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 12.3,
+    "XS": 18.8,
+    "160": 31.5,
+    "XXS": 36.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "8",
+   "nps2": "5",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 5.56,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 11.5,
+    "XS": 17.6,
+    "160": 28.0,
+    "XXS": 33.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "8",
+   "nps2": "5",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 5.56,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 11.5,
+    "XS": 17.6,
+    "160": 28.0,
+    "XXS": 33.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "8",
+   "nps2": "4",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 4.5,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 10.8,
+    "XS": 17.0,
+    "160": 28.0,
+    "XXS": 33.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "8",
+   "nps2": "4",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 4.5,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 10.8,
+    "XS": 17.0,
+    "160": 28.0,
+    "XXS": 33.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "8",
+   "nps2": "3 1/2",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 4.0,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 10.6,
+    "XS": 15.9
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "8",
+   "nps2": "3 1/2",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 4.0,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 10.6,
+    "XS": 15.9
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "8",
+   "nps2": "3",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 3.5,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 9.8,
+    "XS": 15.0,
+    "160": 30.0,
+    "XXS": 33.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "8",
+   "nps2": "3",
+   "dims": {
+    "OD": 8.62,
+    "OD2": 3.5,
+    "L": 6.0
+   },
+   "weights": {
+    "STD": 9.8,
+    "XS": 15.0,
+    "160": 30.0,
+    "XXS": 33.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "10",
+   "nps2": "8",
+   "dims": {
+    "OD": 10.75,
+    "OD2": 8.62,
+    "L": 7.0
+   },
+   "weights": {
+    "STD": 22.1,
+    "XS": 29.4,
+    "80": 37.5,
+    "160": 58.0,
+    "XXS": 48.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "10",
+   "nps2": "8",
+   "dims": {
+    "OD": 10.75,
+    "OD2": 8.62,
+    "L": 7.0
+   },
+   "weights": {
+    "STD": 22.1,
+    "XS": 29.4,
+    "80": 37.5,
+    "160": 58.0,
+    "XXS": 48.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "10",
+   "nps2": "6",
+   "dims": {
+    "OD": 10.75,
+    "OD2": 6.62,
+    "L": 7.0
+   },
+   "weights": {
+    "STD": 20.7,
+    "XS": 28.3,
+    "80": 37.5,
+    "160": 58.0,
+    "XXS": 58.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "10",
+   "nps2": "6",
+   "dims": {
+    "OD": 10.75,
+    "OD2": 6.62,
+    "L": 7.0
+   },
+   "weights": {
+    "STD": 20.7,
+    "XS": 28.3,
+    "80": 37.5,
+    "160": 58.0,
+    "XXS": 58.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "10",
+   "nps2": "5",
+   "dims": {
+    "OD": 10.75,
+    "OD2": 5.56,
+    "L": 7.0
+   },
+   "weights": {
+    "STD": 19.5,
+    "XS": 26.9,
+    "80": 37.5,
+    "160": 54.0,
+    "XXS": 54.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "10",
+   "nps2": "5",
+   "dims": {
+    "OD": 10.75,
+    "OD2": 5.56,
+    "L": 7.0
+   },
+   "weights": {
+    "STD": 19.5,
+    "XS": 26.9,
+    "80": 37.5,
+    "160": 54.0,
+    "XXS": 54.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "10",
+   "nps2": "4",
+   "dims": {
+    "OD": 10.75,
+    "OD2": 4.5,
+    "L": 7.0
+   },
+   "weights": {
+    "STD": 18.4,
+    "XS": 24.2,
+    "80": 37.5,
+    "160": 52.0,
+    "XXS": 52.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "10",
+   "nps2": "4",
+   "dims": {
+    "OD": 10.75,
+    "OD2": 4.5,
+    "L": 7.0
+   },
+   "weights": {
+    "STD": 18.4,
+    "XS": 24.2,
+    "80": 37.5,
+    "160": 52.0,
+    "XXS": 52.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "12",
+   "nps2": "10",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 10.75,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 32.4,
+    "XS": 41.5,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 95.0,
+    "XXS": 95.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "12",
+   "nps2": "10",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 10.75,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 32.4,
+    "XS": 41.5,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 95.0,
+    "XXS": 95.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "12",
+   "nps2": "8",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 8.62,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 30.5,
+    "XS": 38.6,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 85.0,
+    "XXS": 85.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "12",
+   "nps2": "8",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 8.62,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 30.5,
+    "XS": 38.6,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 85.0,
+    "XXS": 85.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "12",
+   "nps2": "6",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 6.62,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 29.5,
+    "XS": 37.4,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 80.0,
+    "XXS": 80.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "12",
+   "nps2": "6",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 6.62,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 29.5,
+    "XS": 37.4,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 80.0,
+    "XXS": 80.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "12",
+   "nps2": "5",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 5.56,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 27.8,
+    "XS": 36.3,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 80.0,
+    "XXS": 80.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "12",
+   "nps2": "5",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 5.56,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 27.8,
+    "XS": 36.3,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 80.0,
+    "XXS": 80.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "12",
+   "nps2": "4",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 4.5,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 26.2,
+    "XS": 34.7,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 80.0,
+    "XXS": 80.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "12",
+   "nps2": "4",
+   "dims": {
+    "OD": 12.75,
+    "OD2": 4.5,
+    "L": 8.0
+   },
+   "weights": {
+    "STD": 26.2,
+    "XS": 34.7,
+    "40": 35.8,
+    "80": 59.0,
+    "160": 80.0,
+    "XXS": 80.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "14",
+   "nps2": "12",
+   "dims": {
+    "OD": 14.0,
+    "OD2": 12.75,
+    "L": 13.0
+   },
+   "weights": {
+    "STD": 63.1,
+    "XS": 81.0,
+    "40": 68.6,
+    "80": 115.0,
+    "160": 115.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "14",
+   "nps2": "12",
+   "dims": {
+    "OD": 14.0,
+    "OD2": 12.75,
+    "L": 13.0
+   },
+   "weights": {
+    "STD": 63.1,
+    "XS": 81.0,
+    "40": 68.6,
+    "80": 115.0,
+    "160": 115.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "14",
+   "nps2": "10",
+   "dims": {
+    "OD": 14.0,
+    "OD2": 10.75,
+    "L": 13.0
+   },
+   "weights": {
+    "STD": 61.4,
+    "XS": 76.7,
+    "40": 68.6,
+    "80": 115.0,
+    "160": 115.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "14",
+   "nps2": "10",
+   "dims": {
+    "OD": 14.0,
+    "OD2": 10.75,
+    "L": 13.0
+   },
+   "weights": {
+    "STD": 61.4,
+    "XS": 76.7,
+    "40": 68.6,
+    "80": 115.0,
+    "160": 115.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "14",
+   "nps2": "8",
+   "dims": {
+    "OD": 14.0,
+    "OD2": 8.62,
+    "L": 13.0
+   },
+   "weights": {
+    "STD": 60.0,
+    "XS": 74.6,
+    "40": 68.6,
+    "80": 115.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "14",
+   "nps2": "8",
+   "dims": {
+    "OD": 14.0,
+    "OD2": 8.62,
+    "L": 13.0
+   },
+   "weights": {
+    "STD": 60.0,
+    "XS": 74.6,
+    "40": 68.6,
+    "80": 115.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "14",
+   "nps2": "6",
+   "dims": {
+    "OD": 14.0,
+    "OD2": 6.62,
+    "L": 13.0
+   },
+   "weights": {
+    "STD": 59.2,
+    "XS": 72.3,
+    "40": 68.6,
+    "80": 115.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "14",
+   "nps2": "6",
+   "dims": {
+    "OD": 14.0,
+    "OD2": 6.62,
+    "L": 13.0
+   },
+   "weights": {
+    "STD": 59.2,
+    "XS": 72.3,
+    "40": 68.6,
+    "80": 115.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "16",
+   "nps2": "14",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 14.0,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 75.4,
+    "XS": 98.0,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "16",
+   "nps2": "14",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 14.0,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 75.4,
+    "XS": 98.0,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "16",
+   "nps2": "12",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 12.75,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 72.7,
+    "XS": 95.8,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "16",
+   "nps2": "12",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 12.75,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 72.7,
+    "XS": 95.8,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "16",
+   "nps2": "10",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 10.75,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 71.1,
+    "XS": 93.3,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "16",
+   "nps2": "10",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 10.75,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 71.1,
+    "XS": 93.3,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 159.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "16",
+   "nps2": "8",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 8.62,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 69.4,
+    "XS": 91.1,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "16",
+   "nps2": "8",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 8.62,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 69.4,
+    "XS": 91.1,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "16",
+   "nps2": "6",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 6.62,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 67.4,
+    "XS": 89.8,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "16",
+   "nps2": "6",
+   "dims": {
+    "OD": 16.0,
+    "OD2": 6.62,
+    "L": 14.0
+   },
+   "weights": {
+    "STD": 67.4,
+    "XS": 89.8,
+    "40": 96.5,
+    "80": 159.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "18",
+   "nps2": "16",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 16.0,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 87.3,
+    "XS": 118.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "18",
+   "nps2": "16",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 16.0,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 87.3,
+    "XS": 118.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "18",
+   "nps2": "14",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 14.0,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 86.0,
+    "XS": 117.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "18",
+   "nps2": "14",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 14.0,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 86.0,
+    "XS": 117.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "18",
+   "nps2": "12",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 12.75,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 84.8,
+    "XS": 115.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "18",
+   "nps2": "12",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 12.75,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 84.8,
+    "XS": 115.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 213.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "18",
+   "nps2": "10",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 10.75,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 83.7,
+    "XS": 113.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 348.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "18",
+   "nps2": "10",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 10.75,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 83.7,
+    "XS": 113.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 348.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "18",
+   "nps2": "8",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 8.62,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 81.75,
+    "XS": 100.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 327.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "18",
+   "nps2": "8",
+   "dims": {
+    "OD": 18.0,
+    "OD2": 8.62,
+    "L": 15.0
+   },
+   "weights": {
+    "STD": 81.75,
+    "XS": 100.0,
+    "40": 131.0,
+    "80": 213.0,
+    "160": 327.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "20",
+   "nps2": "18",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 18.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 123.0,
+    "XS": 162.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 348.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "20",
+   "nps2": "18",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 18.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 123.0,
+    "XS": 162.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 348.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "20",
+   "nps2": "16",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 16.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 121.0,
+    "XS": 159.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 348.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "20",
+   "nps2": "16",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 16.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 121.0,
+    "XS": 159.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 348.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "20",
+   "nps2": "14",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 14.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 119.0,
+    "XS": 157.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 494.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "20",
+   "nps2": "14",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 14.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 119.0,
+    "XS": 157.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 494.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "20",
+   "nps2": "12",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 12.75,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 118.0,
+    "XS": 155.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 494.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "20",
+   "nps2": "12",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 12.75,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 118.0,
+    "XS": 155.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 494.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "20",
+   "nps2": "10",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 10.75,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 117.0,
+    "XS": 152.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 494.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "20",
+   "nps2": "10",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 10.75,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 117.0,
+    "XS": 152.0,
+    "40": 205.0,
+    "80": 348.0,
+    "160": 494.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "20",
+   "nps2": "8",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 8.62,
+    "L": 20.0
+   },
+   "weights": {
+    "40": 205.0,
+    "80": 348.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "20",
+   "nps2": "8",
+   "dims": {
+    "OD": 20.0,
+    "OD2": 8.62,
+    "L": 20.0
+   },
+   "weights": {
+    "40": 205.0,
+    "80": 348.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "24",
+   "nps2": "20",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 20.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 156.0,
+    "XS": 201.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 494.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "24",
+   "nps2": "20",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 20.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 156.0,
+    "XS": 201.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 494.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "24",
+   "nps2": "18",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 18.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 153.0,
+    "XS": 197.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "24",
+   "nps2": "18",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 18.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 153.0,
+    "XS": 197.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "24",
+   "nps2": "16",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 16.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 150.0,
+    "XS": 194.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "24",
+   "nps2": "16",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 16.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 150.0,
+    "XS": 194.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "24",
+   "nps2": "14",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 14.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 147.0,
+    "XS": 190.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "24",
+   "nps2": "14",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 14.0,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 147.0,
+    "XS": 190.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "24",
+   "nps2": "12",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 12.75,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 144.0,
+    "XS": 188.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "24",
+   "nps2": "12",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 12.75,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 144.0,
+    "XS": 188.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "24",
+   "nps2": "10",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 10.75,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 141.0,
+    "XS": 186.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "24",
+   "nps2": "10",
+   "dims": {
+    "OD": 24.0,
+    "OD2": 10.75,
+    "L": 20.0
+   },
+   "weights": {
+    "STD": 141.0,
+    "XS": 186.0,
+    "40": 285.0,
+    "80": 494.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "30",
+   "nps2": "24",
+   "dims": {
+    "OD": 30.0,
+    "OD2": 24.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 315.0,
+    "XS": 315.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "30",
+   "nps2": "24",
+   "dims": {
+    "OD": 30.0,
+    "OD2": 24.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 315.0,
+    "XS": 315.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "30",
+   "nps2": "20",
+   "dims": {
+    "OD": 30.0,
+    "OD2": 20.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 315.0,
+    "XS": 315.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "30",
+   "nps2": "20",
+   "dims": {
+    "OD": 30.0,
+    "OD2": 20.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 315.0,
+    "XS": 315.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "30",
+   "nps2": "18",
+   "dims": {
+    "OD": 30.0,
+    "OD2": 18.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 315.0,
+    "XS": 315.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "30",
+   "nps2": "18",
+   "dims": {
+    "OD": 30.0,
+    "OD2": 18.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 315.0,
+    "XS": 315.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "36",
+   "nps2": "30",
+   "dims": {
+    "OD": 36.0,
+    "OD2": 30.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 379.0,
+    "XS": 379.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "36",
+   "nps2": "30",
+   "dims": {
+    "OD": 36.0,
+    "OD2": 30.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 379.0,
+    "XS": 379.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "36",
+   "nps2": "24",
+   "dims": {
+    "OD": 36.0,
+    "OD2": 24.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 379.0,
+    "XS": 379.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "36",
+   "nps2": "24",
+   "dims": {
+    "OD": 36.0,
+    "OD2": 24.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 379.0,
+    "XS": 379.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "36",
+   "nps2": "20",
+   "dims": {
+    "OD": 36.0,
+    "OD2": 20.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 379.0,
+    "XS": 379.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "36",
+   "nps2": "20",
+   "dims": {
+    "OD": 36.0,
+    "OD2": 20.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 379.0,
+    "XS": 379.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "42",
+   "nps2": "36",
+   "dims": {
+    "OD": 42.0,
+    "OD2": 36.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 443.0,
+    "XS": 443.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "42",
+   "nps2": "36",
+   "dims": {
+    "OD": 42.0,
+    "OD2": 36.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 443.0,
+    "XS": 443.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "42",
+   "nps2": "30",
+   "dims": {
+    "OD": 42.0,
+    "OD2": 30.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 443.0,
+    "XS": 443.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "42",
+   "nps2": "30",
+   "dims": {
+    "OD": 42.0,
+    "OD2": 30.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 443.0,
+    "XS": 443.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "42",
+   "nps2": "24",
+   "dims": {
+    "OD": 42.0,
+    "OD2": 24.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 443.0,
+    "XS": 443.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "42",
+   "nps2": "24",
+   "dims": {
+    "OD": 42.0,
+    "OD2": 24.0,
+    "L": 24.0
+   },
+   "weights": {
+    "STD": 443.0,
+    "XS": 443.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "48",
+   "nps2": "42",
+   "dims": {
+    "OD": 48.0,
+    "OD2": 42.0,
+    "L": 28.0
+   },
+   "weights": {
+    "STD": 525.0,
+    "XS": 525.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "48",
+   "nps2": "42",
+   "dims": {
+    "OD": 48.0,
+    "OD2": 42.0,
+    "L": 28.0
+   },
+   "weights": {
+    "STD": 525.0,
+    "XS": 525.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "48",
+   "nps2": "36",
+   "dims": {
+    "OD": 48.0,
+    "OD2": 36.0,
+    "L": 28.0
+   },
+   "weights": {
+    "STD": 525.0,
+    "XS": 525.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "48",
+   "nps2": "36",
+   "dims": {
+    "OD": 48.0,
+    "OD2": 36.0,
+    "L": 28.0
+   },
+   "weights": {
+    "STD": 525.0,
+    "XS": 525.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "48",
+   "nps2": "30",
+   "dims": {
+    "OD": 48.0,
+    "OD2": 30.0,
+    "L": 28.0
+   },
+   "weights": {
+    "STD": 525.0,
+    "XS": 525.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "48",
+   "nps2": "30",
+   "dims": {
+    "OD": 48.0,
+    "OD2": 30.0,
+    "L": 28.0
+   },
+   "weights": {
+    "STD": 525.0,
+    "XS": 525.0
+   }
+  },
+  {
+   "type": "reducer_concentric",
+   "nps": "48",
+   "nps2": "24",
+   "dims": {
+    "OD": 48.0,
+    "OD2": 24.0,
+    "L": 28.0
+   },
+   "weights": {
+    "STD": 525.0,
+    "XS": 525.0
+   }
+  },
+  {
+   "type": "reducer_eccentric",
+   "nps": "48",
+   "nps2": "24",
+   "dims": {
+    "OD": 48.0,
+    "OD2": 24.0,
+    "L": 28.0
+   },
+   "weights": {
+    "STD": 525.0,
+    "XS": 525.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "1/2",
+   "dims": {
+    "OD": 0.84,
+    "E": 1.0
+   },
+   "weights": {
+    "STD": 0.08,
+    "XS": 0.1,
+    "40": 0.08,
+    "80": 0.1,
+    "160": 0.3,
+    "XXS": 0.5
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "3/4",
+   "dims": {
+    "OD": 1.05,
+    "E": 1.0
+   },
+   "weights": {
+    "STD": 0.14,
+    "XS": 0.16,
+    "40": 0.14,
+    "80": 0.16,
+    "160": 0.3,
+    "XXS": 0.75
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "1",
+   "dims": {
+    "OD": 1.32,
+    "E": 1.5
+   },
+   "weights": {
+    "STD": 0.21,
+    "XS": 0.28,
+    "40": 0.21,
+    "80": 0.28,
+    "160": 0.4,
+    "XXS": 1.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "1 1/4",
+   "dims": {
+    "OD": 1.66,
+    "E": 1.5
+   },
+   "weights": {
+    "STD": 0.33,
+    "XS": 0.48,
+    "40": 0.33,
+    "80": 0.48,
+    "160": 0.5,
+    "XXS": 1.5
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "1 1/2",
+   "dims": {
+    "OD": 1.9,
+    "E": 1.5
+   },
+   "weights": {
+    "STD": 0.54,
+    "XS": 0.67,
+    "40": 0.54,
+    "80": 0.67,
+    "160": 0.6,
+    "XXS": 2.5
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "2",
+   "dims": {
+    "OD": 2.38,
+    "E": 1.5
+   },
+   "weights": {
+    "STD": 0.8,
+    "XS": 0.92,
+    "40": 0.8,
+    "80": 0.92,
+    "160": 1.3,
+    "XXS": 3.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "2 1/2",
+   "dims": {
+    "OD": 2.88,
+    "E": 1.5
+   },
+   "weights": {
+    "STD": 1.0,
+    "XS": 1.3,
+    "40": 1.0,
+    "80": 1.3,
+    "160": 1.8,
+    "XXS": 4.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "3",
+   "dims": {
+    "OD": 3.5,
+    "E": 2.0
+   },
+   "weights": {
+    "STD": 1.7,
+    "XS": 2.1,
+    "40": 1.7,
+    "80": 2.1,
+    "160": 2.9,
+    "XXS": 6.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "3 1/2",
+   "dims": {
+    "OD": 4.0,
+    "E": 2.5
+   },
+   "weights": {
+    "STD": 2.3,
+    "XS": 3.0,
+    "40": 2.3,
+    "80": 3.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "4",
+   "dims": {
+    "OD": 4.5,
+    "E": 2.5
+   },
+   "weights": {
+    "STD": 2.8,
+    "XS": 3.5,
+    "40": 2.8,
+    "80": 3.5,
+    "160": 5.9,
+    "XXS": 9.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "5",
+   "dims": {
+    "OD": 5.56,
+    "E": 3.0
+   },
+   "weights": {
+    "STD": 4.6,
+    "XS": 5.8,
+    "40": 4.6,
+    "80": 5.8,
+    "160": 10.0,
+    "XXS": 13.5
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "6",
+   "dims": {
+    "OD": 6.62,
+    "E": 3.5
+   },
+   "weights": {
+    "STD": 6.9,
+    "XS": 9.3,
+    "40": 6.9,
+    "80": 9.3,
+    "160": 15.0,
+    "XXS": 18.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "8",
+   "dims": {
+    "OD": 8.62,
+    "E": 4.0
+   },
+   "weights": {
+    "STD": 11.8,
+    "XS": 16.0,
+    "40": 11.8,
+    "80": 16.0,
+    "160": 31.0,
+    "XXS": 26.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "10",
+   "dims": {
+    "OD": 10.75,
+    "E": 5.0
+   },
+   "weights": {
+    "STD": 20.8,
+    "XS": 26.0,
+    "40": 20.8,
+    "80": 26.0,
+    "160": 57.0,
+    "XXS": 46.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "12",
+   "dims": {
+    "OD": 12.75,
+    "E": 6.0
+   },
+   "weights": {
+    "STD": 30.3,
+    "XS": 38.0,
+    "40": 30.3,
+    "80": 38.0,
+    "160": 95.0,
+    "XXS": 68.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "14",
+   "dims": {
+    "OD": 14.0,
+    "E": 6.5
+   },
+   "weights": {
+    "STD": 36.5,
+    "XS": 47.0,
+    "40": 36.5,
+    "80": 47.0,
+    "160": 200.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "16",
+   "dims": {
+    "OD": 16.0,
+    "E": 7.0
+   },
+   "weights": {
+    "STD": 43.5,
+    "XS": 57.0,
+    "40": 43.5,
+    "80": 57.0,
+    "160": 297.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "18",
+   "dims": {
+    "OD": 18.0,
+    "E": 8.0
+   },
+   "weights": {
+    "STD": 57.0,
+    "XS": 78.0,
+    "40": 57.0,
+    "80": 78.0,
+    "160": 360.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "20",
+   "dims": {
+    "OD": 20.0,
+    "E": 9.0
+   },
+   "weights": {
+    "STD": 75.7,
+    "XS": 100.0,
+    "40": 75.7,
+    "80": 100.0,
+    "160": 420.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "24",
+   "dims": {
+    "OD": 24.0,
+    "E": 10.5
+   },
+   "weights": {
+    "STD": 101.0,
+    "XS": 145.0,
+    "40": 101.0,
+    "80": 145.0,
+    "160": 535.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "30",
+   "dims": {
+    "OD": 30.0,
+    "E": 10.5
+   },
+   "weights": {
+    "STD": 137.0,
+    "XS": 634.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "36",
+   "dims": {
+    "OD": 36.0,
+    "E": 10.5
+   },
+   "weights": {
+    "STD": 175.0,
+    "XS": 913.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "42",
+   "dims": {
+    "OD": 42.0,
+    "E": 12.0
+   },
+   "weights": {
+    "STD": 229.0,
+    "XS": 1300.0
+   }
+  },
+  {
+   "type": "cap",
+   "nps": "48",
+   "dims": {
+    "OD": 48.0,
+    "E": 13.5
+   },
+   "weights": {
+    "STD": 350.0,
+    "XS": 1675.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "1/2",
+   "dims": {
+    "OD_max": 0.896,
+    "OD_min": 0.809,
+    "K": 1.38,
+    "N": 0.12,
+    "J": 3.0
+   },
+   "weights": {
+    "STD": 0.3,
+    "XS": 0.38,
+    "40": 0.3,
+    "80": 0.38,
+    "160": 0.75,
+    "XXS": 1.75
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "3/4",
+   "dims": {
+    "OD_max": 1.106,
+    "OD_min": 1.019,
+    "K": 1.69,
+    "N": 0.12,
+    "J": 3.0
+   },
+   "weights": {
+    "STD": 0.4,
+    "XS": 0.51,
+    "40": 0.4,
+    "80": 0.51,
+    "160": 0.95,
+    "XXS": 2.5
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "1",
+   "dims": {
+    "OD_max": 1.376,
+    "OD_min": 1.284,
+    "K": 2.0,
+    "N": 0.12,
+    "J": 4.0
+   },
+   "weights": {
+    "STD": 0.75,
+    "XS": 1.0,
+    "40": 0.75,
+    "80": 1.0,
+    "160": 1.13,
+    "XXS": 4.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "1 1/4",
+   "dims": {
+    "OD_max": 1.716,
+    "OD_min": 1.629,
+    "K": 2.5,
+    "N": 0.19,
+    "J": 4.0
+   },
+   "weights": {
+    "STD": 1.1,
+    "XS": 1.25,
+    "40": 1.1,
+    "80": 1.25,
+    "160": 1.51,
+    "XXS": 6.25
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "1 1/2",
+   "dims": {
+    "OD_max": 1.965,
+    "OD_min": 1.869,
+    "K": 2.88,
+    "N": 0.25,
+    "J": 4.0
+   },
+   "weights": {
+    "STD": 1.25,
+    "XS": 1.75,
+    "40": 1.25,
+    "80": 1.75,
+    "160": 2.02,
+    "XXS": 6.5
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "2",
+   "dims": {
+    "OD_max": 2.456,
+    "OD_min": 2.344,
+    "K": 3.62,
+    "N": 0.31,
+    "J": 6.0
+   },
+   "weights": {
+    "STD": 2.25,
+    "XS": 3.0,
+    "40": 2.25,
+    "80": 3.0,
+    "160": 4.51,
+    "XXS": 9.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "2 1/2",
+   "dims": {
+    "OD_max": 2.966,
+    "OD_min": 2.844,
+    "K": 4.12,
+    "N": 0.31,
+    "J": 6.0
+   },
+   "weights": {
+    "STD": 3.5,
+    "XS": 4.5,
+    "40": 3.5,
+    "80": 4.5,
+    "160": 6.02,
+    "XXS": 14.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "3",
+   "dims": {
+    "OD_max": 3.596,
+    "OD_min": 3.469,
+    "K": 5.0,
+    "N": 0.38,
+    "J": 6.0
+   },
+   "weights": {
+    "STD": 4.75,
+    "XS": 6.5,
+    "40": 4.75,
+    "80": 6.5,
+    "160": 8.8,
+    "XXS": 18.5
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "3 1/2",
+   "dims": {
+    "OD_max": 4.096,
+    "OD_min": 3.969,
+    "K": 5.5,
+    "N": 0.38,
+    "J": 6.0
+   },
+   "weights": {
+    "STD": 6.0,
+    "XS": 7.75,
+    "40": 6.0,
+    "80": 7.75
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "4",
+   "dims": {
+    "OD_max": 4.593,
+    "OD_min": 4.469,
+    "K": 6.19,
+    "N": 0.44,
+    "J": 6.0
+   },
+   "weights": {
+    "STD": 7.25,
+    "XS": 9.5,
+    "40": 7.25,
+    "80": 9.5,
+    "160": 14.1,
+    "XXS": 27.5
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "5",
+   "dims": {
+    "OD_max": 5.683,
+    "OD_min": 5.532,
+    "K": 7.31,
+    "N": 0.44,
+    "J": 8.0
+   },
+   "weights": {
+    "STD": 12.0,
+    "XS": 17.0,
+    "40": 12.0,
+    "80": 17.0,
+    "160": 26.4,
+    "XXS": 39.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "6",
+   "dims": {
+    "OD_max": 6.743,
+    "OD_min": 6.594,
+    "K": 8.5,
+    "N": 0.5,
+    "J": 8.0
+   },
+   "weights": {
+    "STD": 16.0,
+    "XS": 23.0,
+    "40": 16.0,
+    "80": 23.0,
+    "160": 36.4,
+    "XXS": 54.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "8",
+   "dims": {
+    "OD_max": 8.743,
+    "OD_min": 8.594,
+    "K": 10.62,
+    "N": 0.5,
+    "J": 8.0
+   },
+   "weights": {
+    "STD": 23.0,
+    "XS": 32.0,
+    "40": 23.0,
+    "80": 32.0,
+    "160": 60.0,
+    "XXS": 73.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "10",
+   "dims": {
+    "OD_max": 10.913,
+    "OD_min": 10.719,
+    "K": 12.75,
+    "N": 0.5,
+    "J": 10.0
+   },
+   "weights": {
+    "STD": 36.0,
+    "XS": 53.0,
+    "40": 36.0,
+    "80": 63.0,
+    "160": 113.0,
+    "XXS": 116.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "12",
+   "dims": {
+    "OD_max": 12.913,
+    "OD_min": 12.719,
+    "K": 15.0,
+    "N": 0.5,
+    "J": 10.0
+   },
+   "weights": {
+    "STD": 47.0,
+    "XS": 62.0,
+    "40": 52.0,
+    "80": 87.0,
+    "160": 160.0,
+    "XXS": 167.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "14",
+   "dims": {
+    "OD_max": 14.17,
+    "OD_min": 13.969,
+    "K": 16.25,
+    "N": 0.5,
+    "J": 12.0
+   },
+   "weights": {
+    "STD": 35.4,
+    "XS": 89.0,
+    "40": 73.0,
+    "80": 123.0,
+    "160": 190.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "16",
+   "dims": {
+    "OD_max": 16.18,
+    "OD_min": 15.969,
+    "K": 18.5,
+    "N": 0.5,
+    "J": 12.0
+   },
+   "weights": {
+    "STD": 44.8,
+    "XS": 96.0,
+    "40": 97.0,
+    "80": 161.0,
+    "160": 245.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "18",
+   "dims": {
+    "OD_max": 18.19,
+    "OD_min": 17.969,
+    "K": 21.0,
+    "N": 0.5,
+    "J": 12.0
+   },
+   "weights": {
+    "STD": 57.2,
+    "XS": 112.0,
+    "40": 126.0,
+    "80": 205.0,
+    "160": 309.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "20",
+   "dims": {
+    "OD_max": 20.24,
+    "OD_min": 19.969,
+    "K": 23.0,
+    "N": 0.5,
+    "J": 12.0
+   },
+   "weights": {
+    "STD": 71.0,
+    "XS": 125.0,
+    "40": 147.0,
+    "80": 251.0,
+    "160": 379.0
+   }
+  },
+  {
+   "type": "lapJointStubEnd",
+   "nps": "24",
+   "dims": {
+    "OD_max": 24.24,
+    "OD_min": 23.969,
+    "K": 27.25,
+    "N": 0.5,
+    "J": 12.0
+   },
+   "weights": {
+    "STD": 102.0,
+    "XS": 151.0,
+    "40": 205.0,
+    "80": 359.0,
+    "160": 542.0
+   }
+  }
+ ]
+}
