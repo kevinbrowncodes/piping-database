@@ -142,12 +142,27 @@ struct FittingsView: View {
         Format.length(inches, unit: unit, fractions: showFractions)
     }
 
+    /// Forged legend uses family-suffixed keys (A_elbow, E_sw, F_cap_SW…);
+    /// resolve a row's plain letter against the fitting's type/connection.
+    private func legendText(_ key: String, for f: FittingsFile.Fitting) -> String {
+        if let direct = legend[key] { return direct }
+        let context = "\(f.type) \(f.connection ?? "")".lowercased()
+        let candidates = legend.keys.filter { $0.hasPrefix("\(key)_") }
+        let best = candidates.first {
+            let suffix = $0.dropFirst(key.count + 1).lowercased()
+            return suffix.split(separator: "_").allSatisfy { context.contains($0) }
+        } ?? candidates.first
+        return best.flatMap { legend[$0] } ?? ""
+    }
+
     private func dimsCard(for f: FittingsFile.Fitting) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             ForEach(f.dims.keys.sorted(), id: \.self) { key in
                 HStack(alignment: .firstTextBaseline) {
-                    Text(key).font(.callout.monospaced()).bold().frame(width: 34, alignment: .leading)
-                    Text(legend[key] ?? "").font(.caption).foregroundStyle(.secondary)
+                    Text(key.replacingOccurrences(of: "_", with: " "))
+                        .font(.callout.monospaced()).bold()
+                        .frame(width: 52, alignment: .leading)
+                    Text(legendText(key, for: f)).font(.caption).foregroundStyle(.secondary)
                     Spacer()
                     Text(fmt(f.dims[key] ?? 0)).font(.callout.monospacedDigit()).bold()
                 }
