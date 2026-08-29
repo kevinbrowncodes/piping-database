@@ -6,8 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		D10000222E5F0001000000A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10000052E5F0001000000A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10000042E5F0001000000A1;
+			remoteInfo = PipingDatabase;
+		};
+		D10000242E5F0001000000A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D10000052E5F0001000000A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10000042E5F0001000000A1;
+			remoteInfo = PipingDatabase;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D10000032E5F0001000000A1 /* PipingDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PipingDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10000142E5F0001000000A1 /* PipingDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipingDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10000152E5F0001000000A1 /* PipingDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipingDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +35,34 @@
 			path = PipingDatabase;
 			sourceTree = "<group>";
 		};
+		D10000102E5F0001000000A1 /* PipingDatabaseTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PipingDatabaseTests;
+			sourceTree = "<group>";
+		};
+		D10000112E5F0001000000A1 /* PipingDatabaseUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PipingDatabaseUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D10000072E5F0001000000A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10000172E5F0001000000A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D100001A2E5F0001000000A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				D10000012E5F0001000000A1 /* PipingDatabase */,
+				D10000102E5F0001000000A1 /* PipingDatabaseTests */,
+				D10000112E5F0001000000A1 /* PipingDatabaseUITests */,
 				D10000022E5F0001000000A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				D10000032E5F0001000000A1 /* PipingDatabase.app */,
+				D10000142E5F0001000000A1 /* PipingDatabaseTests.xctest */,
+				D10000152E5F0001000000A1 /* PipingDatabaseUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,7 +117,66 @@
 			productReference = D10000032E5F0001000000A1 /* PipingDatabase.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D10000122E5F0001000000A1 /* PipingDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D100001C2E5F0001000000A1 /* Build configuration list for PBXNativeTarget "PipingDatabaseTests" */;
+			buildPhases = (
+				D10000162E5F0001000000A1 /* Sources */,
+				D10000172E5F0001000000A1 /* Frameworks */,
+				D10000182E5F0001000000A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10000232E5F0001000000A1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D10000102E5F0001000000A1 /* PipingDatabaseTests */,
+			);
+			name = PipingDatabaseTests;
+			packageProductDependencies = (
+			);
+			productName = PipingDatabaseTests;
+			productReference = D10000142E5F0001000000A1 /* PipingDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D10000132E5F0001000000A1 /* PipingDatabaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D100001D2E5F0001000000A1 /* Build configuration list for PBXNativeTarget "PipingDatabaseUITests" */;
+			buildPhases = (
+				D10000192E5F0001000000A1 /* Sources */,
+				D100001A2E5F0001000000A1 /* Frameworks */,
+				D100001B2E5F0001000000A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10000252E5F0001000000A1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D10000112E5F0001000000A1 /* PipingDatabaseUITests */,
+			);
+			name = PipingDatabaseUITests;
+			packageProductDependencies = (
+			);
+			productName = PipingDatabaseUITests;
+			productReference = D10000152E5F0001000000A1 /* PipingDatabaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
+
+/* Begin PBXTargetDependency section */
+		D10000232E5F0001000000A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10000042E5F0001000000A1 /* PipingDatabase */;
+			targetProxy = D10000222E5F0001000000A1 /* PBXContainerItemProxy */;
+		};
+		D10000252E5F0001000000A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10000042E5F0001000000A1 /* PipingDatabase */;
+			targetProxy = D10000242E5F0001000000A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXProject section */
 		D10000052E5F0001000000A1 /* Project object */ = {
@@ -82,6 +188,14 @@
 				TargetAttributes = {
 					D10000042E5F0001000000A1 = {
 						CreatedOnToolsVersion = 26.0;
+					};
+					D10000122E5F0001000000A1 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = D10000042E5F0001000000A1;
+					};
+					D10000132E5F0001000000A1 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = D10000042E5F0001000000A1;
 					};
 				};
 			};
@@ -100,6 +214,8 @@
 			projectRoot = "";
 			targets = (
 				D10000042E5F0001000000A1 /* PipingDatabase */,
+				D10000122E5F0001000000A1 /* PipingDatabaseTests */,
+				D10000132E5F0001000000A1 /* PipingDatabaseUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -112,10 +228,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D10000182E5F0001000000A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D100001B2E5F0001000000A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D10000062E5F0001000000A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10000162E5F0001000000A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10000192E5F0001000000A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,6 +446,76 @@
 			};
 			name = Release;
 		};
+		D100001E2E5F0001000000A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbrowncodes.PipingDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PipingDatabase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PipingDatabase";
+			};
+			name = Debug;
+		};
+		D100001F2E5F0001000000A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbrowncodes.PipingDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PipingDatabase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PipingDatabase";
+			};
+			name = Release;
+		};
+		D10000202E5F0001000000A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbrowncodes.PipingDatabaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PipingDatabase;
+			};
+			name = Debug;
+		};
+		D10000212E5F0001000000A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbrowncodes.PipingDatabaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PipingDatabase;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +533,24 @@
 			buildConfigurations = (
 				D100000C2E5F0001000000A1 /* Debug */,
 				D100000D2E5F0001000000A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D100001C2E5F0001000000A1 /* Build configuration list for PBXNativeTarget "PipingDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D100001E2E5F0001000000A1 /* Debug */,
+				D100001F2E5F0001000000A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D100001D2E5F0001000000A1 /* Build configuration list for PBXNativeTarget "PipingDatabaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10000202E5F0001000000A1 /* Debug */,
+				D10000212E5F0001000000A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
