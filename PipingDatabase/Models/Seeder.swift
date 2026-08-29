@@ -2,6 +2,8 @@ import Foundation
 import SwiftData
 
 enum Seeder {
+    static let versionKey = "pipeSeedVersion"
+
     struct SeedFile: Decodable {
         let version: Int
         let sizes: [SeedSize]
@@ -16,19 +18,20 @@ enum Seeder {
     struct SeedEntry: Decodable {
         let s: String        // schedule designation
         let w: Double        // wall, inches
-        let std: String?     // defaults to B36.10M
+        let std: String?     // source standard, defaults to B36.10M
     }
 
-    static func seedIfNeeded(container: ModelContainer) throws {
+    /// Seeds reference data on first launch, and re-seeds when the bundled
+    /// seed version changes. Reference data is disposable by design — user
+    /// data (favorites etc.) lives in separate models and is never touched.
+    static func seedIfNeeded(container: ModelContainer, defaults: UserDefaults = .standard) throws {
         let context = ModelContext(container)
+        let seed = try loadSeed()
         let existing = try context.fetchCount(FetchDescriptor<NominalSize>())
-        guard existing == 0 else { return }
+        let storedVersion = defaults.integer(forKey: versionKey)
+        guard existing == 0 || storedVersion != seed.version else { return }
 
-        guard let url = Bundle.main.url(forResource: "PipeSeed", withExtension: "json") else {
-            assertionFailure("PipeSeed.json missing from bundle")
-            return
-        }
-        let seed = try JSONDecoder().decode(SeedFile.self, from: Data(contentsOf: url))
+        try context.delete(model: NominalSize.self)   // cascades to entries
 
         for s in seed.sizes {
             let size = NominalSize(nps: s.nps, sortValue: s.sort, dn: s.dn, odInches: s.od)
@@ -44,5 +47,13 @@ enum Seeder {
             }
         }
         try context.save()
+        defaults.set(seed.version, forKey: versionKey)
+    }
+
+    static func loadSeed() throws -> SeedFile {
+        guard let url = Bundle.main.url(forResource: "PipeSeed", withExtension: "json") else {
+            throw CocoaError(.fileNoSuchFile)
+        }
+        return try JSONDecoder().decode(SeedFile.self, from: Data(contentsOf: url))
     }
 }
