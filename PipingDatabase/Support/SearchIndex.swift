@@ -126,6 +126,15 @@ final class SearchIndex {
                 haystack: "blank blind spectacle figure-8 figure 8 spacer paddle \(b.class) \(b.nps) b16.48".lowercased()))
         }
 
+        for g in store.gaskets?.gaskets ?? [] {
+            out.append(SearchEntry(
+                moduleID: "gaskets", moduleName: "Gaskets",
+                title: "\(g.nps)\" \(g.class)# Gasket",
+                subtitle: "Ring \(fmt(g.ringID)) × \(fmt(g.ringOD)) · ASME B16.21",
+                route: "gaskets|cl=\(g.class)&nps=\(g.nps)",
+                haystack: "gasket ring full face \(g.class) \(g.nps) b16.21".lowercased()))
+        }
+
         return out
     }
 

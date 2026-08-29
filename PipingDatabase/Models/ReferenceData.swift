@@ -121,6 +121,24 @@ struct LineBlanksFile: Decodable {
     }
 }
 
+struct GasketsFile: Decodable {
+    let version: Int
+    let source: String
+    let standard: String
+    let gaskets: [Gasket]
+
+    struct Gasket: Decodable {
+        let `class`: String
+        let nps: String
+        let ringID: Double
+        let ringOD: Double
+        let ffOD: Double?
+        let ffHoles: Int?
+        let ffHoleDia: Double?
+        let ffBoltCircle: Double?
+    }
+}
+
 struct PTRatingsFile: Decodable {
     let version: Int
     let source: String
@@ -172,6 +190,7 @@ final class ReferenceStore {
     let lineBlanks: LineBlanksFile? = load("LineBlanks")
     let ptRatings: PTRatingsFile? = load("PTRatings")
     let boltTorque: BoltTorqueFile? = load("BoltTorque")
+    let gaskets: GasketsFile? = load("Gaskets")
 
     /// All butt-weld fittings across the three Weldbend files.
     var buttWeldFittings: [FittingsFile.Fitting] {

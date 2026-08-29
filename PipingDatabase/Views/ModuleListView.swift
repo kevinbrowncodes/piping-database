@@ -31,7 +31,7 @@ struct ModuleListView: View {
                symbol: "8.circle", available: true),
         Module(id: "gaskets", title: "Gaskets",
                subtitle: "B16.21 — flat ring, full face, drilling",
-               symbol: "circle.dashed", available: false),
+               symbol: "circle.dashed", available: true),
     ]
 
     @State private var path: [String] = []
@@ -129,11 +129,12 @@ struct ModuleListView: View {
                 let preselect = Self.parsePayload(parts.count > 1 ? String(parts[1]) : "")
                 switch id {
                 case "pipe": PipeScheduleView(preselect: preselect)
-                case "fittings": FittingsView()
-                case "flanges": FlangesView()
-                case "valves": ValvesView()
-                case "olets": OletsView()
-                case "blanks": LineBlanksView()
+                case "fittings": FittingsView(preselect: preselect)
+                case "flanges": FlangesView(preselect: preselect)
+                case "valves": ValvesView(preselect: preselect)
+                case "olets": OletsView(preselect: preselect)
+                case "blanks": LineBlanksView(preselect: preselect)
+                case "gaskets": GasketsView(preselect: preselect)
                 default: EmptyView()
                 }
             }
