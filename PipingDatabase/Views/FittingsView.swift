@@ -4,11 +4,19 @@ struct FittingsView: View {
     @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
     @AppStorage("fractionDisplay") private var showFractions = false
 
-    @State private var connection = "BW"
-    @State private var selectedType = "elbow90LR"
-    @State private var selectedClass = "3000"
-    @State private var selectedNPS = "2"
-    @State private var selectedNPS2: String = ""
+    @State private var connection: String
+    @State private var selectedType: String
+    @State private var selectedClass: String
+    @State private var selectedNPS: String
+    @State private var selectedNPS2: String
+
+    init(preselect: [String: String] = [:]) {
+        _connection = State(initialValue: preselect["c"] ?? "BW")
+        _selectedType = State(initialValue: preselect["t"] ?? "elbow90LR")
+        _selectedClass = State(initialValue: preselect["cl"] ?? "3000")
+        _selectedNPS = State(initialValue: preselect["nps"] ?? "2")
+        _selectedNPS2 = State(initialValue: preselect["nps2"] ?? "")
+    }
 
     private var unit: UnitSystem { UnitSystem(rawValue: unitRaw) ?? .imperial }
     private var store: ReferenceStore { .shared }

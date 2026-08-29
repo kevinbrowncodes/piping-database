@@ -4,10 +4,16 @@ struct OletsView: View {
     @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
     @AppStorage("fractionDisplay") private var showFractions = false
 
-    @State private var selectedType = "weldolet"
-    @State private var selectedClass = "STD"
-    @State private var selectedBranch = "1/2"
+    @State private var selectedType: String
+    @State private var selectedClass: String
+    @State private var selectedBranch: String
     @State private var selectedRunKey = ""
+
+    init(preselect: [String: String] = [:]) {
+        _selectedType = State(initialValue: preselect["t"] ?? "weldolet")
+        _selectedClass = State(initialValue: preselect["cl"] ?? "STD")
+        _selectedBranch = State(initialValue: preselect["b"] ?? "1/2")
+    }
 
     private var unit: UnitSystem { UnitSystem(rawValue: unitRaw) ?? .imperial }
     private var file: OletsFile? { ReferenceStore.shared.olets }

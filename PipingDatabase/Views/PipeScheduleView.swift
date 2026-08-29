@@ -20,6 +20,8 @@ struct PipeScheduleView: View {
     @State private var selectedDesignation: String
     @State private var lengthFt = 1.0
     @State private var isFavorite = false
+    @State private var showCompare = false
+    @State private var showInfo = false
     @FocusState private var lengthFocused: Bool
 
     private var payload: String { "nps=\(selectedNPS)&s=\(selectedDesignation)" }
@@ -103,8 +105,18 @@ struct PipeScheduleView: View {
                         Text("DN (metric)").tag(NominalStyle.dn.rawValue)
                     }
                     Toggle("Fractions", isOn: $showFractions)
+                    Divider()
+                    Button("Compare schedules", systemImage: "rectangle.split.2x1") {
+                        showCompare = true
+                    }
+                    if let entry {
+                        ShareLink(item: datasheet(for: entry)) {
+                            Label("Share datasheet", systemImage: "square.and.arrow.up")
+                        }
+                    }
+                    Button("About this data", systemImage: "info.circle") { showInfo = true }
                 } label: {
-                    Image(systemName: "ruler")
+                    Image(systemName: "ellipsis.circle")
                 }
             }
             ToolbarItem(placement: .topBarTrailing) {
@@ -122,6 +134,18 @@ struct PipeScheduleView: View {
             if !designations.contains(selectedDesignation), let first = designations.first {
                 selectedDesignation = first
             }
+        }
+        .sheet(isPresented: $showCompare) {
+            if let size = selectedSize {
+                PipeCompareSheet(size: size, baseline: selectedDesignation, unit: unit)
+            }
+        }
+        .sheet(isPresented: $showInfo) {
+            ModuleInfoSheet(
+                title: "Pipe Schedule",
+                standard: "ASME B36.10M (carbon) · ASME B36.19M (stainless)",
+                notes: "Dimensions and nominal walls per the governing standards. Weights are computed with the B36.10M plain-end formula 10.69 (D−t) t and match the published weight columns within rounding. Water-filled weight assumes fresh water at 60 °F."
+            )
         }
         .task(id: payload) {
             isFavorite = LookupStore.isFavorite(context, moduleID: "pipe", payload: payload)
@@ -142,6 +166,15 @@ struct PipeScheduleView: View {
 
     private func fmtLength(_ inches: Double) -> String {
         Format.length(inches, unit: unit, fractions: showFractions)
+    }
+
+    private func datasheet(for e: PipeScheduleEntry) -> String {
+        """
+        \(lookupTitle)
+        OD \(Format.length(e.odInches, unit: unit)) · ID \(Format.length(e.idInches, unit: unit)) · Wall \(Format.length(e.wallInches, unit: unit))
+        Weight \(Format.linearWeight(e.weightLbPerFt, unit: unit)) · Water-filled \(Format.linearWeight(e.waterFilledWeightLbPerFt, unit: unit))
+        Source: \(e.standard) — Piping Database
+        """
     }
 
     private func dataGrid(for entry: PipeScheduleEntry) -> some View {

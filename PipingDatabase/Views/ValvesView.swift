@@ -4,10 +4,17 @@ struct ValvesView: View {
     @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
     @AppStorage("fractionDisplay") private var showFractions = false
 
-    @State private var selectedType = "gate"
-    @State private var selectedClass = "150"
-    @State private var selectedFacing = "RF"
-    @State private var selectedNPS = "2"
+    @State private var selectedType: String
+    @State private var selectedClass: String
+    @State private var selectedFacing: String
+    @State private var selectedNPS: String
+
+    init(preselect: [String: String] = [:]) {
+        _selectedType = State(initialValue: preselect["t"] ?? "gate")
+        _selectedClass = State(initialValue: preselect["cl"] ?? "150")
+        _selectedFacing = State(initialValue: preselect["f"] ?? "RF")
+        _selectedNPS = State(initialValue: preselect["nps"] ?? "2")
+    }
 
     private var unit: UnitSystem { UnitSystem(rawValue: unitRaw) ?? .imperial }
     private var file: ValvesFile? { ReferenceStore.shared.valves }

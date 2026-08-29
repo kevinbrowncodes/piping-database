@@ -35,8 +35,13 @@ struct ModuleListView: View {
     ]
 
     @State private var path: [String] = []
+    @State private var searchText = ""
     @AppStorage("moduleOrder") private var moduleOrderRaw = ""
     @Environment(\.modelContext) private var context
+
+    private var searchResults: [SearchEntry] {
+        searchText.count >= 2 ? SearchIndex.shared.search(searchText) : []
+    }
 
     @Query(filter: #Predicate<SavedLookup> { $0.isFavorite },
            sort: \SavedLookup.title) private var favorites: [SavedLookup]
@@ -54,6 +59,21 @@ struct ModuleListView: View {
     var body: some View {
         NavigationStack(path: $path) {
             List {
+                if !searchText.isEmpty {
+                    if searchResults.isEmpty {
+                        ContentUnavailableView.search(text: searchText)
+                    } else {
+                        ForEach(searchResults) { result in
+                            NavigationLink(value: result.route) {
+                                VStack(alignment: .leading, spacing: 1) {
+                                    Text(result.title).font(.subheadline).bold()
+                                    Text("\(result.moduleName) · \(result.subtitle)")
+                                        .font(.caption).foregroundStyle(.secondary)
+                                }
+                            }
+                        }
+                    }
+                } else {
                 if !favorites.isEmpty {
                     Section("Favorites") {
                         ForEach(favorites) { fav in
@@ -98,7 +118,9 @@ struct ModuleListView: View {
                         }
                     }
                 }
+                }
             }
+            .searchable(text: $searchText, prompt: "2 300 wn · sch 80 6 · gate 600")
             .toolbar { EditButton() }
             .navigationTitle("Piping Database")
             .navigationDestination(for: String.self) { route in

@@ -4,11 +4,18 @@ struct FlangesView: View {
     @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
     @AppStorage("fractionDisplay") private var showFractions = false
 
-    @State private var selectedClass = "150"
-    @State private var selectedType = "WN"
-    @State private var selectedNPS = "2"
+    @State private var selectedClass: String
+    @State private var selectedType: String
+    @State private var selectedNPS: String
     @State private var showProcedure = false
     @State private var showPTTable = false
+    @State private var showInfo = false
+
+    init(preselect: [String: String] = [:]) {
+        _selectedClass = State(initialValue: preselect["cl"] ?? "150")
+        _selectedType = State(initialValue: preselect["t"] ?? "WN")
+        _selectedNPS = State(initialValue: preselect["k"] ?? "2")
+    }
 
     private var unit: UnitSystem { UnitSystem(rawValue: unitRaw) ?? .imperial }
     private var file: FlangesFile? { ReferenceStore.shared.flanges }
@@ -71,11 +78,30 @@ struct FlangesView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
+                Menu {
+                    if let s = selection {
+                        ShareLink(item: datasheet(for: s)) {
+                            Label("Share datasheet", systemImage: "square.and.arrow.up")
+                        }
+                    }
+                    Button("About this data", systemImage: "info.circle") { showInfo = true }
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
+            ToolbarItem(placement: .topBarTrailing) {
                 Button(unit.toggleLabel) {
                     unitRaw = (unit == .imperial ? UnitSystem.metric : .imperial).rawValue
                 }
                 .font(.headline)
             }
+        }
+        .sheet(isPresented: $showInfo) {
+            ModuleInfoSheet(
+                title: "Flanges",
+                standard: "ASME B16.5 (NPS ½–24) · ASME B16.47 Series A/B (NPS 30–48) · Class 125 per ASME B16.1",
+                notes: "Dimensions, drilling, and weights per the flange tables; P-T ratings are for material group 1.1 (A105 etc.). Torque values indicate lubricated stud stress — always follow the gasket manufacturer's tightening specification."
+            )
         }
         .onChange(of: selectedClass) {
             if !sizeOptions.contains(where: { $0.key == selectedNPS }),
@@ -87,6 +113,20 @@ struct FlangesView: View {
 
     private func fmt(_ inches: Double) -> String {
         Format.length(inches, unit: unit, fractions: showFractions)
+    }
+
+    private func datasheet(for s: FlangesFile.FlangeSize) -> String {
+        let typeName = Self.typeLabels.first { $0.0 == selectedType }?.1 ?? selectedType
+        var lines = [
+            "\(s.label)\" Class \(selectedClass) \(typeName) Flange",
+            "OD \(fmt(s.dims["O"] ?? 0)) · Bolt circle \(fmt(s.drilling.boltCircle))",
+            "Drilling: \(s.drilling.numHoles) × \(s.drilling.boltDia)\" bolts (holes \(fmt(s.drilling.holeDia)))",
+        ]
+        if let torque = ReferenceStore.shared.boltTorque?.torque(boltDia: s.drilling.boltDia, stressPsi: 40000) {
+            lines.append("Torque @ 40 ksi stud stress: \(torque) ft·lb/bolt (lubricated)")
+        }
+        lines.append("Source: \(s.series ?? "ASME B16.5") — Piping Database")
+        return lines.joined(separator: "\n")
     }
 
     private func drillingCard(for s: FlangesFile.FlangeSize) -> some View {
