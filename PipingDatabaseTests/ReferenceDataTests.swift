@@ -73,6 +73,42 @@ struct ReferenceDataTests {
         #expect(tee34?.dims["A"] == 1.5)
     }
 
+    // MARK: Gaskets (B16.21)
+
+    @Test func gasketsDatasetLoads() throws {
+        let f = try #require(Self.store.gaskets)
+        #expect(f.gaskets.count == 99)
+        let counts = Dictionary(grouping: f.gaskets, by: \.class).mapValues(\.count)
+        #expect(counts == ["150": 20, "300": 20, "400": 20, "600": 20, "900": 19])
+        // B16.21 published: 2" Class 150 ring gasket 2.38 ID × 4.12 OD.
+        let two150 = f.gaskets.first { $0.class == "150" && $0.nps == "2" }
+        #expect(two150?.ringID == 2.38)
+        #expect(two150?.ringOD == 4.12)
+        for g in f.gaskets {
+            #expect(g.ringOD > g.ringID, "\(g.class) \(g.nps)")
+            if let ff = g.ffOD { #expect(ff > g.ringOD, "\(g.class) \(g.nps)") }
+        }
+    }
+
+    /// Cross-dataset consistency: full-face gasket drilling must agree with
+    /// the flange drilling extracted from a completely different catalog.
+    @Test func gasketDrillingMatchesFlangeDrilling() throws {
+        let gaskets = try #require(Self.store.gaskets)
+        let flanges = try #require(Self.store.flanges)
+        var compared = 0
+        for g in gaskets.gaskets {
+            guard let bc = g.ffBoltCircle, let holes = g.ffHoles else { continue }
+            guard let cls = flanges.classes.first(where: { $0.class == g.class }),
+                  let flange = cls.sizes.first(where: { $0.nps == g.nps && $0.series == nil })
+            else { continue }
+            #expect(holes == flange.drilling.numHoles, "\(g.class) \(g.nps) holes")
+            #expect(abs(bc - flange.drilling.boltCircle) <= 0.011, "\(g.class) \(g.nps) BC \(bc) vs \(flange.drilling.boltCircle)")
+            compared += 1
+        }
+        // FF data spans classes 150/300/400/600; flange data lacks 400 → 3×20 rows.
+        #expect(compared == 60, "expected 60 overlapping rows, compared \(compared)")
+    }
+
     // MARK: P-T ratings & bolt torque
 
     @Test func ptRatingsLoad() throws {

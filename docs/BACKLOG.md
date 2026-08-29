@@ -43,7 +43,7 @@ dependency is noted.
   tap-any-dimension decimal⇄fraction, volume unit picker (ft³/gal/L/m³),
   keyboard dismissal, iPad/landscape layout. *AC: UI smoke tests cover each.*
 
-## Milestone 2 — The seven modules
+## Milestone 2 — The seven modules ✅
 
 - [x] **PD-8 · Fittings data — butt-weld** (L) — extract Weldbend B16.9 tables
   (90/45/3R elbows, return bends, tees, reducing tees, reducers, caps, stub
@@ -63,10 +63,10 @@ dependency is noted.
   SP-97 olet tables; run×branch dual pickers.
 - [x] **PD-14 · Line blanks data + module** (M) — B16.48 blinds/spacers
   incl. RF-thickness note from recon.
-- [ ] **PD-15 · Gaskets data + module** (M) — B16.21 flat-ring/full-face from
+- [x] **PD-15 · Gaskets data + module** (M) — B16.21 flat-ring/full-face from
   Lamons + drilling from flange data; FF hole count/Ø/BCD.
 
-## Milestone 3 — Beat the original
+## Milestone 3 — Beat the original ✅
 
 - [x] **PD-16 · Global settings** (S) — unit system, NPS/DN, fraction display
   preference (decimal/fraction/both); per-screen override kept.
@@ -106,6 +106,8 @@ dependency is noted.
   description, TestFlight distribution.
 
 ---
+
+**Remaining for v1 ship:** PD-26 full accessibility audit; PD-28 TestFlight (needs Kevin's Apple developer account in Xcode) + App Store screenshots/description; extend star/share/info buttons to the remaining modules (mechanical).
 
 *Stretch (post-v1):* Mac Catalyst/native macOS target · Spotlight indexing ·
 widgets (favorite lookups) · B16.47 Series A/B large flanges · B16.20 spiral

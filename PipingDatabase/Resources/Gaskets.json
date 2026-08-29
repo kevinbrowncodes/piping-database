@@ -1,0 +1,922 @@
+{
+  "version": 1,
+  "source": "Lamons Gasket & Fastener Handbook, pp. 39-43",
+  "standard": "ASME B16.21",
+  "notes": "Flat nonmetallic gasket dimensions for ASME B16.5 flanges, inches as printed (all inch cells are printed as decimals; no fraction conversion was needed). Ring (RF) gaskets pp. 39-41 for Classes 150/300/400/600/900; full-face dimensions pp. 42-43 published for Classes 150/300/400/600 only. Class 900 NPS 3 1/2 is not published (dashes). The Class 900 table on p. 41 is present in the PDF text content but clipped out of the visual rendering by a PDF production flaw; values transcribed verbatim from the embedded text.",
+  "gaskets": [
+    {
+      "class": "150",
+      "nps": "1/2",
+      "ringID": 0.84,
+      "ringOD": 1.88,
+      "ffOD": 3.5,
+      "ffHoles": 4,
+      "ffHoleDia": 0.62,
+      "ffBoltCircle": 2.38
+    },
+    {
+      "class": "150",
+      "nps": "3/4",
+      "ringID": 1.06,
+      "ringOD": 2.25,
+      "ffOD": 3.88,
+      "ffHoles": 4,
+      "ffHoleDia": 0.62,
+      "ffBoltCircle": 2.75
+    },
+    {
+      "class": "150",
+      "nps": "1",
+      "ringID": 1.31,
+      "ringOD": 2.62,
+      "ffOD": 4.25,
+      "ffHoles": 4,
+      "ffHoleDia": 0.62,
+      "ffBoltCircle": 3.12
+    },
+    {
+      "class": "150",
+      "nps": "1 1/4",
+      "ringID": 1.66,
+      "ringOD": 3.0,
+      "ffOD": 4.63,
+      "ffHoles": 4,
+      "ffHoleDia": 0.62,
+      "ffBoltCircle": 3.5
+    },
+    {
+      "class": "150",
+      "nps": "1 1/2",
+      "ringID": 1.91,
+      "ringOD": 3.38,
+      "ffOD": 5.0,
+      "ffHoles": 4,
+      "ffHoleDia": 0.62,
+      "ffBoltCircle": 3.88
+    },
+    {
+      "class": "150",
+      "nps": "2",
+      "ringID": 2.38,
+      "ringOD": 4.12,
+      "ffOD": 6.0,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 4.75
+    },
+    {
+      "class": "150",
+      "nps": "2 1/2",
+      "ringID": 2.88,
+      "ringOD": 4.88,
+      "ffOD": 7.0,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 5.5
+    },
+    {
+      "class": "150",
+      "nps": "3",
+      "ringID": 3.5,
+      "ringOD": 5.38,
+      "ffOD": 7.5,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 6.0
+    },
+    {
+      "class": "150",
+      "nps": "3 1/2",
+      "ringID": 4.0,
+      "ringOD": 6.38,
+      "ffOD": 8.5,
+      "ffHoles": 8,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 7.0
+    },
+    {
+      "class": "150",
+      "nps": "4",
+      "ringID": 4.5,
+      "ringOD": 6.88,
+      "ffOD": 9.0,
+      "ffHoles": 8,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 7.5
+    },
+    {
+      "class": "150",
+      "nps": "5",
+      "ringID": 5.56,
+      "ringOD": 7.75,
+      "ffOD": 10.0,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 8.5
+    },
+    {
+      "class": "150",
+      "nps": "6",
+      "ringID": 6.62,
+      "ringOD": 8.75,
+      "ffOD": 11.0,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 9.5
+    },
+    {
+      "class": "150",
+      "nps": "8",
+      "ringID": 8.62,
+      "ringOD": 11.0,
+      "ffOD": 13.5,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 11.75
+    },
+    {
+      "class": "150",
+      "nps": "10",
+      "ringID": 10.75,
+      "ringOD": 13.38,
+      "ffOD": 16.0,
+      "ffHoles": 12,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 14.25
+    },
+    {
+      "class": "150",
+      "nps": "12",
+      "ringID": 12.75,
+      "ringOD": 16.13,
+      "ffOD": 19.0,
+      "ffHoles": 12,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 17.0
+    },
+    {
+      "class": "150",
+      "nps": "14",
+      "ringID": 14.0,
+      "ringOD": 17.75,
+      "ffOD": 21.0,
+      "ffHoles": 12,
+      "ffHoleDia": 1.12,
+      "ffBoltCircle": 18.75
+    },
+    {
+      "class": "150",
+      "nps": "16",
+      "ringID": 16.0,
+      "ringOD": 20.25,
+      "ffOD": 23.5,
+      "ffHoles": 16,
+      "ffHoleDia": 1.12,
+      "ffBoltCircle": 21.25
+    },
+    {
+      "class": "150",
+      "nps": "18",
+      "ringID": 18.0,
+      "ringOD": 21.62,
+      "ffOD": 25.0,
+      "ffHoles": 16,
+      "ffHoleDia": 1.25,
+      "ffBoltCircle": 22.75
+    },
+    {
+      "class": "150",
+      "nps": "20",
+      "ringID": 20.0,
+      "ringOD": 23.88,
+      "ffOD": 27.5,
+      "ffHoles": 20,
+      "ffHoleDia": 1.25,
+      "ffBoltCircle": 25.0
+    },
+    {
+      "class": "150",
+      "nps": "24",
+      "ringID": 24.0,
+      "ringOD": 28.25,
+      "ffOD": 32.0,
+      "ffHoles": 20,
+      "ffHoleDia": 1.38,
+      "ffBoltCircle": 29.5
+    },
+    {
+      "class": "300",
+      "nps": "1/2",
+      "ringID": 0.84,
+      "ringOD": 2.12,
+      "ffOD": 3.75,
+      "ffHoles": 4,
+      "ffHoleDia": 0.63,
+      "ffBoltCircle": 2.63
+    },
+    {
+      "class": "300",
+      "nps": "3/4",
+      "ringID": 1.06,
+      "ringOD": 2.62,
+      "ffOD": 4.62,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.25
+    },
+    {
+      "class": "300",
+      "nps": "1",
+      "ringID": 1.31,
+      "ringOD": 2.88,
+      "ffOD": 4.88,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.5
+    },
+    {
+      "class": "300",
+      "nps": "1 1/4",
+      "ringID": 1.66,
+      "ringOD": 3.25,
+      "ffOD": 5.25,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.88
+    },
+    {
+      "class": "300",
+      "nps": "1 1/2",
+      "ringID": 1.91,
+      "ringOD": 3.75,
+      "ffOD": 6.12,
+      "ffHoles": 4,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 4.5
+    },
+    {
+      "class": "300",
+      "nps": "2",
+      "ringID": 2.38,
+      "ringOD": 4.38,
+      "ffOD": 6.5,
+      "ffHoles": 8,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 5.0
+    },
+    {
+      "class": "300",
+      "nps": "2 1/2",
+      "ringID": 2.88,
+      "ringOD": 5.12,
+      "ffOD": 7.5,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 5.88
+    },
+    {
+      "class": "300",
+      "nps": "3",
+      "ringID": 3.5,
+      "ringOD": 5.88,
+      "ffOD": 8.25,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 6.63
+    },
+    {
+      "class": "300",
+      "nps": "3 1/2",
+      "ringID": 4.0,
+      "ringOD": 6.5,
+      "ffOD": 9.0,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 7.25
+    },
+    {
+      "class": "300",
+      "nps": "4",
+      "ringID": 4.5,
+      "ringOD": 7.12,
+      "ffOD": 10.0,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 7.88
+    },
+    {
+      "class": "300",
+      "nps": "5",
+      "ringID": 5.56,
+      "ringOD": 8.5,
+      "ffOD": 11.0,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 9.25
+    },
+    {
+      "class": "300",
+      "nps": "6",
+      "ringID": 6.62,
+      "ringOD": 9.88,
+      "ffOD": 12.5,
+      "ffHoles": 12,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 10.63
+    },
+    {
+      "class": "300",
+      "nps": "8",
+      "ringID": 8.62,
+      "ringOD": 12.12,
+      "ffOD": 15.0,
+      "ffHoles": 12,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 13.0
+    },
+    {
+      "class": "300",
+      "nps": "10",
+      "ringID": 10.75,
+      "ringOD": 14.25,
+      "ffOD": 17.5,
+      "ffHoles": 16,
+      "ffHoleDia": 1.13,
+      "ffBoltCircle": 15.25
+    },
+    {
+      "class": "300",
+      "nps": "12",
+      "ringID": 12.75,
+      "ringOD": 16.62,
+      "ffOD": 20.5,
+      "ffHoles": 16,
+      "ffHoleDia": 1.25,
+      "ffBoltCircle": 17.75
+    },
+    {
+      "class": "300",
+      "nps": "14",
+      "ringID": 14.0,
+      "ringOD": 19.12,
+      "ffOD": 23.0,
+      "ffHoles": 20,
+      "ffHoleDia": 1.25,
+      "ffBoltCircle": 20.25
+    },
+    {
+      "class": "300",
+      "nps": "16",
+      "ringID": 16.0,
+      "ringOD": 21.25,
+      "ffOD": 25.5,
+      "ffHoles": 20,
+      "ffHoleDia": 1.38,
+      "ffBoltCircle": 22.5
+    },
+    {
+      "class": "300",
+      "nps": "18",
+      "ringID": 18.0,
+      "ringOD": 23.5,
+      "ffOD": 28.0,
+      "ffHoles": 24,
+      "ffHoleDia": 1.38,
+      "ffBoltCircle": 24.75
+    },
+    {
+      "class": "300",
+      "nps": "20",
+      "ringID": 20.0,
+      "ringOD": 25.75,
+      "ffOD": 30.5,
+      "ffHoles": 24,
+      "ffHoleDia": 1.38,
+      "ffBoltCircle": 27.0
+    },
+    {
+      "class": "300",
+      "nps": "24",
+      "ringID": 24.0,
+      "ringOD": 30.5,
+      "ffOD": 36.0,
+      "ffHoles": 24,
+      "ffHoleDia": 1.63,
+      "ffBoltCircle": 32.0
+    },
+    {
+      "class": "400",
+      "nps": "1/2",
+      "ringID": 0.84,
+      "ringOD": 2.12,
+      "ffOD": 3.75,
+      "ffHoles": 4,
+      "ffHoleDia": 0.63,
+      "ffBoltCircle": 2.62
+    },
+    {
+      "class": "400",
+      "nps": "3/4",
+      "ringID": 1.06,
+      "ringOD": 2.62,
+      "ffOD": 4.63,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.25
+    },
+    {
+      "class": "400",
+      "nps": "1",
+      "ringID": 1.31,
+      "ringOD": 2.88,
+      "ffOD": 4.88,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.5
+    },
+    {
+      "class": "400",
+      "nps": "1 1/4",
+      "ringID": 1.66,
+      "ringOD": 3.25,
+      "ffOD": 5.25,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.88
+    },
+    {
+      "class": "400",
+      "nps": "1 1/2",
+      "ringID": 1.91,
+      "ringOD": 3.75,
+      "ffOD": 6.13,
+      "ffHoles": 4,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 4.5
+    },
+    {
+      "class": "400",
+      "nps": "2",
+      "ringID": 2.38,
+      "ringOD": 4.38,
+      "ffOD": 6.5,
+      "ffHoles": 8,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 5.0
+    },
+    {
+      "class": "400",
+      "nps": "2 1/2",
+      "ringID": 2.88,
+      "ringOD": 5.12,
+      "ffOD": 7.5,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 5.88
+    },
+    {
+      "class": "400",
+      "nps": "3",
+      "ringID": 3.5,
+      "ringOD": 5.88,
+      "ffOD": 8.25,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 6.63
+    },
+    {
+      "class": "400",
+      "nps": "3 1/2",
+      "ringID": 4.0,
+      "ringOD": 6.38,
+      "ffOD": 9.0,
+      "ffHoles": 8,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 7.25
+    },
+    {
+      "class": "400",
+      "nps": "4",
+      "ringID": 4.5,
+      "ringOD": 7.0,
+      "ffOD": 10.0,
+      "ffHoles": 8,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 7.88
+    },
+    {
+      "class": "400",
+      "nps": "5",
+      "ringID": 5.56,
+      "ringOD": 8.38,
+      "ffOD": 11.0,
+      "ffHoles": 8,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 9.25
+    },
+    {
+      "class": "400",
+      "nps": "6",
+      "ringID": 6.62,
+      "ringOD": 9.75,
+      "ffOD": 12.5,
+      "ffHoles": 12,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 10.63
+    },
+    {
+      "class": "400",
+      "nps": "8",
+      "ringID": 8.62,
+      "ringOD": 12.0,
+      "ffOD": 15.0,
+      "ffHoles": 12,
+      "ffHoleDia": 1.13,
+      "ffBoltCircle": 13.0
+    },
+    {
+      "class": "400",
+      "nps": "10",
+      "ringID": 10.75,
+      "ringOD": 14.12,
+      "ffOD": 17.5,
+      "ffHoles": 16,
+      "ffHoleDia": 1.25,
+      "ffBoltCircle": 15.25
+    },
+    {
+      "class": "400",
+      "nps": "12",
+      "ringID": 12.75,
+      "ringOD": 16.5,
+      "ffOD": 20.5,
+      "ffHoles": 16,
+      "ffHoleDia": 1.38,
+      "ffBoltCircle": 17.75
+    },
+    {
+      "class": "400",
+      "nps": "14",
+      "ringID": 14.0,
+      "ringOD": 19.0,
+      "ffOD": 23.0,
+      "ffHoles": 20,
+      "ffHoleDia": 1.38,
+      "ffBoltCircle": 20.25
+    },
+    {
+      "class": "400",
+      "nps": "16",
+      "ringID": 16.0,
+      "ringOD": 21.12,
+      "ffOD": 25.5,
+      "ffHoles": 20,
+      "ffHoleDia": 1.5,
+      "ffBoltCircle": 22.5
+    },
+    {
+      "class": "400",
+      "nps": "18",
+      "ringID": 18.0,
+      "ringOD": 23.38,
+      "ffOD": 28.0,
+      "ffHoles": 24,
+      "ffHoleDia": 1.5,
+      "ffBoltCircle": 24.75
+    },
+    {
+      "class": "400",
+      "nps": "20",
+      "ringID": 20.0,
+      "ringOD": 25.5,
+      "ffOD": 30.5,
+      "ffHoles": 24,
+      "ffHoleDia": 1.63,
+      "ffBoltCircle": 27.0
+    },
+    {
+      "class": "400",
+      "nps": "24",
+      "ringID": 24.0,
+      "ringOD": 30.25,
+      "ffOD": 36.0,
+      "ffHoles": 24,
+      "ffHoleDia": 1.88,
+      "ffBoltCircle": 32.0
+    },
+    {
+      "class": "600",
+      "nps": "1/2",
+      "ringID": 0.84,
+      "ringOD": 2.12,
+      "ffOD": 3.75,
+      "ffHoles": 4,
+      "ffHoleDia": 0.63,
+      "ffBoltCircle": 2.63
+    },
+    {
+      "class": "600",
+      "nps": "3/4",
+      "ringID": 1.06,
+      "ringOD": 2.62,
+      "ffOD": 4.63,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.25
+    },
+    {
+      "class": "600",
+      "nps": "1",
+      "ringID": 1.31,
+      "ringOD": 2.88,
+      "ffOD": 4.88,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.5
+    },
+    {
+      "class": "600",
+      "nps": "1 1/4",
+      "ringID": 1.66,
+      "ringOD": 3.25,
+      "ffOD": 5.25,
+      "ffHoles": 4,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 3.88
+    },
+    {
+      "class": "600",
+      "nps": "1 1/2",
+      "ringID": 1.91,
+      "ringOD": 3.75,
+      "ffOD": 6.13,
+      "ffHoles": 4,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 4.5
+    },
+    {
+      "class": "600",
+      "nps": "2",
+      "ringID": 2.38,
+      "ringOD": 4.38,
+      "ffOD": 6.5,
+      "ffHoles": 8,
+      "ffHoleDia": 0.75,
+      "ffBoltCircle": 5.0
+    },
+    {
+      "class": "600",
+      "nps": "2 1/2",
+      "ringID": 2.88,
+      "ringOD": 5.12,
+      "ffOD": 7.5,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 5.88
+    },
+    {
+      "class": "600",
+      "nps": "3",
+      "ringID": 3.5,
+      "ringOD": 5.88,
+      "ffOD": 8.25,
+      "ffHoles": 8,
+      "ffHoleDia": 0.88,
+      "ffBoltCircle": 6.63
+    },
+    {
+      "class": "600",
+      "nps": "3 1/2",
+      "ringID": 4.0,
+      "ringOD": 6.38,
+      "ffOD": 9.0,
+      "ffHoles": 8,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 7.25
+    },
+    {
+      "class": "600",
+      "nps": "4",
+      "ringID": 4.5,
+      "ringOD": 7.62,
+      "ffOD": 10.75,
+      "ffHoles": 8,
+      "ffHoleDia": 1.0,
+      "ffBoltCircle": 8.5
+    },
+    {
+      "class": "600",
+      "nps": "5",
+      "ringID": 5.56,
+      "ringOD": 9.5,
+      "ffOD": 13.0,
+      "ffHoles": 8,
+      "ffHoleDia": 1.13,
+      "ffBoltCircle": 10.5
+    },
+    {
+      "class": "600",
+      "nps": "6",
+      "ringID": 6.62,
+      "ringOD": 10.5,
+      "ffOD": 14.0,
+      "ffHoles": 12,
+      "ffHoleDia": 1.13,
+      "ffBoltCircle": 11.5
+    },
+    {
+      "class": "600",
+      "nps": "8",
+      "ringID": 8.62,
+      "ringOD": 12.62,
+      "ffOD": 16.5,
+      "ffHoles": 12,
+      "ffHoleDia": 1.25,
+      "ffBoltCircle": 13.75
+    },
+    {
+      "class": "600",
+      "nps": "10",
+      "ringID": 10.75,
+      "ringOD": 15.75,
+      "ffOD": 20.0,
+      "ffHoles": 16,
+      "ffHoleDia": 1.38,
+      "ffBoltCircle": 17.0
+    },
+    {
+      "class": "600",
+      "nps": "12",
+      "ringID": 12.75,
+      "ringOD": 18.0,
+      "ffOD": 22.0,
+      "ffHoles": 20,
+      "ffHoleDia": 1.38,
+      "ffBoltCircle": 19.25
+    },
+    {
+      "class": "600",
+      "nps": "14",
+      "ringID": 14.0,
+      "ringOD": 19.38,
+      "ffOD": 23.75,
+      "ffHoles": 20,
+      "ffHoleDia": 1.5,
+      "ffBoltCircle": 20.75
+    },
+    {
+      "class": "600",
+      "nps": "16",
+      "ringID": 16.0,
+      "ringOD": 22.25,
+      "ffOD": 27.0,
+      "ffHoles": 20,
+      "ffHoleDia": 1.63,
+      "ffBoltCircle": 23.75
+    },
+    {
+      "class": "600",
+      "nps": "18",
+      "ringID": 18.0,
+      "ringOD": 24.12,
+      "ffOD": 29.25,
+      "ffHoles": 20,
+      "ffHoleDia": 1.75,
+      "ffBoltCircle": 25.75
+    },
+    {
+      "class": "600",
+      "nps": "20",
+      "ringID": 20.0,
+      "ringOD": 26.88,
+      "ffOD": 32.0,
+      "ffHoles": 24,
+      "ffHoleDia": 1.75,
+      "ffBoltCircle": 28.5
+    },
+    {
+      "class": "600",
+      "nps": "24",
+      "ringID": 24.0,
+      "ringOD": 31.12,
+      "ffOD": 37.0,
+      "ffHoles": 24,
+      "ffHoleDia": 2.0,
+      "ffBoltCircle": 33.0
+    },
+    {
+      "class": "900",
+      "nps": "1/2",
+      "ringID": 0.84,
+      "ringOD": 2.5
+    },
+    {
+      "class": "900",
+      "nps": "3/4",
+      "ringID": 1.06,
+      "ringOD": 2.75
+    },
+    {
+      "class": "900",
+      "nps": "1",
+      "ringID": 1.31,
+      "ringOD": 3.12
+    },
+    {
+      "class": "900",
+      "nps": "1 1/4",
+      "ringID": 1.66,
+      "ringOD": 3.5
+    },
+    {
+      "class": "900",
+      "nps": "1 1/2",
+      "ringID": 1.91,
+      "ringOD": 3.88
+    },
+    {
+      "class": "900",
+      "nps": "2",
+      "ringID": 2.38,
+      "ringOD": 5.62
+    },
+    {
+      "class": "900",
+      "nps": "2 1/2",
+      "ringID": 2.88,
+      "ringOD": 6.5
+    },
+    {
+      "class": "900",
+      "nps": "3",
+      "ringID": 3.5,
+      "ringOD": 6.62
+    },
+    {
+      "class": "900",
+      "nps": "4",
+      "ringID": 4.5,
+      "ringOD": 8.12
+    },
+    {
+      "class": "900",
+      "nps": "5",
+      "ringID": 5.56,
+      "ringOD": 9.75
+    },
+    {
+      "class": "900",
+      "nps": "6",
+      "ringID": 6.62,
+      "ringOD": 11.38
+    },
+    {
+      "class": "900",
+      "nps": "8",
+      "ringID": 8.62,
+      "ringOD": 14.12
+    },
+    {
+      "class": "900",
+      "nps": "10",
+      "ringID": 10.75,
+      "ringOD": 17.12
+    },
+    {
+      "class": "900",
+      "nps": "12",
+      "ringID": 12.75,
+      "ringOD": 19.62
+    },
+    {
+      "class": "900",
+      "nps": "14",
+      "ringID": 14.0,
+      "ringOD": 20.5
+    },
+    {
+      "class": "900",
+      "nps": "16",
+      "ringID": 16.0,
+      "ringOD": 22.62
+    },
+    {
+      "class": "900",
+      "nps": "18",
+      "ringID": 18.0,
+      "ringOD": 25.12
+    },
+    {
+      "class": "900",
+      "nps": "20",
+      "ringID": 20.0,
+      "ringOD": 27.5
+    },
+    {
+      "class": "900",
+      "nps": "24",
+      "ringID": 24.0,
+      "ringOD": 33.0
+    }
+  ]
+}
