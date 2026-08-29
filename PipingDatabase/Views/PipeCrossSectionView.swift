@@ -5,6 +5,7 @@ import SwiftUI
 struct PipeCrossSectionView: View {
     let entry: PipeScheduleEntry
     let unit: UnitSystem
+    var fractions: Bool = false
 
     var body: some View {
         Canvas { ctx, size in
@@ -50,9 +51,13 @@ struct PipeCrossSectionView: View {
             arrowhead(&ctx, at: CGPoint(x: center.x - outerR, y: dimY), pointing: .left, color: dimColor)
             arrowhead(&ctx, at: CGPoint(x: center.x + outerR, y: dimY), pointing: .right, color: dimColor)
 
-            let odText = unit == .imperial
-                ? String(format: "%.3f", entry.odInches)
-                : String(format: "%.1f", entry.odInches * 25.4)
+            let odText: String
+            if unit == .imperial {
+                odText = fractions ? Format.fractionalInches(entry.odInches)
+                                   : String(format: "%.3f", entry.odInches)
+            } else {
+                odText = String(format: "%.1f", entry.odInches * 25.4)
+            }
             ctx.draw(Text(odText).font(.system(.footnote, design: .monospaced)).foregroundStyle(dimColor),
                      at: CGPoint(x: center.x, y: dimY - 10))
 
@@ -66,9 +71,13 @@ struct PipeCrossSectionView: View {
             leader.addLine(to: leaderEnd)
             ctx.stroke(leader, with: .color(dimColor), lineWidth: 1)
 
-            let wallText = unit == .imperial
-                ? String(format: "%.3f", entry.wallInches)
-                : String(format: "%.2f", entry.wallInches * 25.4)
+            let wallText: String
+            if unit == .imperial {
+                wallText = fractions ? Format.fractionalInches(entry.wallInches)
+                                     : String(format: "%.3f", entry.wallInches)
+            } else {
+                wallText = String(format: "%.2f", entry.wallInches * 25.4)
+            }
             ctx.draw(Text(wallText).font(.system(.footnote, design: .monospaced)).foregroundStyle(dimColor),
                      at: CGPoint(x: leaderEnd.x - 4, y: leaderEnd.y + 10))
         }

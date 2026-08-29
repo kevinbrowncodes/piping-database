@@ -3,16 +3,21 @@ import SwiftData
 
 struct PipeScheduleView: View {
     @Query(sort: \NominalSize.sortValue) private var sizes: [NominalSize]
+    @Environment(\.horizontalSizeClass) private var hSize
 
     @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
     @AppStorage("nominalStyle") private var nominalRaw = NominalStyle.nps.rawValue
+    @AppStorage("fractionDisplay") private var showFractions = false
+    @AppStorage("volumeUnit") private var volumeRaw = VolumeUnit.cubicFeet.rawValue
 
     @State private var selectedNPS = "1/2"
     @State private var selectedDesignation = "40"
     @State private var lengthFt = 1.0
+    @FocusState private var lengthFocused: Bool
 
     private var unit: UnitSystem { UnitSystem(rawValue: unitRaw) ?? .imperial }
     private var nominalStyle: NominalStyle { NominalStyle(rawValue: nominalRaw) ?? .nps }
+    private var volumeUnit: VolumeUnit { VolumeUnit(rawValue: volumeRaw) ?? .cubicFeet }
 
     private var selectedSize: NominalSize? {
         sizes.first { $0.nps == selectedNPS } ?? sizes.first
@@ -33,29 +38,59 @@ struct PipeScheduleView: View {
     var body: some View {
         VStack(spacing: 0) {
             ScrollView {
-                VStack(spacing: 16) {
-                    if let entry {
-                        PipeCrossSectionView(entry: entry, unit: unit)
-                            .frame(height: 230)
-                            .padding(.top, 8)
-                        dataGrid(for: entry)
-                        calculator(for: entry)
+                if let entry {
+                    if hSize == .regular {
+                        HStack(alignment: .top, spacing: 24) {
+                            drawing(for: entry)
+                                .frame(maxWidth: .infinity)
+                                .frame(minHeight: 300)
+                            VStack(spacing: 16) {
+                                dataGrid(for: entry)
+                                calculator(for: entry)
+                            }
+                            .frame(maxWidth: .infinity)
+                        }
+                        .padding()
                     } else {
-                        ContentUnavailableView("No data", systemImage: "circle.slash")
+                        VStack(spacing: 16) {
+                            drawing(for: entry)
+                                .frame(height: 230)
+                                .padding(.top, 8)
+                            dataGrid(for: entry)
+                            calculator(for: entry)
+                        }
+                        .padding(.horizontal)
                     }
+                } else {
+                    ContentUnavailableView("No data", systemImage: "circle.slash")
                 }
-                .padding(.horizontal)
             }
+            .scrollDismissesKeyboard(.immediately)
             pickers
         }
         .navigationTitle("Pipe Schedule")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
+                Menu {
+                    Picker("Nominal size", selection: $nominalRaw) {
+                        Text("NPS (inches)").tag(NominalStyle.nps.rawValue)
+                        Text("DN (metric)").tag(NominalStyle.dn.rawValue)
+                    }
+                    Toggle("Fractions", isOn: $showFractions)
+                } label: {
+                    Image(systemName: "ruler")
+                }
+            }
+            ToolbarItem(placement: .topBarTrailing) {
                 Button(unit.toggleLabel) {
                     unitRaw = (unit == .imperial ? UnitSystem.metric : .imperial).rawValue
                 }
                 .font(.headline)
+            }
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button("Done") { lengthFocused = false }
             }
         }
         .onChange(of: selectedNPS) {
@@ -65,18 +100,29 @@ struct PipeScheduleView: View {
         }
     }
 
+    private func drawing(for entry: PipeScheduleEntry) -> some View {
+        PipeCrossSectionView(entry: entry, unit: unit, fractions: showFractions)
+            .contentShape(Rectangle())
+            .onTapGesture { showFractions.toggle() }
+            .accessibilityLabel("Pipe cross section. Tap to toggle fraction display.")
+    }
+
+    private func fmtLength(_ inches: Double) -> String {
+        Format.length(inches, unit: unit, fractions: showFractions)
+    }
+
     private func dataGrid(for entry: PipeScheduleEntry) -> some View {
         Grid(alignment: .leading, horizontalSpacing: 24, verticalSpacing: 6) {
             GridRow {
-                labeled("OD", Format.length(entry.odInches, unit: unit))
+                labeled("OD", fmtLength(entry.odInches))
                 labeled("Weight", Format.linearWeight(entry.weightLbPerFt, unit: unit))
             }
             GridRow {
-                labeled("ID", Format.length(entry.idInches, unit: unit))
+                labeled("ID", fmtLength(entry.idInches))
                 labeled("W. filled", Format.linearWeight(entry.waterFilledWeightLbPerFt, unit: unit))
             }
             GridRow {
-                labeled("Wall", Format.length(entry.wallInches, unit: unit))
+                labeled("Wall", fmtLength(entry.wallInches))
                 labeled("Source", entry.standard)
             }
         }
@@ -93,20 +139,31 @@ struct PipeScheduleView: View {
                     .keyboardType(.decimalPad)
                     .textFieldStyle(.roundedBorder)
                     .frame(width: 90)
+                    .focused($lengthFocused)
                 Text(unit == .imperial ? "ft" : "m")
                 Spacer()
             }
             let ft = unit == .imperial ? lengthFt : lengthFt * 3.28084
+            let volume = volumeUnit.convert(cuFt: entry.internalVolumeCuFt(lengthFt: ft))
             Grid(alignment: .leading, horizontalSpacing: 24, verticalSpacing: 6) {
                 GridRow {
                     labeled("Ext. SA", Format.area(entry.externalSurfaceSqFt(lengthFt: ft), unit: unit))
                     labeled("Int. SA", Format.area(entry.internalSurfaceSqFt(lengthFt: ft), unit: unit))
                 }
                 GridRow {
-                    labeled("Volume", Format.volume(entry.internalVolumeCuFt(lengthFt: ft), unit: unit))
                     labeled("Total SA",
                             Format.area(entry.externalSurfaceSqFt(lengthFt: ft) + entry.internalSurfaceSqFt(lengthFt: ft),
                                         unit: unit))
+                    HStack(alignment: .lastTextBaseline, spacing: 6) {
+                        labeled("Volume", String(format: "%.\(volumeUnit.formatDecimals)f", volume))
+                        Picker("Volume unit", selection: $volumeRaw) {
+                            ForEach(VolumeUnit.allCases) { u in
+                                Text(u.label).tag(u.rawValue)
+                            }
+                        }
+                        .pickerStyle(.menu)
+                        .fixedSize()
+                    }
                 }
             }
         }
@@ -140,6 +197,7 @@ struct PipeScheduleView: View {
             .pickerStyle(.wheel)
         }
         .frame(height: 130)
+        .frame(maxWidth: 600)
         .background(.bar)
     }
 }

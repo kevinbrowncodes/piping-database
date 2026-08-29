@@ -54,6 +54,23 @@ struct FormulaTests {
         #expect(Format.volume(1.0, unit: .metric) == "28.3168 L")
     }
 
+    @Test func fractionRendering() {
+        #expect(Format.fractionalInches(0.5) == "1/2\"")
+        #expect(Format.fractionalInches(29.5) == "29 1/2\"")     // recon example
+        #expect(Format.fractionalInches(2.375) == "2 3/8\"")     // 2" pipe OD
+        #expect(Format.fractionalInches(14.0) == "14\"")
+        #expect(Format.fractionalInches(0.8125) == "13/16\"")
+        #expect(Format.fractionalInches(0.109) == "≈1/8\"")      // wall, off-sixteenth
+        #expect(Format.length(0.5, unit: .metric, fractions: true) == "12.70 mm") // fractions are imperial-only
+    }
+
+    @Test func volumeUnitConversions() {
+        #expect(abs(VolumeUnit.gallons.convert(cuFt: 1) - 7.48052) < 0.0001)
+        #expect(abs(VolumeUnit.liters.convert(cuFt: 1) - 28.3168) < 0.0001)
+        #expect(abs(VolumeUnit.cubicMeters.convert(cuFt: 1) - 0.0283168) < 0.0000001)
+        #expect(VolumeUnit.cubicFeet.convert(cuFt: 2.5) == 2.5)
+    }
+
     @Test func edgeCases() {
         let e = entry(od: 0.405, wall: 0.049)
         #expect(e.internalVolumeCuFt(lengthFt: 0) == 0)

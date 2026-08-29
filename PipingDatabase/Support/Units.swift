@@ -25,6 +25,36 @@ enum ScheduleOrder {
     }
 }
 
+enum VolumeUnit: String, CaseIterable, Identifiable {
+    case cubicFeet, gallons, liters, cubicMeters
+    var id: String { rawValue }
+
+    var label: String {
+        switch self {
+        case .cubicFeet: return "ft³"
+        case .gallons: return "gal"
+        case .liters: return "L"
+        case .cubicMeters: return "m³"
+        }
+    }
+
+    func convert(cuFt: Double) -> Double {
+        switch self {
+        case .cubicFeet: return cuFt
+        case .gallons: return cuFt * 7.48052
+        case .liters: return cuFt * 28.3168
+        case .cubicMeters: return cuFt * 0.0283168
+        }
+    }
+
+    var formatDecimals: Int {
+        switch self {
+        case .cubicFeet, .cubicMeters: return 6
+        case .gallons, .liters: return 4
+        }
+    }
+}
+
 enum Format {
     /// Length stored in inches, shown per unit system.
     static func length(_ inches: Double, unit: UnitSystem, decimals: Int = 3) -> String {
@@ -32,6 +62,34 @@ enum Format {
         case .imperial: return String(format: "%.\(decimals)f in", inches)
         case .metric: return String(format: "%.2f mm", inches * 25.4)
         }
+    }
+
+    /// Trade-fraction rendering to the nearest 1/16" (reduced), matching the
+    /// reference app's tap-any-dimension feature. Values that don't land on
+    /// a sixteenth are prefixed with ≈.
+    static func fractionalInches(_ inches: Double) -> String {
+        let sixteenths = (inches * 16).rounded()
+        let exact = abs(inches * 16 - sixteenths) < 0.032 // within ~0.002"
+        let whole = Int(sixteenths) / 16
+        var num = Int(sixteenths) % 16
+        var den = 16
+        while num != 0 && num % 2 == 0 { num /= 2; den /= 2 }
+
+        var body: String
+        if num == 0 {
+            body = "\(whole)"
+        } else if whole == 0 {
+            body = "\(num)/\(den)"
+        } else {
+            body = "\(whole) \(num)/\(den)"
+        }
+        return (exact ? "" : "≈") + body + "\""
+    }
+
+    /// Length honoring the user's fraction preference (imperial only).
+    static func length(_ inches: Double, unit: UnitSystem, fractions: Bool) -> String {
+        guard unit == .imperial, fractions else { return length(inches, unit: unit) }
+        return fractionalInches(inches)
     }
 
     static func linearWeight(_ lbPerFt: Double, unit: UnitSystem) -> String {

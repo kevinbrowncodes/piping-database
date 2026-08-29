@@ -28,18 +28,18 @@ dependency is noted.
   SwiftData models, seeding pipeline, module list, Pipe Schedule vertical
   slice with Canvas drawing; builds and runs in simulator.
 
-## Milestone 1 — Trustworthy core (Pipe Schedule done right)
+## Milestone 1 — Trustworthy core (Pipe Schedule done right) ✅
 
-- [ ] **PD-4 · Full pipe dataset** (L) — complete B36.10M (NPS 1/8–48, all
+- [x] **PD-4 · Full pipe dataset** (L) — complete B36.10M (NPS 1/8–48, all
   schedules incl. 160/XXS) + B36.19M stainless (5S/10S/40S/80S); seed-version
   migration. *AC: invariant + golden + count tests pass; stainless entries
   flagged with their standard.*
-- [ ] **PD-5 · Test target & CI** (M) — Swift Testing unit target, XCUITest
+- [x] **PD-5 · Test target & CI** (M) — Swift Testing unit target, XCUITest
   smoke target, GitHub Actions running tests per PR. *AC: Layers 1–3 of
   TESTING.md implemented for pipe data; red CI blocks merge.* (with PD-4)
-- [ ] **PD-6 · First commit & repo hygiene** (S) — initial commit to `develop`,
+- [x] **PD-6 · First commit & repo hygiene** (S) — initial commit to `develop`,
   push, branch protection on `main`, PR flow. *(unblocks CI in PD-5)*
-- [ ] **PD-7 · Pipe Schedule UX completion** (M) — NPS↔DN display toggle,
+- [x] **PD-7 · Pipe Schedule UX completion** (M) — NPS↔DN display toggle,
   tap-any-dimension decimal⇄fraction, volume unit picker (ft³/gal/L/m³),
   keyboard dismissal, iPad/landscape layout. *AC: UI smoke tests cover each.*
 
