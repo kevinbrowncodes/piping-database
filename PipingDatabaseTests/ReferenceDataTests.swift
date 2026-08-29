@@ -56,6 +56,57 @@ struct ReferenceDataTests {
         #expect(conc == ecc)
     }
 
+    // MARK: Fittings — forged (B16.11)
+
+    @Test func forgedDatasetLoads() throws {
+        let f = try #require(Self.store.forged)
+        #expect(f.fittings.count == 606)
+        #expect(f.standard == "ASME B16.11")
+        for fit in f.fittings {
+            #expect(fit.connection == "SW" || fit.connection == "TH", "\(fit.id)")
+            #expect(fit.class != nil, "\(fit.id)")
+        }
+        // B16.11 published: SW 3000 tee NPS 3/4 center-to-end A = 1.50.
+        let tee34 = f.fittings.first {
+            $0.type == "tee" && $0.connection == "SW" && $0.class == "6000" && $0.nps == "3/4"
+        }
+        #expect(tee34?.dims["A"] == 1.5)
+    }
+
+    // MARK: P-T ratings & bolt torque
+
+    @Test func ptRatingsLoad() throws {
+        let pt = try #require(Self.store.ptRatings)
+        // B16.5 Group 1.1 published goldens.
+        #expect(pt.rating(class: "150", tempF: 100) == 285)
+        #expect(pt.rating(class: "300", tempF: 100) == 740)
+        #expect(pt.rating(class: "2500", tempF: 1000) == 715)
+        // Ratings decrease with temperature for every class.
+        for (cls, series) in pt.classes {
+            #expect(series.count == pt.temperaturesF.count, "\(cls)")
+            #expect(series == series.sorted(by: >), "non-decreasing ratings in \(cls)")
+        }
+    }
+
+    @Test func boltTorqueLoads() throws {
+        let t = try #require(Self.store.boltTorque)
+        #expect(t.torque(boltDia: "3/4", stressPsi: 50000) == 167)
+        #expect(t.torque(boltDia: "5/8", stressPsi: 30000) == 60)
+        #expect(t.procedure.count == 7)
+        // Torque grows with diameter at every stress level.
+        for stress in t.stressesPsi {
+            let row = try #require(t.torqueFtLbs[String(stress)])
+            #expect(row == row.sorted(), "\(stress)")
+            #expect(row.count == t.boltDiameters.count)
+        }
+        // Linear-with-stress consistency (the property used to validate the source).
+        let r30 = try #require(t.torqueFtLbs["30000"])
+        let r60 = try #require(t.torqueFtLbs["60000"])
+        for (a, b) in zip(r30, r60) {
+            #expect(abs(Double(b) - 2 * Double(a)) / Double(b) < 0.02)
+        }
+    }
+
     // MARK: Valves (B16.10)
 
     @Test func valvesDatasetLoads() throws {

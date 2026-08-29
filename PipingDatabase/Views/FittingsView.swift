@@ -33,12 +33,24 @@ struct FittingsView: View {
         connection == "BW" ? store.buttWeldLegend : (store.forged?.legend ?? [:])
     }
 
+    static let forgedTypeLabels: [(String, String)] = [
+        ("elbow90", "90° Elbow"), ("elbow45", "45° Elbow"), ("streetElbow", "Street Elbow"),
+        ("tee", "Tee"), ("cross", "Cross"), ("lateral", "Lateral"),
+        ("coupling", "Coupling"), ("halfCoupling", "Half Coupling"),
+        ("reducingCoupling", "Red. Coupling"), ("cap", "Cap"),
+        ("quikLeg90", "QuikLeg 90"), ("bossWithLip", "Boss w/ Lip"),
+        ("plugRound", "Plug (Round)"), ("plugHex", "Plug (Hex)"), ("plugSquare", "Plug (Square)"),
+        ("bushingHex", "Bushing (Hex)"), ("bushingFlush", "Bushing (Flush)"),
+        ("union", "Union"),
+    ]
+
     private var types: [(String, String)] {
         let present = Set(pool.map(\.type))
         if connection == "BW" {
             return Self.bwTypeLabels.filter { present.contains($0.0) }
         }
-        return present.sorted().map { ($0, $0.replacingOccurrences(of: "([A-Z0-9])", with: " $1", options: .regularExpression).capitalized) }
+        return Self.forgedTypeLabels.filter { present.contains($0.0) }
+            + present.subtracting(Self.forgedTypeLabels.map(\.0)).sorted().map { ($0, $0) }
     }
 
     private var typed: [FittingsFile.Fitting] {

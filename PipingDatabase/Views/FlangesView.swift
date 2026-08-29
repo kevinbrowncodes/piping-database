@@ -7,6 +7,8 @@ struct FlangesView: View {
     @State private var selectedClass = "150"
     @State private var selectedType = "WN"
     @State private var selectedNPS = "2"
+    @State private var showProcedure = false
+    @State private var showPTTable = false
 
     private var unit: UnitSystem { UnitSystem(rawValue: unitRaw) ?? .imperial }
     private var file: FlangesFile? { ReferenceStore.shared.flanges }
@@ -53,6 +55,8 @@ struct FlangesView: View {
                             .contentShape(Rectangle())
                             .onTapGesture { showFractions.toggle() }
                         drillingCard(for: s)
+                        boltUpCard(for: s)
+                        ptCard
                         dimsCard(for: s)
                     } else {
                         ContentUnavailableView("No data", systemImage: "circle.slash")
@@ -108,6 +112,68 @@ struct FlangesView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
         .background(.quaternary.opacity(0.4), in: RoundedRectangle(cornerRadius: 12))
+    }
+
+    @ViewBuilder
+    private func boltUpCard(for s: FlangesFile.FlangeSize) -> some View {
+        if let torque = ReferenceStore.shared.boltTorque {
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Text("Bolt-up · \(s.drilling.numHoles) × \(s.drilling.boltDia)\" studs")
+                        .font(.caption).bold()
+                    Spacer()
+                    Button("Procedure") { showProcedure = true }
+                        .font(.caption)
+                }
+                if torque.torque(boltDia: s.drilling.boltDia, stressPsi: 30000) != nil {
+                    HStack(spacing: 18) {
+                        ForEach([30000, 40000, 50000], id: \.self) { stress in
+                            VStack(alignment: .leading, spacing: 1) {
+                                Text("\(stress / 1000) ksi").font(.caption2).foregroundStyle(.secondary)
+                                Text("\(torque.torque(boltDia: s.drilling.boltDia, stressPsi: stress) ?? 0) ft·lb")
+                                    .font(.callout.monospacedDigit()).bold()
+                            }
+                        }
+                    }
+                    Text("Torque per bolt to reach the indicated stud stress (lubricated). Follow the gasket manufacturer's spec.")
+                        .font(.caption2).foregroundStyle(.secondary)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(.quaternary.opacity(0.4), in: RoundedRectangle(cornerRadius: 12))
+            .sheet(isPresented: $showProcedure) {
+                BoltProcedureSheet(numHoles: s.drilling.numHoles, torqueFile: torque)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var ptCard: some View {
+        if let pt = ReferenceStore.shared.ptRatings,
+           let series = pt.classes[selectedClass] {
+            Button {
+                showPTTable = true
+            } label: {
+                HStack {
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text("P-T rating · Group \(pt.materialGroup) (\(pt.materials))")
+                            .font(.caption2).foregroundStyle(.secondary)
+                        Text("\(series[0]) psig @ 100 °F")
+                            .font(.callout.monospacedDigit()).bold()
+                    }
+                    Spacer()
+                    Image(systemName: "chevron.right").font(.caption).foregroundStyle(.secondary)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .background(.quaternary.opacity(0.4), in: RoundedRectangle(cornerRadius: 12))
+            }
+            .buttonStyle(.plain)
+            .sheet(isPresented: $showPTTable) {
+                PTTableSheet(cls: selectedClass, file: pt)
+            }
+        }
     }
 
     private func dimsCard(for s: FlangesFile.FlangeSize) -> some View {

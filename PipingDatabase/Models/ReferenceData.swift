@@ -121,6 +121,37 @@ struct LineBlanksFile: Decodable {
     }
 }
 
+struct PTRatingsFile: Decodable {
+    let version: Int
+    let source: String
+    let standard: String
+    let materialGroup: String
+    let materials: String
+    let temperaturesF: [Int]
+    let note: String
+    let classes: [String: [Int]]
+
+    func rating(class cls: String, tempF: Int) -> Int? {
+        guard let idx = temperaturesF.firstIndex(of: tempF) else { return nil }
+        return classes[cls]?[idx]
+    }
+}
+
+struct BoltTorqueFile: Decodable {
+    let version: Int
+    let source: String
+    let note: String
+    let stressesPsi: [Int]
+    let boltDiameters: [String]
+    let torqueFtLbs: [String: [Int]]
+    let procedure: [String]
+
+    func torque(boltDia: String, stressPsi: Int) -> Int? {
+        guard let col = boltDiameters.firstIndex(of: boltDia) else { return nil }
+        return torqueFtLbs[String(stressPsi)]?[col]
+    }
+}
+
 /// Loads the bundled datasets once; immutable thereafter.
 final class ReferenceStore {
     static let shared = ReferenceStore()
@@ -139,6 +170,8 @@ final class ReferenceStore {
     let olets: OletsFile? = load("Olets")
     let valves: ValvesFile? = load("Valves")
     let lineBlanks: LineBlanksFile? = load("LineBlanks")
+    let ptRatings: PTRatingsFile? = load("PTRatings")
+    let boltTorque: BoltTorqueFile? = load("BoltTorque")
 
     /// All butt-weld fittings across the three Weldbend files.
     var buttWeldFittings: [FittingsFile.Fitting] {

@@ -1,0 +1,7712 @@
+{
+  "version": 1,
+  "source": "Bonney Forge Forged Steel Fittings & Unions catalog (F9-2012)",
+  "standard": "ASME B16.11",
+  "legend": {
+    "A_elbow": "elbow90/elbow45: center to end",
+    "B_elbow": "elbow90/elbow45: end to opposite outside face (overall, per diagram)",
+    "A_tee_cross": "tee/cross: center to end of each outlet",
+    "B_tee_cross": "tee/cross: end to opposite outside face (overall, per diagram)",
+    "A_lateral": "lateral: center to end of 45-degree branch outlet (per diagram)",
+    "B_lateral": "lateral: center to run end (per diagram)",
+    "E_lateral": "lateral: run end to end (appears in both TH and SW lateral tables)",
+    "C_sw": "socket bore diameter, decimal (SW elbow90, elbow45, tee, cross, lateral; quikLeg90 run sockets)",
+    "D_min_sw": "minimum socket depth, printed 'D MIN.' (all SW tables: elbows, tees, crosses, laterals, quikLeg90, bossWithLip, coupling family)",
+    "E_sw": "center to bottom of socket (SW elbow90, elbow45, tee, cross, quikLeg90)",
+    "A_streetElbow": "street elbow: center to female end (per diagram)",
+    "B_streetElbow": "street elbow: overall outside dimension (per diagram)",
+    "C_streetElbow": "street elbow: center to end of male threaded end (per diagram)",
+    "A_quikLeg90": "quikLeg90: center to run end (per diagram)",
+    "B_quikLeg90": "quikLeg90: center to outside of top outlet (per diagram)",
+    "F_quikLeg90": "quikLeg90: center to outside of leg outlet (per diagram)",
+    "G_quikLeg90": "quikLeg90: bore diameter of QuikLeg outlet, decimal",
+    "H_quikLeg90": "quikLeg90: leg outlet dimension (per diagram)",
+    "A_bossWithLip": "bossWithLip: overall height including lip (per diagram; lip is 0.380 in per drawing)",
+    "B_bossWithLip": "bossWithLip: diameter at base outlet (per diagram)",
+    "E_bossWithLip": "bossWithLip: diameter across top/lip (per diagram)",
+    "F_bossWithLip": "bossWithLip SW: socket bore diameter, decimal",
+    "A_halfCoupling_SW": "SW half coupling: end-to-end length (row A of SW coupling table)",
+    "AA_coupling_SW": "SW coupling / reducing coupling: end-to-end length (row AA)",
+    "B_coupling_SW": "SW coupling family (coupling, halfCoupling, reducingCoupling, cap): outside diameter",
+    "C_coupling_SW": "SW coupling family: socket bore diameter, decimal",
+    "E_coupling_SW": "SW coupling / reducing coupling: distance between bottoms of sockets (per diagram)",
+    "F_cap_SW": "SW cap: end-to-end length",
+    "A_coupling_TH": "TH coupling / reducing coupling: end-to-end length",
+    "B_coupling_TH": "TH coupling family (coupling, halfCoupling, reducingCoupling, cap): outside diameter",
+    "C_halfCoupling_TH": "TH half coupling: end-to-end length",
+    "D_cap_TH": "TH cap: end-to-end length",
+    "A_plugRound": "round plug: overall length",
+    "B_plugRound": "round plug: head diameter (per diagram)",
+    "C_plugHex_bushingHex": "hex plug / hex bushing: across flats (shared row C)",
+    "D_min_plugHex": "hex plug: minimum head dimension (per diagram, printed 'D MIN.')",
+    "E_plug_bushing": "length dimension shared by hex plug, hex bushing and flush bushing diagrams (row E)",
+    "F_plugSquare": "square plug: head across flats (per diagram)",
+    "G_plugSquare": "square plug: head height (per diagram)",
+    "H_plugSquare": "square plug: thread length (per diagram)",
+    "J_min_bushingHex": "hex bushing: minimum head height (per diagram, printed 'J MIN.')",
+    "A_union": "SP-83 union: end-to-end length (per diagram)",
+    "B_union": "SP-83 union: across the flats of the union nut (catalog note 1)",
+    "C_union": "SP-83 union: body diameter/height dimension (per diagram)",
+    "D_union": "SP-83 union: partial length dimension shown with E on the socket-weld end view (per diagram)",
+    "E_min_union": "SP-83 union: minimum socket depth (printed 'E MIN.')",
+    "F_union": "SP-83 union: socket bore diameter, decimal"
+  },
+  "notes": [
+    "All dimensions in decimal inches; weights in pounds, based on carbon steel (A105). Fractional catalog values converted to decimals.",
+    "Class 2000 (threaded) rows were excluded per project scope (classes 3000/6000/9000 only).",
+    "Plugs and bushings are published by the catalog as a single combined class '3000/6000' table; the class field for those rows is '3000/6000'.",
+    "Legend keys are suffixed by fitting family because the same letter has different meanings on different catalog pages; dims in each row use the plain letter (A, AA, B, C, D, D_min, E, E_min, F, G, H, J_min).",
+    "Reducing coupling dimensions and weights are those of the corresponding full coupling size (catalog note); reducers smaller than 1/4 in are not offered.",
+    "The SP-83 union table covers both threaded and socket-weld variants in one table (E_min and F are socket-end data); rows are recorded once under connection 'TH'.",
+    "Values transcribed exactly as printed, including apparent catalog misprints: tee TH 3000 NPS 2 B = 1 11/32 (expected 3 11/32) and bossWithLip SW 6000 NPS 1 F = 1.340 (expected 1.330).",
+    "Excluded catalog sections: socket-weld reducer inserts (MSS SP-79, compound sizes), Rockwood unions (proprietary, no B16.11 class), and lug nut unions (proprietary Stub Acme threads)."
+  ],
+  "fittings": [
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.875,
+        "B": 0.90625
+      },
+      "weight": 0.27
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625
+      },
+      "weight": 0.35
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125
+      },
+      "weight": 0.58
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625
+      },
+      "weight": 0.97
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375
+      },
+      "weight": 1.42
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875
+      },
+      "weight": 2.29
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5
+      },
+      "weight": 2.77
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125
+      },
+      "weight": 5.43
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375
+      },
+      "weight": 5.87
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0
+      },
+      "weight": 11.03
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75
+      },
+      "weight": 17.5
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0
+      },
+      "weight": 33.2
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625
+      },
+      "weight": 0.37
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125
+      },
+      "weight": 0.65
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625
+      },
+      "weight": 1.05
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375
+      },
+      "weight": 1.64
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875
+      },
+      "weight": 2.69
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5
+      },
+      "weight": 3.62
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125
+      },
+      "weight": 6.13
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375
+      },
+      "weight": 7.84
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0
+      },
+      "weight": 14.4
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75
+      },
+      "weight": 22.95
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 4.1875,
+        "B": 5.75
+      },
+      "weight": 37.12
+    },
+    {
+      "type": "elbow90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0
+      },
+      "weight": 33.42
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.875,
+        "B": 0.90625,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.4375
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.875,
+        "B": 0.90625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.4375
+      },
+      "weight": 0.21
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.53125
+      },
+      "weight": 0.26
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.625
+      },
+      "weight": 0.45
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.75
+      },
+      "weight": 0.75
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.875
+      },
+      "weight": 1.05
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.0625
+      },
+      "weight": 1.52
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 2.08
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.5
+      },
+      "weight": 3.37
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.0,
+        "B": 3.6875,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 1.625
+      },
+      "weight": 6.67
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 3.375,
+        "B": 4.375,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 2.25
+      },
+      "weight": 11.08
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 4.1875,
+        "B": 5.75,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 2.625
+      },
+      "weight": 22.59
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.875,
+        "B": 0.90625,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.4375
+      }
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.53125
+      },
+      "weight": 0.26
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.625
+      },
+      "weight": 0.59
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.75
+      },
+      "weight": 0.97
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.875
+      },
+      "weight": 1.42
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 1.0625
+      },
+      "weight": 2.33
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 2.96
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.5
+      },
+      "weight": 5.71
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.625
+      },
+      "weight": 6.42
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 2.25
+      },
+      "weight": 12.16
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 2.5
+      },
+      "weight": 18.69
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 2.75
+      },
+      "weight": 34.15
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 1.0
+      },
+      "weight": 1.7
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 1.125
+      },
+      "weight": 2.79
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 3.81
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.375
+      },
+      "weight": 5.71
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.5
+      },
+      "weight": 8.15
+    },
+    {
+      "type": "elbow90",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "2",
+      "dims": {
+        "A": 3.0,
+        "B": 3.6875,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 2.125
+      },
+      "weight": 11.26
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.75,
+        "B": 0.90625
+      },
+      "weight": 0.23
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.75,
+        "B": 1.0625
+      },
+      "weight": 0.3
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.0,
+        "B": 1.3125
+      },
+      "weight": 0.58
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.125,
+        "B": 1.5625
+      },
+      "weight": 0.91
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.25,
+        "B": 1.84375
+      },
+      "weight": 1.29
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.21875
+      },
+      "weight": 2.02
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.375,
+        "B": 2.5
+      },
+      "weight": 2.29
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 1.6875,
+        "B": 3.03125
+      },
+      "weight": 4.54
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 1.75,
+        "B": 3.3125
+      },
+      "weight": 5.26
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.0625,
+        "B": 4.0
+      },
+      "weight": 7.83
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 2.5,
+        "B": 4.75
+      },
+      "weight": 12.99
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 3.125,
+        "B": 6.0
+      },
+      "weight": 24.75
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.75,
+        "B": 1.0625
+      },
+      "weight": 0.56
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.0,
+        "B": 1.3125
+      },
+      "weight": 0.58
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.5625
+      },
+      "weight": 0.91
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.25,
+        "B": 1.84375
+      },
+      "weight": 1.54
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.21875
+      },
+      "weight": 2.25
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 1.375,
+        "B": 2.5
+      },
+      "weight": 2.84
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.6875,
+        "B": 3.03125
+      },
+      "weight": 5.12
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 1.75,
+        "B": 3.3125
+      },
+      "weight": 6.82
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.0625,
+        "B": 4.0
+      },
+      "weight": 10.28
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 4.75
+      },
+      "weight": 15.0
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 3.125,
+        "B": 6.0
+      },
+      "weight": 35.2
+    },
+    {
+      "type": "elbow45",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 3.125,
+        "B": 6.0
+      },
+      "weight": 24.75
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.75,
+        "B": 0.90625,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.3125
+      },
+      "weight": 0.22
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.75,
+        "B": 0.90625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.3125
+      },
+      "weight": 0.19
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 0.75,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.3125
+      },
+      "weight": 0.22
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.0,
+        "B": 1.3125,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.4375
+      },
+      "weight": 0.42
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.125,
+        "B": 1.5625,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 0.7
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.25,
+        "B": 1.84375,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.5625
+      },
+      "weight": 0.95
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.21875,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.6875
+      },
+      "weight": 1.39
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 1.375,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 0.8125
+      },
+      "weight": 1.68
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 1.75,
+        "B": 3.03125,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.0
+      },
+      "weight": 2.96
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.0625,
+        "B": 4.0,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 1.125
+      },
+      "weight": 7.76
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 2.5,
+        "B": 4.375,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 1.25
+      },
+      "weight": 8.55
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 3.125,
+        "B": 6.0,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 1.625
+      },
+      "weight": 24.06
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.75,
+        "B": 0.90625,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.3125
+      }
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.75,
+        "B": 1.0625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.3125
+      },
+      "weight": 0.22
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.0,
+        "B": 1.3125,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.4375
+      },
+      "weight": 0.48
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.125,
+        "B": 1.5625,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.5
+      },
+      "weight": 0.89
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.25,
+        "B": 1.84375,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.5625
+      },
+      "weight": 1.26
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.21875,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.6875
+      },
+      "weight": 2.0
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.375,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.8125
+      },
+      "weight": 2.29
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 1.75,
+        "B": 3.03125,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.0
+      },
+      "weight": 4.49
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 1.84375,
+        "B": 3.375,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.125
+      },
+      "weight": 5.57
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.0625,
+        "B": 4.0,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 1.25
+      },
+      "weight": 8.69
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 2.5,
+        "B": 4.75,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 1.375
+      },
+      "weight": 14.2
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 3.125,
+        "B": 6.0,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 1.625
+      },
+      "weight": 24.06
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.25,
+        "B": 1.84375,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.625
+      },
+      "weight": 1.31
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.3125,
+        "B": 2.21875,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.75
+      },
+      "weight": 2.37
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1",
+      "dims": {
+        "A": 1.375,
+        "B": 2.5,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.8125
+      },
+      "weight": 2.91
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.75,
+        "B": 3.03125,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.875
+      },
+      "weight": 4.31
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 1.84375,
+        "B": 3.375,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.0
+      },
+      "weight": 6.89
+    },
+    {
+      "type": "elbow45",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "2",
+      "dims": {
+        "A": 2.0625,
+        "B": 4.0,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.125
+      },
+      "weight": 10.84
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.875,
+        "B": 0.90625
+      },
+      "weight": 0.36
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625
+      },
+      "weight": 0.47
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125
+      },
+      "weight": 0.77
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625
+      },
+      "weight": 1.29
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375
+      },
+      "weight": 1.89
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875
+      },
+      "weight": 3.08
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5
+      },
+      "weight": 3.73
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125
+      },
+      "weight": 7.0
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 1.34375
+      },
+      "weight": 7.63
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0
+      },
+      "weight": 14.67
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75
+      },
+      "weight": 22.65
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0
+      },
+      "weight": 40.08
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625
+      },
+      "weight": 0.47
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125
+      },
+      "weight": 0.87
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625
+      },
+      "weight": 1.45
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375
+      },
+      "weight": 2.24
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875
+      },
+      "weight": 3.71
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5
+      },
+      "weight": 4.92
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125
+      },
+      "weight": 8.13
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375
+      },
+      "weight": 10.11
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0
+      },
+      "weight": 19.16
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75
+      },
+      "weight": 30.43
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 4.1875,
+        "B": 5.75
+      },
+      "weight": 47.55
+    },
+    {
+      "type": "tee",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0
+      },
+      "weight": 47.77
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.875,
+        "B": 0.90625,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.4375
+      },
+      "weight": 0.33
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.875,
+        "B": 0.90625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.4375
+      },
+      "weight": 0.27
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.53125
+      },
+      "weight": 0.34
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.625
+      },
+      "weight": 0.59
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.75
+      },
+      "weight": 0.94
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.875
+      },
+      "weight": 1.29
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.0625
+      },
+      "weight": 2.04
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 2.77
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.5
+      },
+      "weight": 4.11
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.0,
+        "B": 3.6875,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 1.625
+      },
+      "weight": 8.68
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 3.375,
+        "B": 4.375,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 2.25
+      },
+      "weight": 13.79
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 4.1875,
+        "B": 5.75,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 2.625
+      },
+      "weight": 28.6
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.875,
+        "B": 0.90625,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.4375
+      }
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.53125
+      },
+      "weight": 0.34
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.625
+      },
+      "weight": 0.8
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.75
+      },
+      "weight": 1.27
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.875
+      },
+      "weight": 1.91
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 1.0625
+      },
+      "weight": 3.17
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 4.04
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.5
+      },
+      "weight": 7.55
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.625
+      },
+      "weight": 8.19
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 2.25
+      },
+      "weight": 16.15
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 2.5
+      },
+      "weight": 24.43
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 2.75
+      },
+      "weight": 42.79
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 1.0
+      },
+      "weight": 2.31
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 1.125
+      },
+      "weight": 3.62
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 5.2
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.375
+      },
+      "weight": 7.55
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.5
+      },
+      "weight": 10.78
+    },
+    {
+      "type": "tee",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "2",
+      "dims": {
+        "A": 3.0,
+        "B": 3.6875,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 2.125
+      },
+      "weight": 15.79
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625
+      },
+      "weight": 0.65
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625
+      },
+      "weight": 0.58
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125
+      },
+      "weight": 0.97
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625
+      },
+      "weight": 1.6
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375
+      },
+      "weight": 2.28
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875
+      },
+      "weight": 3.65
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5
+      },
+      "weight": 4.54
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125
+      },
+      "weight": 8.47
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375
+      },
+      "weight": 9.1
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0
+      },
+      "weight": 17.69
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75
+      },
+      "weight": 26.13
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0
+      },
+      "weight": 47.37
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625
+      },
+      "weight": 0.65
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125
+      },
+      "weight": 1.19
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625
+      },
+      "weight": 1.6
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375
+      },
+      "weight": 2.65
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875
+      },
+      "weight": 4.34
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5
+      },
+      "weight": 5.92
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125
+      },
+      "weight": 10.5
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375
+      },
+      "weight": 12.12
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0
+      },
+      "weight": 23.15
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75
+      },
+      "weight": 28.13
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0
+      },
+      "weight": 54.0
+    },
+    {
+      "type": "cross",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0
+      },
+      "weight": 43.5
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.9375,
+        "B": 1.0625,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.4375
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.9375,
+        "B": 1.0625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.4375
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 0.96875,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.53125
+      },
+      "weight": 0.42
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.625
+      },
+      "weight": 0.72
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.75
+      },
+      "weight": 1.17
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.875
+      },
+      "weight": 1.49
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.0625
+      },
+      "weight": 2.38
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 3.25
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.5
+      },
+      "weight": 5.08
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 1.625
+      },
+      "weight": 15.78
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 2.25
+      },
+      "weight": 24.73
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 4.5,
+        "B": 6.0,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 2.625
+      },
+      "weight": 40.0
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 1.5625,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.75
+      },
+      "weight": 1.55
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.875
+      },
+      "weight": 2.31
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 1.0625
+      },
+      "weight": 3.74
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 5.25
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.5
+      },
+      "weight": 8.8
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.625
+      },
+      "weight": 9.66
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 2.25
+      },
+      "weight": 16.75
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 3.75,
+        "B": 4.75,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 2.5
+      },
+      "weight": 23.0
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.84375,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 1.0
+      },
+      "weight": 1.75
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.21875,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 1.125
+      },
+      "weight": 4.12
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 1.25
+      },
+      "weight": 5.25
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.375,
+        "B": 3.03125,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.375
+      },
+      "weight": 5.12
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.34375,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.5
+      },
+      "weight": 8.75
+    },
+    {
+      "type": "cross",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "2",
+      "dims": {
+        "A": 3.25,
+        "B": 4.0,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 2.125
+      },
+      "weight": 22.19
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.875,
+        "B": 1.0625,
+        "E": 2.6875
+      }
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 2.125,
+        "B": 1.3125,
+        "E": 3.0
+      },
+      "weight": 1.0
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 2.5625,
+        "B": 1.5625,
+        "E": 3.5625
+      },
+      "weight": 1.99
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 3.0,
+        "B": 1.84375,
+        "E": 4.125
+      },
+      "weight": 2.73
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 3.5,
+        "B": 2.21875,
+        "E": 4.8125
+      },
+      "weight": 4.43
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 3.9375,
+        "B": 2.5,
+        "E": 5.375
+      },
+      "weight": 5.45
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 4.75,
+        "B": 3.03125,
+        "E": 6.4375
+      },
+      "weight": 11.1
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 5.0,
+        "B": 3.34375,
+        "E": 6.625
+      },
+      "weight": 11.7
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 3.0,
+        "B": 1.84375,
+        "E": 4.125
+      },
+      "weight": 2.38
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 3.5,
+        "B": 2.21875,
+        "E": 4.8125
+      },
+      "weight": 3.25
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 3.9375,
+        "B": 2.5,
+        "E": 5.375
+      },
+      "weight": 5.44
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 4.75,
+        "B": 3.03125,
+        "E": 6.4375
+      },
+      "weight": 7.19
+    },
+    {
+      "type": "lateral",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 5.0,
+        "B": 3.34375,
+        "E": 6.625
+      },
+      "weight": 12.31
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.875,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 2.6875
+      },
+      "weight": 1.0
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 2.125,
+        "B": 1.3125,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 3.0
+      },
+      "weight": 0.88
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 2.5625,
+        "B": 1.5625,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 3.5625
+      },
+      "weight": 1.56
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 3.0,
+        "B": 1.84375,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 4.125
+      },
+      "weight": 2.08
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 3.5,
+        "B": 2.21875,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 4.8125
+      },
+      "weight": 3.08
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 3.9375,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 5.375
+      },
+      "weight": 4.22
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 4.75,
+        "B": 3.03125,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 6.4375
+      },
+      "weight": 6.89
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 2.5625,
+        "B": 1.5625,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 3.5625
+      },
+      "weight": 2.0
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 3.0,
+        "B": 1.84375,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 4.125
+      },
+      "weight": 3.07
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 3.5,
+        "B": 2.21875,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 4.8125
+      },
+      "weight": 4.85
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 3.9375,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 5.375
+      },
+      "weight": 6.25
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 4.75,
+        "B": 3.03125,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 6.4375
+      },
+      "weight": 11.94
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 5.0,
+        "B": 3.34375,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 6.625
+      },
+      "weight": 12.5
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1/2",
+      "dims": {
+        "A": 3.0,
+        "B": 1.84375,
+        "C": 0.855,
+        "D_min": 0.5625,
+        "E": 4.125
+      },
+      "weight": 1.75
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "3/4",
+      "dims": {
+        "A": 3.5,
+        "B": 2.21875,
+        "C": 1.065,
+        "D_min": 0.625,
+        "E": 4.8125
+      },
+      "weight": 2.38
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1",
+      "dims": {
+        "A": 3.9375,
+        "B": 2.5,
+        "C": 1.33,
+        "D_min": 0.6875,
+        "E": 5.375
+      },
+      "weight": 3.75
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 4.75,
+        "B": 3.03125,
+        "C": 1.675,
+        "D_min": 0.875,
+        "E": 6.4375
+      },
+      "weight": 6.88
+    },
+    {
+      "type": "lateral",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 5.0,
+        "B": 3.34375,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 6.625
+      },
+      "weight": 6.88
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.875,
+        "B": 1.0625,
+        "C": 1.25
+      },
+      "weight": 0.27
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 0.875,
+        "B": 1.0625,
+        "C": 1.25
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.0,
+        "B": 1.3125,
+        "C": 1.5
+      },
+      "weight": 0.41
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.125,
+        "B": 1.5,
+        "C": 1.625
+      },
+      "weight": 0.61
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.375,
+        "B": 1.8125,
+        "C": 1.875
+      },
+      "weight": 1.02
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.1875,
+        "C": 2.25
+      },
+      "weight": 1.73
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.4375,
+        "C": 2.625
+      },
+      "weight": 2.42
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.125,
+        "B": 3.03125,
+        "C": 2.9375
+      },
+      "weight": 4.05
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.3125,
+        "C": 3.3125
+      },
+      "weight": 5.25
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 0.875,
+        "B": 1.0625,
+        "C": 1.25
+      },
+      "weight": 0.42
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.0,
+        "B": 1.3125,
+        "C": 1.5
+      },
+      "weight": 0.44
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.5,
+        "C": 1.625
+      },
+      "weight": 0.69
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.375,
+        "B": 1.8125,
+        "C": 1.875
+      },
+      "weight": 1.18
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.75,
+        "B": 2.1875,
+        "C": 2.25
+      },
+      "weight": 2.09
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.4375,
+        "C": 2.625
+      },
+      "weight": 3.12
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.125,
+        "B": 3.03125,
+        "C": 2.9375
+      },
+      "weight": 4.87
+    },
+    {
+      "type": "streetElbow",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.3125,
+        "C": 3.3125
+      },
+      "weight": 7.04
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.875,
+        "F": 1.875,
+        "G": 0.855,
+        "H": 0.5
+      },
+      "weight": 2.63
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.875,
+        "F": 1.875,
+        "G": 1.065,
+        "H": 0.5625
+      },
+      "weight": 2.19
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "F": 2.5,
+        "G": 1.33,
+        "H": 0.75
+      },
+      "weight": 6.02
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "F": 2.5,
+        "G": 1.675,
+        "H": 0.75
+      }
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.0,
+        "F": 3.0,
+        "G": 1.915,
+        "H": 0.75
+      },
+      "weight": 5.1
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.125,
+        "F": 3.25,
+        "G": 2.406,
+        "H": 0.875
+      },
+      "weight": 10.31
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.875,
+        "F": 1.875,
+        "G": 0.855,
+        "H": 0.5625
+      }
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "F": 2.5,
+        "G": 1.065,
+        "H": 0.5625
+      },
+      "weight": 6.53
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "F": 2.5,
+        "G": 1.33,
+        "H": 0.75
+      }
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.375,
+        "B": 3.0,
+        "F": 3.0,
+        "G": 1.675,
+        "H": 0.75
+      }
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.125,
+        "F": 3.125,
+        "G": 1.915,
+        "H": 0.875
+      },
+      "weight": 10.31
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.5,
+        "B": 1.875,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.625,
+        "F": 1.875,
+        "G": 0.855,
+        "H": 0.5625
+      }
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.875,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.75,
+        "F": 1.875,
+        "G": 1.065,
+        "H": 0.5625
+      },
+      "weight": 2.03
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.5,
+        "B": 1.875,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.875,
+        "F": 1.875,
+        "G": 1.33,
+        "H": 0.5625
+      },
+      "weight": 2.63
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.25,
+        "F": 2.5,
+        "G": 1.675,
+        "H": 0.75
+      }
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.25,
+        "F": 2.5,
+        "G": 1.915,
+        "H": 0.75
+      },
+      "weight": 3.89
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.0,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.5,
+        "F": 3.0,
+        "G": 2.406,
+        "H": 0.75
+      },
+      "weight": 6.33
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.875,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.875,
+        "F": 1.875,
+        "G": 1.065,
+        "H": 0.5625
+      },
+      "weight": 2.19
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 1.0625,
+        "F": 2.5,
+        "G": 1.33,
+        "H": 0.75
+      },
+      "weight": 6.02
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.375,
+        "B": 3.0,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 1.25,
+        "F": 3.0,
+        "G": 1.675,
+        "H": 0.5625
+      }
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.375,
+        "B": 3.0,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 1.5,
+        "F": 3.0,
+        "G": 1.915,
+        "H": 0.5625
+      },
+      "weight": 4.75
+    },
+    {
+      "type": "quikLeg90",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.375,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 1.625,
+        "F": 3.125,
+        "G": 2.406,
+        "H": 0.6875
+      },
+      "weight": 10.98
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.6875,
+        "E": 1.0
+      },
+      "weight": 0.13
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.8125,
+        "E": 1.0625
+      },
+      "weight": 0.21
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 0.9375,
+        "E": 1.375
+      },
+      "weight": 0.29
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.375,
+        "B": 1.0625,
+        "E": 1.5
+      },
+      "weight": 0.29
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.6875,
+        "B": 1.3125,
+        "E": 1.8125
+      },
+      "weight": 0.51
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.875,
+        "B": 1.6875,
+        "E": 2.25
+      },
+      "weight": 0.84
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 1.9375,
+        "E": 2.5
+      },
+      "weight": 1.18
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.25,
+        "B": 2.4375,
+        "E": 3.125
+      },
+      "weight": 2.04
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 2.875,
+        "E": 3.625
+      },
+      "weight": 2.93
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 2.75,
+        "B": 3.5,
+        "E": 4.375
+      },
+      "weight": 4.11
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.5625,
+        "E": 0.875
+      },
+      "weight": 0.12
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.6875,
+        "E": 1.0
+      },
+      "weight": 0.15
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.8125,
+        "E": 1.25
+      },
+      "weight": 0.2
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 0.9375,
+        "E": 1.5
+      },
+      "weight": 0.33
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.375,
+        "B": 1.0625,
+        "E": 1.75
+      },
+      "weight": 0.43
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 1.6875,
+        "B": 1.3125,
+        "E": 2.25
+      },
+      "weight": 0.93
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.875,
+        "B": 1.6875,
+        "E": 2.5
+      },
+      "weight": 1.15
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 1.9375,
+        "E": 3.0
+      },
+      "weight": 1.86
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.25,
+        "B": 2.4375,
+        "E": 3.625
+      },
+      "weight": 3.02
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 2.875,
+        "E": 4.25
+      },
+      "weight": 4.4
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 2.75,
+        "B": 3.5,
+        "E": 5.0
+      },
+      "weight": 6.4
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.6875,
+        "D_min": 0.375,
+        "E": 0.9375,
+        "F": 0.555
+      },
+      "weight": 0.13
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.8125,
+        "D_min": 0.375,
+        "E": 1.0625,
+        "F": 0.69
+      },
+      "weight": 0.21
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 0.9375,
+        "D_min": 0.375,
+        "E": 1.3125,
+        "F": 0.855
+      },
+      "weight": 0.29
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.375,
+        "B": 1.0625,
+        "D_min": 0.5,
+        "E": 1.5,
+        "F": 1.065
+      },
+      "weight": 0.29
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.6875,
+        "B": 1.3125,
+        "D_min": 0.5,
+        "E": 1.8125,
+        "F": 1.33
+      },
+      "weight": 0.51
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.875,
+        "B": 1.6875,
+        "D_min": 0.5,
+        "E": 2.25,
+        "F": 1.675
+      },
+      "weight": 0.84
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 1.9375,
+        "D_min": 0.5,
+        "E": 2.5,
+        "F": 1.915
+      },
+      "weight": 1.18
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.25,
+        "B": 2.4375,
+        "D_min": 0.625,
+        "E": 3.125,
+        "F": 2.406
+      },
+      "weight": 2.04
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 2.875,
+        "D_min": 0.625,
+        "E": 3.625,
+        "F": 2.906
+      },
+      "weight": 2.93
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 2.75,
+        "B": 3.5,
+        "D_min": 0.625,
+        "E": 4.375,
+        "F": 3.535
+      },
+      "weight": 4.11
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.5625,
+        "D_min": 0.375,
+        "E": 0.875,
+        "F": 0.42
+      },
+      "weight": 0.18
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.6875,
+        "D_min": 0.375,
+        "E": 1.0,
+        "F": 0.555
+      },
+      "weight": 0.16
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.1875,
+        "B": 0.8125,
+        "D_min": 0.375,
+        "E": 1.25,
+        "F": 0.69
+      },
+      "weight": 0.22
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.3125,
+        "B": 0.9375,
+        "D_min": 0.375,
+        "E": 1.5,
+        "F": 0.855
+      },
+      "weight": 0.33
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.375,
+        "B": 1.0625,
+        "D_min": 0.5,
+        "E": 1.75,
+        "F": 1.065
+      },
+      "weight": 0.43
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 1.6875,
+        "B": 1.3125,
+        "D_min": 0.5,
+        "E": 2.25,
+        "F": 1.34
+      },
+      "weight": 0.93
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.875,
+        "B": 1.6875,
+        "D_min": 0.5,
+        "E": 2.5,
+        "F": 1.675
+      },
+      "weight": 1.24
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 1.9375,
+        "D_min": 0.5,
+        "E": 3.0,
+        "F": 1.915
+      },
+      "weight": 1.91
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.25,
+        "B": 2.4375,
+        "D_min": 0.625,
+        "E": 3.625,
+        "F": 2.406
+      },
+      "weight": 3.07
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.5,
+        "B": 2.875,
+        "D_min": 0.625,
+        "E": 4.25,
+        "F": 2.906
+      },
+      "weight": 4.83
+    },
+    {
+      "type": "bossWithLip",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 2.75,
+        "B": 3.5,
+        "D_min": 0.625,
+        "E": 5.0,
+        "F": 3.535
+      },
+      "weight": 6.83
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "AA": 1.03125,
+        "B": 0.75,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.09
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "AA": 1.03125,
+        "B": 0.875,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.12
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "AA": 1.03125,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.16
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "AA": 1.1875,
+        "B": 1.25,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.375
+      },
+      "weight": 0.24
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "AA": 1.40625,
+        "B": 1.5,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.375
+      },
+      "weight": 0.39
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "AA": 1.515625,
+        "B": 1.8125,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 0.57
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "AA": 1.515625,
+        "B": 2.25,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 0.9
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "AA": 1.515625,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.04
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "AA": 2.015625,
+        "B": 3.0,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 1.79
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "AA": 2.015625,
+        "B": 3.625,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 2.42
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "AA": 2.015625,
+        "B": 4.3125,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 4.06
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "AA": 2.265625,
+        "B": 5.5,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 0.75
+      },
+      "weight": 5.73
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 1.0625,
+        "B": 0.75,
+        "C": 0.42,
+        "D_min": 0.375
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.0625,
+        "B": 0.875,
+        "C": 0.555,
+        "D_min": 0.375
+      },
+      "weight": 0.13
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375
+      },
+      "weight": 0.18
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.375,
+        "B": 1.25,
+        "C": 0.855,
+        "D_min": 0.375
+      },
+      "weight": 0.32
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.5,
+        "C": 1.065,
+        "D_min": 0.5
+      },
+      "weight": 0.46
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 1.8125,
+        "C": 1.33,
+        "D_min": 0.5
+      },
+      "weight": 0.75
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.875,
+        "B": 2.25,
+        "C": 1.675,
+        "D_min": 0.5
+      },
+      "weight": 1.24
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5
+      },
+      "weight": 1.33
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.0,
+        "C": 2.406,
+        "D_min": 0.625
+      },
+      "weight": 2.38
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.5625,
+        "B": 3.625,
+        "C": 2.906,
+        "D_min": 0.625
+      },
+      "weight": 3.55
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 2.75,
+        "B": 4.3125,
+        "C": 3.535,
+        "D_min": 0.625
+      },
+      "weight": 6.24
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 3.0,
+        "B": 5.5,
+        "C": 4.545,
+        "D_min": 0.75
+      },
+      "weight": 8.3
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "AA": 1.03125,
+        "B": 0.875,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.12
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "AA": 1.03125,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.16
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "AA": 1.1875,
+        "B": 1.25,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.375
+      },
+      "weight": 0.24
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "AA": 1.40625,
+        "B": 1.5,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.375
+      },
+      "weight": 0.39
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "AA": 1.515625,
+        "B": 1.8125,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 0.57
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "AA": 1.515625,
+        "B": 2.25,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 0.9
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "AA": 1.515625,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.04
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "AA": 2.015625,
+        "B": 3.0,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 1.79
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "AA": 2.015625,
+        "B": 3.625,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 2.42
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "AA": 2.015625,
+        "B": 4.3125,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 4.06
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "AA": 2.265625,
+        "B": 5.5,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 0.75
+      },
+      "weight": 5.73
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "F": 0.6875,
+        "B": 0.75,
+        "C": 0.42,
+        "D_min": 0.375
+      },
+      "weight": 0.07
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "F": 0.75,
+        "B": 0.875,
+        "C": 0.555,
+        "D_min": 0.375
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "F": 0.75,
+        "B": 1.0625,
+        "C": 0.69,
+        "D_min": 0.375
+      },
+      "weight": 0.14
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "F": 0.875,
+        "B": 1.25,
+        "C": 0.855,
+        "D_min": 0.375
+      },
+      "weight": 0.22
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "F": 1.0,
+        "B": 1.5,
+        "C": 1.065,
+        "D_min": 0.5
+      },
+      "weight": 0.36
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "F": 1.0625,
+        "B": 1.8125,
+        "C": 1.33,
+        "D_min": 0.5
+      },
+      "weight": 0.55
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "F": 1.1875,
+        "B": 2.25,
+        "C": 1.675,
+        "D_min": 0.5
+      },
+      "weight": 1.01
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "F": 1.25,
+        "B": 2.5,
+        "C": 1.915,
+        "D_min": 0.5
+      },
+      "weight": 1.27
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "F": 1.5,
+        "B": 3.0,
+        "C": 2.406,
+        "D_min": 0.625
+      },
+      "weight": 1.99
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "F": 1.5625,
+        "B": 3.625,
+        "C": 2.906,
+        "D_min": 0.625
+      },
+      "weight": 3.38
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "F": 1.8125,
+        "B": 4.3125,
+        "C": 3.535,
+        "D_min": 0.625
+      },
+      "weight": 6.3
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "F": 2.0625,
+        "B": 5.5,
+        "C": 4.545,
+        "D_min": 0.75
+      },
+      "weight": 12.08
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "AA": 1.0625,
+        "B": 0.875,
+        "C": 0.42,
+        "D_min": 0.375,
+        "E": 0.25
+      }
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "AA": 1.125,
+        "B": 1.0625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.23
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "AA": 1.125,
+        "B": 1.3125,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.33
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "AA": 1.15625,
+        "B": 1.5,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.375
+      },
+      "weight": 0.45
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "AA": 1.40625,
+        "B": 1.75,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.375
+      },
+      "weight": 0.67
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "AA": 1.515625,
+        "B": 2.25,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.27
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "AA": 1.515625,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.37
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "AA": 1.515625,
+        "B": 3.0,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 2.09
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "AA": 2.015625,
+        "B": 3.625,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 3.85
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "AA": 2.015625,
+        "B": 4.25,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 4.93
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "AA": 2.015625,
+        "B": 5.0,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 6.69
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "AA": 2.265625,
+        "B": 6.25,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 0.75
+      },
+      "weight": 8.0
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 1.0625,
+        "B": 0.875,
+        "C": 0.42,
+        "D_min": 0.375
+      }
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.0625,
+        "B": 1.0625,
+        "C": 0.555,
+        "D_min": 0.375
+      }
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.125,
+        "B": 1.3125,
+        "C": 0.69,
+        "D_min": 0.375
+      }
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.375,
+        "B": 1.5,
+        "C": 0.855,
+        "D_min": 0.375
+      },
+      "weight": 0.56
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 1.75,
+        "C": 1.065,
+        "D_min": 0.5
+      },
+      "weight": 0.8
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.25,
+        "C": 1.33,
+        "D_min": 0.5
+      },
+      "weight": 1.58
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.875,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5
+      },
+      "weight": 1.72
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 3.0,
+        "C": 1.915,
+        "D_min": 0.5
+      },
+      "weight": 2.99
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.625,
+        "C": 2.406,
+        "D_min": 0.625
+      },
+      "weight": 4.99
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.5625,
+        "B": 4.25,
+        "C": 2.906,
+        "D_min": 0.625
+      },
+      "weight": 5.44
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 2.75,
+        "B": 5.0,
+        "C": 3.535,
+        "D_min": 0.625
+      },
+      "weight": 9.5
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 3.0,
+        "B": 6.25,
+        "C": 4.545,
+        "D_min": 0.75
+      },
+      "weight": 12.64
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "AA": 1.125,
+        "B": 1.0625,
+        "C": 0.555,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.23
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "AA": 1.125,
+        "B": 1.3125,
+        "C": 0.69,
+        "D_min": 0.375,
+        "E": 0.25
+      },
+      "weight": 0.33
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "AA": 1.15625,
+        "B": 1.5,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.375
+      },
+      "weight": 0.45
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "AA": 1.40625,
+        "B": 1.75,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.375
+      },
+      "weight": 0.67
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "AA": 1.515625,
+        "B": 2.25,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.27
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "AA": 1.515625,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.37
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "AA": 1.515625,
+        "B": 3.0,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 2.09
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "AA": 2.015625,
+        "B": 3.625,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 3.85
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "AA": 2.015625,
+        "B": 4.25,
+        "C": 2.906,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 4.93
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "AA": 2.015625,
+        "B": 5.0,
+        "C": 3.535,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 6.69
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "AA": 2.265625,
+        "B": 6.25,
+        "C": 4.545,
+        "D_min": 0.75,
+        "E": 0.75
+      },
+      "weight": 8.0
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "F": 0.9375,
+        "B": 1.0625,
+        "C": 0.555,
+        "D_min": 0.375
+      },
+      "weight": 0.2
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "F": 0.9375,
+        "B": 1.3125,
+        "C": 0.69,
+        "D_min": 0.375
+      },
+      "weight": 0.27
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "F": 1.0,
+        "B": 1.5,
+        "C": 0.855,
+        "D_min": 0.375
+      },
+      "weight": 0.42
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "F": 1.0625,
+        "B": 1.75,
+        "C": 1.065,
+        "D_min": 0.5
+      },
+      "weight": 0.58
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "F": 1.25,
+        "B": 2.25,
+        "C": 1.33,
+        "D_min": 0.5
+      },
+      "weight": 1.18
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "F": 1.3125,
+        "B": 2.5,
+        "C": 1.675,
+        "D_min": 0.5
+      },
+      "weight": 1.41
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "F": 1.375,
+        "B": 3.0,
+        "C": 1.915,
+        "D_min": 0.5
+      },
+      "weight": 2.19
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "F": 1.625,
+        "B": 3.625,
+        "C": 2.406,
+        "D_min": 0.625
+      },
+      "weight": 3.65
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "F": 1.6875,
+        "B": 4.25,
+        "C": 2.906,
+        "D_min": 0.625
+      },
+      "weight": 5.63
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "F": 1.9375,
+        "B": 5.0,
+        "C": 3.535,
+        "D_min": 0.625
+      },
+      "weight": 8.78
+    },
+    {
+      "type": "cap",
+      "connection": "SW",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "F": 2.3125,
+        "B": 6.25,
+        "C": 4.545,
+        "D_min": 0.75
+      },
+      "weight": 14.25
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1/2",
+      "dims": {
+        "AA": 1.375,
+        "B": 1.8125,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.375
+      },
+      "weight": 0.62
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "3/4",
+      "dims": {
+        "AA": 1.5,
+        "B": 2.0,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.375
+      },
+      "weight": 1.04
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1",
+      "dims": {
+        "AA": 1.75,
+        "B": 2.375,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.71
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/4",
+      "dims": {
+        "AA": 1.796875,
+        "B": 2.75,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.69
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/2",
+      "dims": {
+        "AA": 2.0,
+        "B": 3.0625,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 2.93
+    },
+    {
+      "type": "coupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "2",
+      "dims": {
+        "AA": 2.5,
+        "B": 3.625,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 4.61
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.375,
+        "B": 1.8125,
+        "C": 0.855,
+        "D_min": 0.375
+      },
+      "weight": 0.88
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.5,
+        "B": 2.0,
+        "C": 1.065,
+        "D_min": 0.5
+      },
+      "weight": 0.8
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1",
+      "dims": {
+        "A": 1.75,
+        "B": 2.375,
+        "C": 1.33,
+        "D_min": 0.5
+      },
+      "weight": 1.74
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 1.796875,
+        "B": 2.75,
+        "C": 1.675,
+        "D_min": 0.5
+      },
+      "weight": 2.22
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 3.0625,
+        "C": 1.915,
+        "D_min": 0.5
+      },
+      "weight": 2.93
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 3.625,
+        "C": 2.406,
+        "D_min": 0.625
+      },
+      "weight": 4.99
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1/2",
+      "dims": {
+        "AA": 1.375,
+        "B": 1.8125,
+        "C": 0.855,
+        "D_min": 0.375,
+        "E": 0.375
+      },
+      "weight": 0.62
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "3/4",
+      "dims": {
+        "AA": 1.5,
+        "B": 2.0,
+        "C": 1.065,
+        "D_min": 0.5,
+        "E": 0.375
+      },
+      "weight": 1.04
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1",
+      "dims": {
+        "AA": 1.75,
+        "B": 2.375,
+        "C": 1.33,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.71
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/4",
+      "dims": {
+        "AA": 1.796875,
+        "B": 2.75,
+        "C": 1.675,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 1.69
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "1 1/2",
+      "dims": {
+        "AA": 2.0,
+        "B": 3.0625,
+        "C": 1.915,
+        "D_min": 0.5,
+        "E": 0.5
+      },
+      "weight": 2.93
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "SW",
+      "class": "9000",
+      "nps": "2",
+      "dims": {
+        "AA": 2.5,
+        "B": 3.625,
+        "C": 2.406,
+        "D_min": 0.625,
+        "E": 0.75
+      },
+      "weight": 4.61
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 1.25,
+        "B": 0.75
+      },
+      "weight": 0.13
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.375,
+        "B": 0.75
+      },
+      "weight": 0.11
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.5,
+        "B": 0.875
+      },
+      "weight": 0.13
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.875,
+        "B": 1.125
+      },
+      "weight": 0.29
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 2.0,
+        "B": 1.375
+      },
+      "weight": 0.42
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 2.375,
+        "B": 1.75
+      },
+      "weight": 0.85
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.625,
+        "B": 2.25
+      },
+      "weight": 1.6
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 3.125,
+        "B": 2.5
+      },
+      "weight": 2.26
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 3.375,
+        "B": 3.0
+      },
+      "weight": 2.95
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.625,
+        "B": 3.625
+      },
+      "weight": 4.61
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 4.25,
+        "B": 4.25
+      },
+      "weight": 6.89
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 4.75,
+        "B": 5.5
+      },
+      "weight": 12.48
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "C": 0.625,
+        "B": 0.75
+      },
+      "weight": 0.06
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "C": 0.6875,
+        "B": 0.75
+      },
+      "weight": 0.05
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "C": 0.75,
+        "B": 0.875
+      },
+      "weight": 0.06
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "C": 0.9375,
+        "B": 1.125
+      },
+      "weight": 0.13
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "C": 1.0,
+        "B": 1.375
+      },
+      "weight": 0.21
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "C": 1.1875,
+        "B": 1.75
+      },
+      "weight": 0.42
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "C": 1.3125,
+        "B": 2.25
+      },
+      "weight": 0.79
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "C": 1.5625,
+        "B": 2.5
+      },
+      "weight": 1.12
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "C": 1.6875,
+        "B": 3.0
+      },
+      "weight": 1.53
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "C": 1.8125,
+        "B": 3.625
+      },
+      "weight": 2.34
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "C": 2.125,
+        "B": 4.25
+      },
+      "weight": 3.26
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "C": 2.375,
+        "B": 5.5
+      },
+      "weight": 6.48
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.375,
+        "B": 0.75
+      },
+      "weight": 0.11
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.5,
+        "B": 0.875
+      },
+      "weight": 0.13
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.875,
+        "B": 1.125
+      },
+      "weight": 0.29
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 2.0,
+        "B": 1.375
+      },
+      "weight": 0.42
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 2.375,
+        "B": 1.75
+      },
+      "weight": 0.85
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.625,
+        "B": 2.25
+      },
+      "weight": 1.6
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 3.125,
+        "B": 2.5
+      },
+      "weight": 2.26
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 3.375,
+        "B": 3.0
+      },
+      "weight": 2.95
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.625,
+        "B": 3.625
+      },
+      "weight": 4.61
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 4.25,
+        "B": 4.25
+      },
+      "weight": 6.89
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "A": 4.75,
+        "B": 5.5
+      },
+      "weight": 12.48
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "D": 0.9375,
+        "B": 0.75
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "D": 1.0,
+        "B": 0.75
+      },
+      "weight": 0.09
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "D": 1.0,
+        "B": 0.875
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "D": 1.25,
+        "B": 1.125
+      },
+      "weight": 0.24
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "D": 1.4375,
+        "B": 1.375
+      },
+      "weight": 0.37
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "D": 1.625,
+        "B": 1.75
+      },
+      "weight": 0.74
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "D": 1.75,
+        "B": 2.25
+      },
+      "weight": 1.35
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "D": 1.75,
+        "B": 2.5
+      },
+      "weight": 1.64
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "D": 1.875,
+        "B": 3.0
+      },
+      "weight": 2.4
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "D": 2.375,
+        "B": 3.625
+      },
+      "weight": 4.45
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "D": 2.5625,
+        "B": 4.25
+      },
+      "weight": 7.14
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "4",
+      "dims": {
+        "D": 2.6875,
+        "B": 5.5
+      },
+      "weight": 12.42
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 1.25,
+        "B": 0.875
+      },
+      "weight": 0.18
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.375,
+        "B": 1.0
+      },
+      "weight": 0.28
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.5,
+        "B": 1.25
+      },
+      "weight": 0.39
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.875,
+        "B": 1.5
+      },
+      "weight": 0.7
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 2.0,
+        "B": 1.75
+      },
+      "weight": 0.95
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.375,
+        "B": 2.25
+      },
+      "weight": 1.93
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.625,
+        "B": 2.5
+      },
+      "weight": 2.28
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 3.125,
+        "B": 3.0
+      },
+      "weight": 4.2
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 3.375,
+        "B": 3.625
+      },
+      "weight": 6.0
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.625,
+        "B": 4.25
+      },
+      "weight": 8.65
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 4.25,
+        "B": 5.0
+      },
+      "weight": 13.41
+    },
+    {
+      "type": "coupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 4.75,
+        "B": 6.25
+      },
+      "weight": 21.86
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "C": 0.625,
+        "B": 0.875
+      },
+      "weight": 0.1
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "C": 0.6875,
+        "B": 1.0
+      },
+      "weight": 0.12
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "C": 0.75,
+        "B": 1.25
+      },
+      "weight": 0.19
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "C": 0.9375,
+        "B": 1.5
+      },
+      "weight": 0.35
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "C": 1.0,
+        "B": 1.75
+      },
+      "weight": 0.49
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "C": 1.1875,
+        "B": 2.25
+      },
+      "weight": 0.97
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "C": 1.3125,
+        "B": 2.5
+      },
+      "weight": 1.15
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "C": 1.5625,
+        "B": 3.0
+      },
+      "weight": 2.08
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "C": 1.6875,
+        "B": 3.625
+      },
+      "weight": 3.05
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "C": 1.8125,
+        "B": 4.25
+      },
+      "weight": 4.35
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "C": 2.125,
+        "B": 5.0
+      },
+      "weight": 6.83
+    },
+    {
+      "type": "halfCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "C": 2.375,
+        "B": 6.25
+      },
+      "weight": 7.05
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.375,
+        "B": 1.0
+      },
+      "weight": 0.28
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.5,
+        "B": 1.25
+      },
+      "weight": 0.39
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.875,
+        "B": 1.5
+      },
+      "weight": 0.7
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 2.0,
+        "B": 1.75
+      },
+      "weight": 0.95
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.375,
+        "B": 2.25
+      },
+      "weight": 1.93
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.625,
+        "B": 2.5
+      },
+      "weight": 2.28
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 3.125,
+        "B": 3.0
+      },
+      "weight": 4.2
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 3.375,
+        "B": 3.625
+      },
+      "weight": 6.0
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 3.625,
+        "B": 4.25
+      },
+      "weight": 8.65
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "A": 4.25,
+        "B": 5.0
+      },
+      "weight": 13.41
+    },
+    {
+      "type": "reducingCoupling",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "A": 4.75,
+        "B": 6.25
+      },
+      "weight": 21.86
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/8",
+      "dims": {
+        "D": 1.0,
+        "B": 0.875
+      },
+      "weight": 0.16
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "D": 1.0625,
+        "B": 1.0
+      },
+      "weight": 0.23
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "D": 1.0625,
+        "B": 1.25
+      },
+      "weight": 0.31
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "D": 1.3125,
+        "B": 1.5
+      },
+      "weight": 0.55
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "D": 1.5,
+        "B": 1.75
+      },
+      "weight": 0.78
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "D": 1.6875,
+        "B": 2.25
+      },
+      "weight": 1.55
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "D": 1.8125,
+        "B": 2.5
+      },
+      "weight": 1.9
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "D": 1.875,
+        "B": 3.0
+      },
+      "weight": 2.79
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "D": 2.0,
+        "B": 3.625
+      },
+      "weight": 4.35
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2 1/2",
+      "dims": {
+        "D": 2.5,
+        "B": 4.25
+      },
+      "weight": 8.1
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3",
+      "dims": {
+        "D": 2.6875,
+        "B": 5.0
+      },
+      "weight": 10.73
+    },
+    {
+      "type": "cap",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "4",
+      "dims": {
+        "D": 2.9375,
+        "B": 6.25
+      },
+      "weight": 15.58
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/8",
+      "dims": {
+        "A": 1.375,
+        "B": 0.40625
+      },
+      "weight": 0.05
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.625,
+        "B": 0.5625
+      },
+      "weight": 0.11
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.625,
+        "B": 0.6875
+      },
+      "weight": 0.18
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 1.75,
+        "B": 0.8125
+      },
+      "weight": 0.25
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 1.75,
+        "B": 1.0625
+      },
+      "weight": 0.41
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.0,
+        "B": 1.3125
+      },
+      "weight": 0.73
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.0,
+        "B": 1.6875
+      },
+      "weight": 1.2
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 1.90625
+      },
+      "weight": 1.57
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2",
+      "dims": {
+        "A": 2.5,
+        "B": 2.375
+      },
+      "weight": 3.1
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 2.75,
+        "B": 2.875
+      },
+      "weight": 5.01
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3",
+      "dims": {
+        "A": 2.75,
+        "B": 3.5
+      },
+      "weight": 7.4
+    },
+    {
+      "type": "plugRound",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "4",
+      "dims": {
+        "A": 3.0,
+        "B": 4.5
+      },
+      "weight": 13.25
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/8",
+      "dims": {
+        "C": 0.4375,
+        "D_min": 0.25,
+        "E": 0.4375
+      },
+      "weight": 0.03
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/4",
+      "dims": {
+        "C": 0.625,
+        "D_min": 0.25,
+        "E": 0.5
+      },
+      "weight": 0.06
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/8",
+      "dims": {
+        "C": 0.6875,
+        "D_min": 0.3125,
+        "E": 0.5625
+      },
+      "weight": 0.09
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/2",
+      "dims": {
+        "C": 0.875,
+        "D_min": 0.3125,
+        "E": 0.6875
+      },
+      "weight": 0.16
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/4",
+      "dims": {
+        "C": 1.0625,
+        "D_min": 0.375,
+        "E": 0.75
+      },
+      "weight": 0.27
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1",
+      "dims": {
+        "C": 1.375,
+        "D_min": 0.375,
+        "E": 0.84375
+      },
+      "weight": 0.48
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/4",
+      "dims": {
+        "C": 1.75,
+        "D_min": 0.5625,
+        "E": 0.875
+      },
+      "weight": 0.93
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/2",
+      "dims": {
+        "C": 2.0,
+        "D_min": 0.625,
+        "E": 0.9375
+      },
+      "weight": 1.35
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2",
+      "dims": {
+        "C": 2.5,
+        "D_min": 0.6875,
+        "E": 1.0
+      },
+      "weight": 2.26
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2 1/2",
+      "dims": {
+        "C": 3.0,
+        "D_min": 0.75,
+        "E": 1.25
+      },
+      "weight": 3.84
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3",
+      "dims": {
+        "C": 3.75,
+        "D_min": 0.8125,
+        "E": 1.6875
+      },
+      "weight": 7.08
+    },
+    {
+      "type": "plugHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "4",
+      "dims": {
+        "C": 4.875,
+        "D_min": 1.0,
+        "E": 1.78125
+      },
+      "weight": 12.07
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/8",
+      "dims": {
+        "F": 0.28125,
+        "G": 0.25,
+        "H": 0.375
+      },
+      "weight": 0.02
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/4",
+      "dims": {
+        "F": 0.375,
+        "G": 0.25,
+        "H": 0.4375
+      },
+      "weight": 0.04
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/8",
+      "dims": {
+        "F": 0.4375,
+        "G": 0.3125,
+        "H": 0.5
+      },
+      "weight": 0.06
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/2",
+      "dims": {
+        "F": 0.5625,
+        "G": 0.375,
+        "H": 0.5625
+      },
+      "weight": 0.12
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/4",
+      "dims": {
+        "F": 0.625,
+        "G": 0.4375,
+        "H": 0.625
+      },
+      "weight": 0.19
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1",
+      "dims": {
+        "F": 0.8125,
+        "G": 0.5,
+        "H": 0.75
+      },
+      "weight": 0.35
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/4",
+      "dims": {
+        "F": 0.9375,
+        "G": 0.5625,
+        "H": 0.8125
+      },
+      "weight": 0.61
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/2",
+      "dims": {
+        "F": 1.125,
+        "G": 0.625,
+        "H": 0.8125
+      },
+      "weight": 0.83
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2",
+      "dims": {
+        "F": 1.3125,
+        "G": 0.6875,
+        "H": 0.875
+      },
+      "weight": 1.41
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2 1/2",
+      "dims": {
+        "F": 1.5,
+        "G": 0.75,
+        "H": 1.0625
+      },
+      "weight": 2.33
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3",
+      "dims": {
+        "F": 1.6875,
+        "G": 0.8125,
+        "H": 1.125
+      },
+      "weight": 3.57
+    },
+    {
+      "type": "plugSquare",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "4",
+      "dims": {
+        "F": 2.5,
+        "G": 1.25,
+        "H": 1.25
+      },
+      "weight": 6.28
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/4",
+      "dims": {
+        "C": 0.625,
+        "E": 0.5,
+        "J_min": 0.1875
+      },
+      "weight": 0.03
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/8",
+      "dims": {
+        "C": 0.6875,
+        "E": 0.5625,
+        "J_min": 0.1875
+      },
+      "weight": 0.04
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/2",
+      "dims": {
+        "C": 0.875,
+        "E": 0.6875,
+        "J_min": 0.1875
+      },
+      "weight": 0.06
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/4",
+      "dims": {
+        "C": 1.0625,
+        "E": 0.75,
+        "J_min": 0.25
+      },
+      "weight": 0.12
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1",
+      "dims": {
+        "C": 1.375,
+        "E": 0.84375,
+        "J_min": 0.25
+      },
+      "weight": 0.21
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/4",
+      "dims": {
+        "C": 1.75,
+        "E": 0.875,
+        "J_min": 0.375
+      },
+      "weight": 0.38
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/2",
+      "dims": {
+        "C": 2.0,
+        "E": 0.9375,
+        "J_min": 0.375
+      },
+      "weight": 0.37
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2",
+      "dims": {
+        "C": 2.5,
+        "E": 1.0,
+        "J_min": 0.375
+      },
+      "weight": 0.77
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2 1/2",
+      "dims": {
+        "C": 3.0,
+        "E": 1.25,
+        "J_min": 0.5
+      },
+      "weight": 1.31
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3",
+      "dims": {
+        "C": 3.75,
+        "E": 1.6875,
+        "J_min": 0.4375
+      },
+      "weight": 3.78
+    },
+    {
+      "type": "bushingHex",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "4",
+      "dims": {
+        "C": 4.875,
+        "E": 1.78125,
+        "J_min": 1.0
+      },
+      "weight": 7.31
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/4",
+      "dims": {
+        "E": 0.5
+      },
+      "weight": 0.05
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/8",
+      "dims": {
+        "E": 0.5625
+      },
+      "weight": 0.07
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1/2",
+      "dims": {
+        "E": 0.6875
+      },
+      "weight": 0.03
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3/4",
+      "dims": {
+        "E": 0.75
+      },
+      "weight": 0.06
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1",
+      "dims": {
+        "E": 0.84375
+      },
+      "weight": 0.09
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/4",
+      "dims": {
+        "E": 0.875
+      },
+      "weight": 0.17
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "1 1/2",
+      "dims": {
+        "E": 0.9375
+      },
+      "weight": 0.19
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2",
+      "dims": {
+        "E": 1.0
+      },
+      "weight": 0.39
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "2 1/2",
+      "dims": {
+        "E": 1.25
+      },
+      "weight": 0.62
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "3",
+      "dims": {
+        "E": 1.6875
+      },
+      "weight": 1.0
+    },
+    {
+      "type": "bushingFlush",
+      "connection": "TH",
+      "class": "3000/6000",
+      "nps": "4",
+      "dims": {
+        "E": 1.78125
+      },
+      "weight": 1.88
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/8",
+      "dims": {
+        "A": 1.703125,
+        "B": 1.375,
+        "C": 0.875,
+        "D": 0.953125,
+        "E_min": 0.375,
+        "F": 0.42
+      },
+      "weight": 0.41
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.71875,
+        "B": 1.375,
+        "C": 0.875,
+        "D": 0.96875,
+        "E_min": 0.375,
+        "F": 0.555
+      },
+      "weight": 0.38
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.875,
+        "B": 1.5625,
+        "C": 1.03125,
+        "D": 1.125,
+        "E_min": 0.375,
+        "F": 0.69
+      },
+      "weight": 0.54
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1/2",
+      "dims": {
+        "A": 2.0,
+        "B": 1.8125,
+        "C": 1.234375,
+        "D": 1.25,
+        "E_min": 0.375,
+        "F": 0.855
+      },
+      "weight": 0.79
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3/4",
+      "dims": {
+        "A": 2.28125,
+        "B": 2.171875,
+        "C": 1.484375,
+        "D": 1.28125,
+        "E_min": 0.5,
+        "F": 1.065
+      },
+      "weight": 1.25
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1",
+      "dims": {
+        "A": 2.5,
+        "B": 2.5625,
+        "C": 1.8125,
+        "D": 1.5,
+        "E_min": 0.5,
+        "F": 1.33
+      },
+      "weight": 1.8
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 2.875,
+        "B": 3.125,
+        "C": 2.234375,
+        "D": 1.875,
+        "E_min": 0.5,
+        "F": 1.675
+      },
+      "weight": 2.88
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 3.03125,
+        "B": 3.5,
+        "C": 2.484375,
+        "D": 2.03125,
+        "E_min": 0.5,
+        "F": 1.915
+      },
+      "weight": 3.64
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2",
+      "dims": {
+        "A": 3.5,
+        "B": 4.25,
+        "C": 3.03125,
+        "D": 2.25,
+        "E_min": 0.625,
+        "F": 2.406
+      },
+      "weight": 5.81
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "2 1/2",
+      "dims": {
+        "A": 4.046875,
+        "B": 4.875,
+        "C": 3.65625,
+        "D": 2.796875,
+        "E_min": 0.625,
+        "F": 2.906
+      },
+      "weight": 8.77
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "3000",
+      "nps": "3",
+      "dims": {
+        "A": 4.296875,
+        "B": 5.75,
+        "C": 4.40625,
+        "D": 3.046875,
+        "E_min": 0.625,
+        "F": 3.535
+      },
+      "weight": 12.98
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/4",
+      "dims": {
+        "A": 1.875,
+        "B": 1.578125,
+        "C": 1.03125,
+        "D": 1.125,
+        "E_min": 0.375,
+        "F": 0.555
+      },
+      "weight": 0.59
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/8",
+      "dims": {
+        "A": 1.984375,
+        "B": 1.8125,
+        "C": 1.234375,
+        "D": 1.234375,
+        "E_min": 0.375,
+        "F": 0.69
+      },
+      "weight": 0.84
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1/2",
+      "dims": {
+        "A": 2.296875,
+        "B": 2.203125,
+        "C": 1.46875,
+        "D": 1.546875,
+        "E_min": 0.375,
+        "F": 0.855
+      },
+      "weight": 1.42
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "3/4",
+      "dims": {
+        "A": 2.5,
+        "B": 2.578125,
+        "C": 1.796875,
+        "D": 1.5,
+        "E_min": 0.5,
+        "F": 1.065
+      },
+      "weight": 2.09
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1",
+      "dims": {
+        "A": 2.875,
+        "B": 3.109375,
+        "C": 2.171875,
+        "D": 1.875,
+        "E_min": 0.5,
+        "F": 1.33
+      },
+      "weight": 3.4
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/4",
+      "dims": {
+        "A": 3.015625,
+        "B": 3.421875,
+        "C": 2.46875,
+        "D": 2.015625,
+        "E_min": 0.5,
+        "F": 1.675
+      },
+      "weight": 4.09
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "1 1/2",
+      "dims": {
+        "A": 3.53125,
+        "B": 4.09375,
+        "C": 3.03125,
+        "D": 2.53125,
+        "E_min": 0.5,
+        "F": 1.915
+      },
+      "weight": 7.18
+    },
+    {
+      "type": "union",
+      "connection": "TH",
+      "class": "6000",
+      "nps": "2",
+      "dims": {
+        "A": 4.265625,
+        "B": 4.875,
+        "C": 3.65625,
+        "D": 3.015625,
+        "E_min": 0.625,
+        "F": 2.406
+      },
+      "weight": 12.44
+    }
+  ]
+}
