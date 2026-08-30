@@ -102,8 +102,10 @@ dependency is noted.
 - [x] **PD-27 · Help & provenance** (S) — About-this-data sheets citing
   standards (Pipe + Flanges; remaining modules are one-liners) + data-source
   table in Settings.
-- [ ] **PD-28 · App Store prep** (M) — privacy manifest, screenshots,
-  description, TestFlight distribution.
+- [x] **PD-28 · App Store prep** (M) — privacy manifest, screenshots
+  (6.9" + 13", required sizes), description/keywords/privacy policy in
+  `appstore/SUBMISSION.md`. *TestFlight upload needs Kevin's Apple account —
+  step-by-step in the submission pack.*
 
 ---
 
