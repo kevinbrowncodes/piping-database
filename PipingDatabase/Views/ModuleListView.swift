@@ -149,7 +149,8 @@ struct ModuleListView: View {
                 // navigating back to the root works normally afterwards.
                 if !didConsumeDeepLink, path.isEmpty,
                    let target = ProcessInfo.processInfo.environment["OPEN_MODULE"],
-                   modules.contains(where: { $0.id == String(target.split(separator: "|")[0]) }) {
+                   let head = target.split(separator: "|").first,
+                   modules.contains(where: { $0.id == String(head) }) {
                     didConsumeDeepLink = true
                     path = [target]
                 }
