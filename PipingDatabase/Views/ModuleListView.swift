@@ -36,7 +36,8 @@ struct ModuleListView: View {
 
     @State private var path: [String] = []
     @State private var searchText = ""
-    @AppStorage("moduleOrder") private var moduleOrderRaw = ""
+    @State private var didConsumeDeepLink = false
+    @AppStorage(PrefKey.moduleOrder) private var moduleOrderRaw = ""
     @Environment(\.modelContext) private var context
 
     private var searchResults: [SearchEntry] {
@@ -51,8 +52,12 @@ struct ModuleListView: View {
     private var orderedModules: [Module] {
         let order = moduleOrderRaw.split(separator: ",").map(String.init)
         guard !order.isEmpty else { return modules }
+        // Stable for ids missing from a stale saved order: fall back to
+        // canonical position rather than letting them tie at .max.
+        let canonical = Dictionary(uniqueKeysWithValues: modules.enumerated().map { ($1.id, $0) })
         return modules.sorted {
-            (order.firstIndex(of: $0.id) ?? .max) < (order.firstIndex(of: $1.id) ?? .max)
+            (order.firstIndex(of: $0.id) ?? .max, canonical[$0.id] ?? 0)
+                < (order.firstIndex(of: $1.id) ?? .max, canonical[$1.id] ?? 0)
         }
     }
 
@@ -139,10 +144,16 @@ struct ModuleListView: View {
                 }
             }
             .onAppear {
-                // Dev/automation hook: SIMCTL_CHILD_OPEN_MODULE=pipe deep-links on launch.
-                if let target = ProcessInfo.processInfo.environment["OPEN_MODULE"], path.isEmpty {
+                #if DEBUG
+                // Dev/automation hook (debug builds only), consumed once so
+                // navigating back to the root works normally afterwards.
+                if !didConsumeDeepLink, path.isEmpty,
+                   let target = ProcessInfo.processInfo.environment["OPEN_MODULE"],
+                   modules.contains(where: { $0.id == String(target.split(separator: "|")[0]) }) {
+                    didConsumeDeepLink = true
                     path = [target]
                 }
+                #endif
             }
         }
     }

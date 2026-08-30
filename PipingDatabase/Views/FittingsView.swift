@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct FittingsView: View {
-    @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
-    @AppStorage("fractionDisplay") private var showFractions = false
+    @AppStorage(PrefKey.unitSystem) private var unitRaw = UnitSystem.imperial.rawValue
+    @AppStorage(PrefKey.fractionDisplay) private var showFractions = false
 
     @State private var connection: String
     @State private var selectedType: String

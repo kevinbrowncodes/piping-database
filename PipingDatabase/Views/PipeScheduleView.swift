@@ -11,10 +11,10 @@ struct PipeScheduleView: View {
         _selectedDesignation = State(initialValue: preselect["s"] ?? "40")
     }
 
-    @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
-    @AppStorage("nominalStyle") private var nominalRaw = NominalStyle.nps.rawValue
-    @AppStorage("fractionDisplay") private var showFractions = false
-    @AppStorage("volumeUnit") private var volumeRaw = VolumeUnit.cubicFeet.rawValue
+    @AppStorage(PrefKey.unitSystem) private var unitRaw = UnitSystem.imperial.rawValue
+    @AppStorage(PrefKey.nominalStyle) private var nominalRaw = NominalStyle.nps.rawValue
+    @AppStorage(PrefKey.fractionDisplay) private var showFractions = false
+    @AppStorage(PrefKey.volumeUnit) private var volumeRaw = VolumeUnit.cubicFeet.rawValue
 
     @State private var selectedNPS: String
     @State private var selectedDesignation: String
@@ -173,7 +173,7 @@ struct PipeScheduleView: View {
         \(lookupTitle)
         OD \(Format.length(e.odInches, unit: unit)) · ID \(Format.length(e.idInches, unit: unit)) · Wall \(Format.length(e.wallInches, unit: unit))
         Weight \(Format.linearWeight(e.weightLbPerFt, unit: unit)) · Water-filled \(Format.linearWeight(e.waterFilledWeightLbPerFt, unit: unit))
-        Source: \(e.standard) — Piping Database
+        Source: \(e.standard) — Piping Database \(AppInfo.version)
         """
     }
 

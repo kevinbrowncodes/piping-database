@@ -1,5 +1,25 @@
 import Foundation
 
+/// Single source of truth for UserDefaults preference keys — used by every
+/// @AppStorage site and by the debug-only UITEST_RESET hook. Deliberately
+/// excludes Seeder.versionKey (wiping it would force a full re-seed).
+enum PrefKey {
+    static let unitSystem = "unitSystem"
+    static let nominalStyle = "nominalStyle"
+    static let fractionDisplay = "fractionDisplay"
+    static let volumeUnit = "volumeUnit"
+    static let moduleOrder = "moduleOrder"
+    static let all = [unitSystem, nominalStyle, fractionDisplay, volumeUnit, moduleOrder]
+}
+
+enum AppInfo {
+    static var version: String {
+        let v = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0"
+        let b = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "0"
+        return "\(v) (\(b))"
+    }
+}
+
 enum UnitSystem: String, CaseIterable {
     case imperial
     case metric

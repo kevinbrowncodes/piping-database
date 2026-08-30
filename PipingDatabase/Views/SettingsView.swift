@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
-    @AppStorage("nominalStyle") private var nominalRaw = NominalStyle.nps.rawValue
-    @AppStorage("fractionDisplay") private var showFractions = false
-    @AppStorage("volumeUnit") private var volumeRaw = VolumeUnit.cubicFeet.rawValue
+    @AppStorage(PrefKey.unitSystem) private var unitRaw = UnitSystem.imperial.rawValue
+    @AppStorage(PrefKey.nominalStyle) private var nominalRaw = NominalStyle.nps.rawValue
+    @AppStorage(PrefKey.fractionDisplay) private var showFractions = false
+    @AppStorage(PrefKey.volumeUnit) private var volumeRaw = VolumeUnit.cubicFeet.rawValue
 
     var body: some View {
         Form {
@@ -43,6 +43,10 @@ struct SettingsView: View {
                 Text("Data sources")
             } footer: {
                 Text("Dimensional data compiled from published manufacturer catalogs reprinting the governing standards. Always verify critical dimensions against the current standard edition.")
+            }
+
+            Section("About") {
+                LabeledContent("Version", value: AppInfo.version)
             }
         }
         .navigationTitle("Settings")

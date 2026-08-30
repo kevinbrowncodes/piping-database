@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct GasketsView: View {
-    @AppStorage("unitSystem") private var unitRaw = UnitSystem.imperial.rawValue
-    @AppStorage("fractionDisplay") private var showFractions = false
+    @AppStorage(PrefKey.unitSystem) private var unitRaw = UnitSystem.imperial.rawValue
+    @AppStorage(PrefKey.fractionDisplay) private var showFractions = false
 
     @State private var selectedClass: String
     @State private var selectedNPS: String

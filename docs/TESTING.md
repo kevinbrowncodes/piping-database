@@ -55,7 +55,11 @@ schema + invariants + independently-sourced goldens + counts.
 - Launch → every module row present; tap each available module → screen appears.
 - Pipe Schedule: pick size + schedule → all data labels non-empty and match the
   golden value for that pick; unit toggle flips in→mm everywhere at once.
-- Uses the `OPEN_MODULE` launch-environment hook to jump straight into modules.
+- Debug-only launch-environment hooks (compiled out of Release):
+  `OPEN_MODULE=<id|payload>` deep-links into a module, `OPEN_TAB` selects a
+  tab, and `UITEST_RESET=1` clears the `PrefKey.all` preferences plus the
+  SavedLookup store for deterministic runs — every UI test must set it
+  (the `launchApp` helper in SmokeTests does).
 - Optional later: snapshot tests on the Canvas drawings to catch dimension
   callouts drifting or overlapping.
 
