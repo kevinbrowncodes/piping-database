@@ -16,14 +16,26 @@ Everything below is ready to paste into App Store Connect. Items marked
 | Age rating | 4+ (no objectionable content) |
 | Price | **[YOU]** — comparable apps charge $5–$15 one-time; the reference app you started from is paid |
 
-**App name** **[YOU]**: App Store names must be globally unique and
-"Piping Database" may be taken (it's close to the app that inspired this).
-Have 2–3 fallbacks ready, e.g.:
-- `Piping Database: Fitter Ref`
-- `PipeFitter Reference`
-- `Piping DB — ASME Reference`
+**App name — ASO-optimized set** (the name is the heaviest-weighted
+search field; never repeat a word across name/subtitle/keywords):
 
-**Subtitle** (30 chars max): `Pipe, flange & fitting specs`
+| Field | Value | Chars |
+|---|---|---|
+| Name | `PipeBase: Pipe Fitter Charts` | 28/30 |
+| Subtitle | `Flange, valve & fitting specs` | 29/30 |
+| Keywords | `pipefitter,piping,schedule,ASME,weldolet,gasket,torque,NPS,welder,blind,dimensions,calculator` | 92/100 |
+
+Rationale: the niche's incumbents are calculators (Pipe Fitter
+Calculator, PipeFit Pro, Miter Pipe Calculator…); the charts/specs/
+reference queries are nearly unowned. Name carries pipe + fitter +
+charts as standalone tokens; subtitle adds flange/valve/fitting/specs;
+keyword field covers the one-word "pipefitter" variant, "calculator"
+traffic, and unowned long-tail trade terms.
+
+Fallback names if PipeBase is taken at reservation time:
+`PipeSpec: Pipe Fitter Charts` (28) · `PipeVault: Pipe Fitter Charts`
+(29). Reserve the name early in App Store Connect — that's the only
+true availability check, and names are first-come.
 
 ## 2. Description (paste into App Store Connect)
 
@@ -73,10 +85,10 @@ live dimensioned drawings, inch/mm, fractions, torque data. Fully
 offline. Built for the field.
 ```
 
-**Keywords** (100 chars, comma-separated, no spaces needed):
-```
-pipe,fitter,flange,fitting,valve,schedule,ASME,piping,weldolet,gasket,pipefitter,NPS,torque
-```
+**Keywords**: use the set in section 1 — it's deduplicated against the
+recommended name and subtitle. If you change the name, re-check that no
+keyword repeats a name/subtitle word (repeats earn nothing and waste
+characters).
 
 ## 3. Privacy
 
