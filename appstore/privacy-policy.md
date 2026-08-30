@@ -1,12 +1,12 @@
-# Privacy Policy — Piping Database
+# Privacy Policy — PipeBase
 
 **Effective date:** August 29, 2026
 
-Piping Database is an offline engineering reference application.
+PipeBase is an offline engineering reference application.
 
 ## Data collection
 
-Piping Database does not collect, store, transmit, sell, or share any
+PipeBase does not collect, store, transmit, sell, or share any
 personal data. The app:
 
 - makes **no network requests** of any kind;

@@ -173,7 +173,7 @@ struct PipeScheduleView: View {
         \(lookupTitle)
         OD \(Format.length(e.odInches, unit: unit)) · ID \(Format.length(e.idInches, unit: unit)) · Wall \(Format.length(e.wallInches, unit: unit))
         Weight \(Format.linearWeight(e.weightLbPerFt, unit: unit)) · Water-filled \(Format.linearWeight(e.waterFilledWeightLbPerFt, unit: unit))
-        Source: \(e.standard) — Piping Database \(AppInfo.version)
+        Source: \(e.standard) — PipeBase \(AppInfo.version)
         """
     }
 

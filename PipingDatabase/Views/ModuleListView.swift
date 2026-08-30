@@ -127,7 +127,7 @@ struct ModuleListView: View {
             }
             .searchable(text: $searchText, prompt: "2 300 wn · sch 80 6 · gate 600")
             .toolbar { EditButton() }
-            .navigationTitle("Piping Database")
+            .navigationTitle("PipeBase")
             .navigationDestination(for: String.self) { route in
                 let parts = route.split(separator: "|", maxSplits: 1)
                 let id = String(parts.first ?? "")

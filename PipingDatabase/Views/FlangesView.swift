@@ -125,7 +125,7 @@ struct FlangesView: View {
         if let torque = ReferenceStore.shared.boltTorque?.torque(boltDia: s.drilling.boltDia, stressPsi: 40000) {
             lines.append("Torque @ 40 ksi stud stress: \(torque) ft·lb/bolt (lubricated)")
         }
-        lines.append("Source: \(s.series ?? "ASME B16.5") — Piping Database \(AppInfo.version)")
+        lines.append("Source: \(s.series ?? "ASME B16.5") — PipeBase \(AppInfo.version)")
         return lines.joined(separator: "\n")
     }
 
