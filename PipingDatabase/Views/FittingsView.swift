@@ -84,7 +84,7 @@ struct FittingsView: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        ModuleLayout(pickerWidth: 420) {
             ScrollView {
                 VStack(spacing: 16) {
                     if let f = selection {
@@ -105,6 +105,7 @@ struct FittingsView: View {
                 }
                 .padding(.horizontal)
             }
+        } pickers: {
             pickers
         }
         .navigationTitle("Fittings")
@@ -145,6 +146,10 @@ struct FittingsView: View {
     /// Forged legend uses family-suffixed keys (A_elbow, E_sw, F_cap_SW…);
     /// resolve a row's plain letter against the fitting's type/connection.
     private func legendText(_ key: String, for f: FittingsFile.Fitting) -> String {
+        LegendText.display(rawLegend(key, for: f))
+    }
+
+    private func rawLegend(_ key: String, for f: FittingsFile.Fitting) -> String {
         if let direct = legend[key] { return direct }
         let context = "\(f.type) \(f.connection ?? "")".lowercased()
         let candidates = legend.keys.filter { $0.hasPrefix("\(key)_") }
@@ -180,13 +185,18 @@ struct FittingsView: View {
         VStack(alignment: .leading, spacing: 6) {
             Text("Weight").font(.caption2).foregroundStyle(.secondary)
             let keys = weights.keys.sorted { ScheduleOrder.index(of: $0) < ScheduleOrder.index(of: $1) }
-            HStack(spacing: 18) {
+            // Up to six schedules per fitting: wrap whole cells, never the
+            // text inside them (BUG-0005).
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 84), alignment: .leading)],
+                      alignment: .leading, spacing: 8) {
                 ForEach(keys, id: \.self) { k in
                     VStack(alignment: .leading, spacing: 1) {
                         Text(k == "–" ? "each" : "Sch \(k)").font(.caption2).foregroundStyle(.secondary)
                         Text(String(format: "%.2f lb", weights[k] ?? 0))
                             .font(.callout.monospacedDigit()).bold()
                     }
+                    .lineLimit(1)
+                    .fixedSize()
                 }
             }
         }
@@ -232,9 +242,6 @@ struct FittingsView: View {
                 .frame(width: 90)
             }
         }
-        .frame(height: 130)
-        .frame(maxWidth: 700)
-        .background(.bar)
     }
 }
 

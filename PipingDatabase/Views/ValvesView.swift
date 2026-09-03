@@ -53,7 +53,7 @@ struct ValvesView: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        ModuleLayout {
             ScrollView {
                 VStack(spacing: 16) {
                     if let v = selection {
@@ -73,6 +73,7 @@ struct ValvesView: View {
                 }
                 .padding(.horizontal)
             }
+        } pickers: {
             pickers
         }
         .navigationTitle("Valves")
@@ -138,9 +139,6 @@ struct ValvesView: View {
             }
             .pickerStyle(.wheel)
         }
-        .frame(height: 130)
-        .frame(maxWidth: 700)
-        .background(.bar)
     }
 }
 

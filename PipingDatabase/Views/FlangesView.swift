@@ -53,7 +53,7 @@ struct FlangesView: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        ModuleLayout {
             ScrollView {
                 VStack(spacing: 16) {
                     if let s = selection {
@@ -72,6 +72,7 @@ struct FlangesView: View {
                 }
                 .padding(.horizontal)
             }
+        } pickers: {
             pickers
         }
         .navigationTitle("Flanges")
@@ -108,7 +109,20 @@ struct FlangesView: View {
                let first = sizeOptions.first {
                 selectedNPS = first.key
             }
+            reconcileType()
         }
+        .onChange(of: selectedNPS) { reconcileType() }
+    }
+
+    /// Class 125 rows list only WN/SO and B16.47 rows only WN/blind; a type
+    /// chosen elsewhere must follow the wheel to what the row offers, or the
+    /// cards keep rendering the old type while the wheel shows another (BUG-0003).
+    private func reconcileType() {
+        selectedType = Self.reconciledType(selectedType, available: availableTypes.map(\.0))
+    }
+
+    static func reconciledType(_ current: String, available: [String]) -> String {
+        available.contains(current) ? current : (available.first ?? current)
     }
 
     private func fmt(_ inches: Double) -> String {
@@ -125,7 +139,7 @@ struct FlangesView: View {
         if let torque = ReferenceStore.shared.boltTorque?.torque(boltDia: s.drilling.boltDia, stressPsi: 40000) {
             lines.append("Torque @ 40 ksi stud stress: \(torque) ft·lb/bolt (lubricated)")
         }
-        lines.append("Source: \(s.series ?? "ASME B16.5") — PipeBase \(AppInfo.version)")
+        lines.append("Source: \(s.sourceLabel(class: selectedClass)) — PipeBase \(AppInfo.version)")
         return lines.joined(separator: "\n")
     }
 
@@ -145,7 +159,7 @@ struct FlangesView: View {
             if let weight {
                 GridRow {
                     labeled("Weight (\(selectedType))", String(format: "%.1f lb", weight))
-                    labeled("Source", s.series ?? file?.standard ?? "ASME B16.5")
+                    labeled("Source", s.sourceLabel(class: selectedClass))
                 }
             }
         }
@@ -238,7 +252,7 @@ struct FlangesView: View {
     private func dimRow(_ key: String, _ value: Double) -> some View {
         HStack(alignment: .firstTextBaseline) {
             Text(key).font(.callout.monospaced()).bold().frame(width: 40, alignment: .leading)
-            Text(file?.legend[key] ?? "").font(.caption).foregroundStyle(.secondary)
+            Text(LegendText.display(file?.legend[key] ?? "")).font(.caption).foregroundStyle(.secondary)
             Spacer()
             Text(fmt(value)).font(.callout.monospacedDigit()).bold()
         }
@@ -270,9 +284,6 @@ struct FlangesView: View {
             .pickerStyle(.wheel)
             .frame(width: 110)
         }
-        .frame(height: 130)
-        .frame(maxWidth: 600)
-        .background(.bar)
     }
 }
 

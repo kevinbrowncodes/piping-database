@@ -6,9 +6,19 @@ struct PipeScheduleView: View {
     @Environment(\.horizontalSizeClass) private var hSize
     @Environment(\.modelContext) private var context
 
+    /// Opened from a favorite, recent or search result: that selection is a
+    /// real lookup and belongs in Recents. Opened from the module list, the
+    /// default 1/2" Sch 40 is only noise until the user moves a wheel (BUG-0009).
+    private let openedByDeepLink: Bool
+    private let initialPayload: String
+
     init(preselect: [String: String] = [:]) {
-        _selectedNPS = State(initialValue: preselect["nps"] ?? "1/2")
-        _selectedDesignation = State(initialValue: preselect["s"] ?? "40")
+        let nps = preselect["nps"] ?? "1/2"
+        let designation = preselect["s"] ?? "40"
+        _selectedNPS = State(initialValue: nps)
+        _selectedDesignation = State(initialValue: designation)
+        openedByDeepLink = !preselect.isEmpty
+        initialPayload = "nps=\(nps)&s=\(designation)"
     }
 
     @AppStorage(PrefKey.unitSystem) private var unitRaw = UnitSystem.imperial.rawValue
@@ -52,7 +62,7 @@ struct PipeScheduleView: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        ModuleLayout {
             ScrollView {
                 if let entry {
                     if hSize == .regular {
@@ -82,6 +92,7 @@ struct PipeScheduleView: View {
                 }
             }
             .scrollDismissesKeyboard(.immediately)
+        } pickers: {
             pickers
         }
         .navigationTitle("Pipe Schedule")
@@ -149,6 +160,7 @@ struct PipeScheduleView: View {
         }
         .task(id: payload) {
             isFavorite = LookupStore.isFavorite(context, moduleID: "pipe", payload: payload)
+            guard openedByDeepLink || payload != initialPayload else { return }
             // Debounce so wheel scrolling doesn't spam recents.
             try? await Task.sleep(for: .seconds(1.5))
             guard !Task.isCancelled, entry != nil else { return }
@@ -262,8 +274,5 @@ struct PipeScheduleView: View {
             }
             .pickerStyle(.wheel)
         }
-        .frame(height: 130)
-        .frame(maxWidth: 600)
-        .background(.bar)
     }
 }

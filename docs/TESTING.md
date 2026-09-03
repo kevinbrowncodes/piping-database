@@ -63,6 +63,15 @@ schema + invariants + independently-sourced goldens + counts.
 - Optional later: snapshot tests on the Canvas drawings to catch dimension
   callouts drifting or overlapping.
 
+## Bug regressions
+
+Every defect found in a device QA pass gets a ticket in `docs/bug/` and a
+regression test named for the behaviour that must hold —
+`PipingDatabaseTests/BugRegressionTests.swift` (pure logic: bolt sequence,
+legend captions, search tokens, flange type reconciliation, source labels)
+plus the calculator cases in `TradeCalcTests` and real-UI checks in
+`SmokeTests`. The ticket links the test; the test comment cites the ticket.
+
 ## Layer 5 — Extraction workflow checks (process, not code)
 
 When extracting a table from a reference PDF:

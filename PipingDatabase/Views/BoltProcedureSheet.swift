@@ -41,32 +41,55 @@ struct BoltProcedureSheet: View {
     }
 }
 
-/// Numbered star-sequence bolt pattern for any multiple-of-4 bolt count.
-struct BoltPatternDiagram: View {
-    let numHoles: Int
+/// Star (criss-cross) tightening order for a bolt circle.
+///
+/// Positions are numbered 0 at the top, clockwise. The legacy star pattern
+/// tightens opposite pairs a quarter turn apart: 0°-180°, 90°-270°,
+/// 45°-225°, 135°-315°, … — the same words as step 6 of the printed
+/// procedure. For 8 bolts that reads 1-5-3-7-2-6-4-8 around the circle.
+enum BoltSequence {
+    /// Hole positions in tightening order.
+    static func order(count n: Int) -> [Int] {
+        guard n > 0 else { return [] }
+        guard n >= 4, n % 4 == 0 else { return oppositePairs(count: n) }
+        let quarter = n / 4
+        var order: [Int] = []
+        for k in 0..<quarter {
+            order += [k, k + n / 2, k + quarter, k + 3 * quarter]
+        }
+        return order
+    }
 
-    /// Cross-pattern tightening sequence (1 at top, 2 opposite, then quarters).
-    private var sequence: [Int] {
-        let n = max(numHoles, 4)
+    /// Sequence number (1-based) shown at each hole position.
+    static func numbers(count n: Int) -> [Int] {
+        var position = [Int](repeating: 0, count: max(n, 0))
+        for (seq, pos) in order(count: n).enumerated() { position[pos] = seq + 1 }
+        return position
+    }
+
+    /// Bolt counts that are not a multiple of four (none in B16.5/B16.47):
+    /// opposite pairs, stepping a quarter turn between pairs.
+    private static func oppositePairs(count n: Int) -> [Int] {
         var order: [Int] = []
         var remaining = Set(0..<n)
         var current = 0
         while !remaining.isEmpty {
-            if remaining.contains(current) {
-                order.append(current)
-                remaining.remove(current)
+            for p in [current, (current + n / 2) % n] where remaining.contains(p) {
+                order.append(p)
+                remaining.remove(p)
             }
-            let opposite = (current + n / 2) % n
-            if remaining.contains(opposite) {
-                order.append(opposite)
-                remaining.remove(opposite)
-            }
-            current = remaining.min() ?? 0
+            let next = (current + max(n / 4, 1)) % n
+            current = remaining.contains(next) ? next : (remaining.min() ?? 0)
         }
-        var position = [Int](repeating: 0, count: n)
-        for (seq, pos) in order.enumerated() { position[pos] = seq + 1 }
-        return position
+        return order
     }
+}
+
+/// Numbered star-sequence bolt pattern for any bolt count.
+struct BoltPatternDiagram: View {
+    let numHoles: Int
+
+    private var sequence: [Int] { BoltSequence.numbers(count: max(numHoles, 4)) }
 
     var body: some View {
         Canvas { ctx, size in

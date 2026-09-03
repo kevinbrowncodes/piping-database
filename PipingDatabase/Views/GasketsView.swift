@@ -29,7 +29,7 @@ struct GasketsView: View {
     private var hasFullFace: Bool { selection?.ffOD != nil }
 
     var body: some View {
-        VStack(spacing: 0) {
+        ModuleLayout {
             ScrollView {
                 VStack(spacing: 16) {
                     if let g = selection {
@@ -53,6 +53,7 @@ struct GasketsView: View {
                 }
                 .padding(.horizontal)
             }
+        } pickers: {
             pickers
         }
         .navigationTitle("Gaskets")
@@ -115,9 +116,6 @@ struct GasketsView: View {
             }
             .pickerStyle(.wheel)
         }
-        .frame(height: 130)
-        .frame(maxWidth: 500)
-        .background(.bar)
     }
 }
 

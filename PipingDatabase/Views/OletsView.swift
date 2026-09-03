@@ -43,7 +43,7 @@ struct OletsView: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        ModuleLayout {
             ScrollView {
                 VStack(spacing: 16) {
                     if let o = selection {
@@ -60,6 +60,7 @@ struct OletsView: View {
                 }
                 .padding(.horizontal)
             }
+        } pickers: {
             pickers
         }
         .navigationTitle("Branch Connections")
@@ -111,7 +112,7 @@ struct OletsView: View {
             ForEach(o.dims.keys.sorted(), id: \.self) { key in
                 HStack(alignment: .firstTextBaseline) {
                     Text(key).font(.callout.monospaced()).bold().frame(width: 34, alignment: .leading)
-                    Text(file?.legend[key] ?? "").font(.caption).foregroundStyle(.secondary)
+                    Text(LegendText.display(file?.legend[key] ?? "")).font(.caption).foregroundStyle(.secondary)
                     Spacer()
                     Text(fmt(o.dims[key] ?? 0)).font(.callout.monospacedDigit()).bold()
                 }
@@ -150,9 +151,6 @@ struct OletsView: View {
             .pickerStyle(.wheel)
             .frame(width: 100)
         }
-        .frame(height: 130)
-        .frame(maxWidth: 600)
-        .background(.bar)
     }
 }
 

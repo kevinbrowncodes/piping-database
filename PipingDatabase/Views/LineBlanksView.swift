@@ -27,7 +27,7 @@ struct LineBlanksView: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        ModuleLayout {
             ScrollView {
                 VStack(spacing: 16) {
                     if let b = selection {
@@ -42,6 +42,7 @@ struct LineBlanksView: View {
                 }
                 .padding(.horizontal)
             }
+        } pickers: {
             pickers
         }
         .navigationTitle("Line Blanks")
@@ -106,9 +107,6 @@ struct LineBlanksView: View {
             }
             .pickerStyle(.wheel)
         }
-        .frame(height: 130)
-        .frame(maxWidth: 500)
-        .background(.bar)
     }
 }
 

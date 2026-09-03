@@ -16,12 +16,15 @@ struct TradeCalcEngine {
     private var feetPart: Double?
     private var digits = ""
     private var sixteenths = 0
+    private var negative = false
     private var typedSinceResult = false
     private var result: Double?
 
-    /// Current entry in inches.
+    /// Current entry in inches. The sign applies to the whole entry
+    /// (feet + inches + sixteenths), never to one part of it (BUG-0002).
     private var entryInches: Double {
-        (feetPart ?? 0) * 12 + (Double(digits) ?? 0) + Double(sixteenths) / 16
+        let magnitude = (feetPart ?? 0) * 12 + (Double(digits) ?? 0) + Double(sixteenths) / 16
+        return negative ? -magnitude : magnitude
     }
 
     private var hasEntry: Bool {
@@ -56,12 +59,21 @@ struct TradeCalcEngine {
     }
 
     mutating func backspace() {
-        if sixteenths != 0 { sixteenths = 0 } else if !digits.isEmpty { digits.removeLast() } else { feetPart = nil }
+        if sixteenths != 0 {
+            sixteenths = 0
+        } else if !digits.isEmpty {
+            digits.removeLast()
+        } else if let f = feetPart {
+            // Undo the feet key: the number moves back into the inch field
+            // instead of vanishing (BUG-0010).
+            feetPart = nil
+            digits = f == 0 ? "" : String(Int(f))
+        }
     }
 
     mutating func plusMinus() {
         if hasEntry {
-            if let f = feetPart { feetPart = -f } else if let v = Double(digits) { digits = String(-v) }
+            negative.toggle()
         } else if let r = result {
             result = -r
         } else if let a = accumulator {
@@ -110,6 +122,7 @@ struct TradeCalcEngine {
         feetPart = nil
         digits = ""
         sixteenths = 0
+        negative = false
     }
 
     // MARK: Memory

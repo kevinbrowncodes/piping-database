@@ -39,6 +39,7 @@ struct SettingsView: View {
                 LabeledContent("Valves", value: "ASME B16.10")
                 LabeledContent("Branch connections", value: "MSS SP-97")
                 LabeledContent("Line blanks", value: "ASME B16.48")
+                LabeledContent("Gaskets", value: "ASME B16.21")
             } header: {
                 Text("Data sources")
             } footer: {

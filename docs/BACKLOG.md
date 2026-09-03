@@ -107,6 +107,21 @@ dependency is noted.
   `appstore/SUBMISSION.md`. *TestFlight upload needs Kevin's Apple account —
   step-by-step in the submission pack.*
 
+## Bugs — device QA pass 2026-09-03 (iPhone 13 Pro, iOS 26.6.1, WDA-driven)
+
+One file per ticket under `docs/bug/`; Status lives in the ticket.
+
+- [x] **[BUG-0001](bug/BUG-0001.md) · Bolt-up sequence diagram is not a star pattern** (High)
+- [x] **[BUG-0002](bug/BUG-0002.md) · Calculator +/− mishandles feet entries and later digits** (High)
+- [x] **[BUG-0003](bug/BUG-0003.md) · Flanges keeps a stale type when the class/size drops it** (Medium)
+- [x] **[BUG-0004](bug/BUG-0004.md) · Dimension legends show raw extraction notes** (Medium)
+- [x] **[BUG-0005](bug/BUG-0005.md) · Fittings weight card wraps six schedule columns on iPhone** (Medium)
+- [x] **[BUG-0006](bug/BUG-0006.md) · Global search matches numbers as substrings** (Medium)
+- [x] **[BUG-0007](bug/BUG-0007.md) · iPhone landscape clips the drawing under the pickers** (Low)
+- [x] **[BUG-0008](bug/BUG-0008.md) · Gaskets missing from Settings; flange Source string misleading** (Low)
+- [x] **[BUG-0009](bug/BUG-0009.md) · Recents records the default selection on module open** (Low)
+- [x] **[BUG-0010](bug/BUG-0010.md) · Calculator backspace after "feet" wipes the entry** (Low)
+
 ---
 
 **Remaining for v1 ship:** PD-26 full accessibility audit; PD-28 TestFlight (needs Kevin's Apple developer account in Xcode) + App Store screenshots/description; extend star/share/info buttons to the remaining modules (mechanical).

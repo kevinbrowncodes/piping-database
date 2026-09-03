@@ -49,6 +49,13 @@ struct FlangesFile: Decodable {
         let weights: [String: Double]?
 
         var key: String { series.map { "\(nps)|\($0)" } ?? nps }
+
+        /// Standard this row conforms to: B16.47 series for NPS ≥ 30,
+        /// B16.1 for Class 125 cast-iron drilling, otherwise B16.5 (BUG-0008).
+        func sourceLabel(class cls: String) -> String {
+            if let series { return series }
+            return cls == "125" ? "ASME B16.1" : "ASME B16.5"
+        }
         var label: String {
             guard let series else { return nps }
             return "\(nps) \(series.hasSuffix("A") ? "A" : "B")"
@@ -85,6 +92,11 @@ struct OletsFile: Decodable {
         var runRangeText: String {
             guard let from = runFrom, let to = runTo else { return "Order to run size" }
             return from == to ? "\(from)\" (size on size)" : "\(from)\" – \(to)\""
+        }
+
+        /// One-line summary for lists: "Run 3/4" – 36"" or "Order to run size".
+        var runSummary: String {
+            runFrom == nil ? runRangeText : "Run \(runRangeText)"
         }
     }
 }

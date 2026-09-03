@@ -64,7 +64,9 @@ struct ModuleListView: View {
     var body: some View {
         NavigationStack(path: $path) {
             List {
-                if !searchText.isEmpty {
+                // Search runs from two characters; a single character must not
+                // claim "No Results" over the module list (BUG-0006).
+                if searchText.count >= 2 {
                     if searchResults.isEmpty {
                         ContentUnavailableView.search(text: searchText)
                     } else {

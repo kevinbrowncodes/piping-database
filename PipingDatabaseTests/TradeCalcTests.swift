@@ -84,6 +84,54 @@ struct TradeCalcTests {
         #expect(e.displayInches == 1)
     }
 
+    // BUG-0002: the sign applies to the whole entry, and digits typed after
+    // +/− keep extending the inch field.
+    @Test func signAppliesToWholeFeetInchEntry() {
+        var e = TradeCalcEngine()
+        e.digit(5); e.feet(); e.digit(3); e.plusMinus()      // 5'-3" → −5'-3"
+        #expect(e.displayInches == -63)
+        #expect(e.displayText == "-5'-3\"")
+        e.plusMinus()
+        #expect(e.displayInches == 63)
+    }
+
+    @Test func digitsAfterSignExtendTheInchField() {
+        var e = TradeCalcEngine()
+        e.digit(5); e.plusMinus(); e.digit(3)                 // −53"
+        #expect(e.displayInches == -53)
+        #expect(e.displayText == "-4'-5\"")
+        e.fraction(sixteenths: 8)                             // −53 1/2"
+        #expect(e.displayInches == -53.5)
+    }
+
+    @Test func signOnResultAndAccumulator() {
+        var e = TradeCalcEngine()
+        e.digit(5); e.feet(); e.equals(); e.plusMinus()
+        #expect(e.displayInches == -60)
+        e.op(.add); e.plusMinus()                             // accumulator
+        #expect(e.displayInches == 60)
+        e.digit(6); e.equals()
+        #expect(e.displayInches == 66)
+    }
+
+    @Test func negativeEntryClearsAfterCommit() {
+        var e = TradeCalcEngine()
+        e.digit(1); e.plusMinus(); e.op(.add); e.digit(3); e.equals()
+        #expect(e.displayInches == 2)                         // −1 + 3, sign did not leak
+    }
+
+    // BUG-0010: backspace after the feet key undoes it instead of wiping the entry.
+    @Test func backspaceUndoesFeetKey() {
+        var e = TradeCalcEngine()
+        e.digit(5); e.feet(); e.backspace()
+        #expect(e.displayInches == 5)
+        #expect(e.displayText == "0'-5\"")
+        e.feet(); e.digit(3); e.backspace(); e.backspace()   // 5'-3" → 5'-0" → 5"
+        #expect(e.displayInches == 5)
+        e.backspace()
+        #expect(e.displayInches == 0)
+    }
+
     @Test func chainedOperations() {
         var e = TradeCalcEngine()
         e.digit(2)
