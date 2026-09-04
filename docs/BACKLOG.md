@@ -122,6 +122,13 @@ One file per ticket under `docs/bug/`; Status lives in the ticket.
 - [x] **[BUG-0009](bug/BUG-0009.md) · Recents records the default selection on module open** (Low)
 - [x] **[BUG-0010](bug/BUG-0010.md) · Calculator backspace after "feet" wipes the entry** (Low)
 
+## Milestone 5 — Post-launch
+
+- [ ] **[PD-29](story/PD-29.md) · Coverage gate** (M) — app target measured at
+  45% line coverage (2026-09-03); add `scripts/check.sh` (local 95% gate, no
+  CI) and one XCUITest per module/sheet to reach it. *Blocks: nothing ships
+  without a green gate once landed.*
+
 ---
 
 **Remaining for v1 ship:** PD-26 full accessibility audit; PD-28 TestFlight (needs Kevin's Apple developer account in Xcode) + App Store screenshots/description; extend star/share/info buttons to the remaining modules (mechanical).
