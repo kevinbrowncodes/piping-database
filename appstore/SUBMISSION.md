@@ -1,4 +1,4 @@
-# App Store Submission Pack — Piping Database 1.0.0
+# App Store Submission Pack — PipeBase 1.0.1
 
 Everything below is ready to paste into App Store Connect. Items marked
 **[YOU]** need your Apple account or a decision only you can make.
@@ -10,7 +10,7 @@ Everything below is ready to paste into App Store Connect. Items marked
 | Field | Value |
 |---|---|
 | Bundle ID | `com.kevinbrowncodes.PipingDatabase` (already set in the project) |
-| Version / Build | 1.0.0 (1) — bump the **build** number for every re-upload of 1.0.0 |
+| Version / Build | **1.0.1 (2)** — 1.0 (1) is live (Ready for Sale since 2026-08-30); every update needs a new marketing version AND a higher build number |
 | Primary category | Reference |
 | Secondary category | Utilities |
 | Age rating | 4+ (no objectionable content) |
@@ -149,7 +149,28 @@ Connect won't ask the encryption question on upload.
 7. If you re-upload 1.0.0, bump CURRENT_PROJECT_VERSION (build number)
    first — App Store Connect rejects duplicate build numbers.
 
-## 8. Known gaps consciously shipped in 1.0
+## 8. Release 1.0.1 — What's New (paste into the version's "What's New")
+
+```
+Bug-fix release from a full on-device QA pass.
+• Flange bolt-up diagram now shows the true star tightening sequence
+• Trade calculator: +/− applies to the whole feet-inch entry, and ⌫ undoes
+  the feet key
+• Flange type follows the wheel when a class or size doesn't offer it
+• Cleaner dimension captions on Fittings, Flanges and Branch Connections
+• Search matches sizes exactly ("sch 80 6" is the 6" pipe)
+• Fittings weights no longer wrap on iPhone; landscape puts the wheels
+  beside the drawing
+• Gaskets listed under Settings → Data sources; per-row flange source label
+```
+
+Ship flow for updates (ascpilot, from the repo root with
+`ASC_META=appstore/asc_meta.json`): bump `MARKETING_VERSION` +
+`CURRENT_PROJECT_VERSION` → `bin/upload.sh PipingDatabase 793YF22DGM PipeBase`
+→ `asc.py create-version` → wait for the build to be VALID → `asc.py
+attach-build` → `asc.py submit`.
+
+## 9. Known gaps consciously shipped in 1.0
 
 - Full accessibility/Dynamic Type audit is still on the backlog (labels
   exist on all drawings and controls; a systematic pass hasn't run).

@@ -1,0 +1,37 @@
+{
+  "bundle_id": "com.kevinbrowncodes.PipingDatabase",
+  "version": "1.0.1",
+  "subtitle": "Flange, valve & fitting specs",
+  "primary_category": "REFERENCE",
+  "secondary_category": "UTILITIES",
+  "copyright": "2026 Kevin Brown",
+  "support_url": "https://github.com/kevinbrowncodes/pipebase-support",
+  "privacy_policy_url": "https://github.com/kevinbrowncodes/pipebase-support/blob/main/privacy-policy.md",
+  "promotional_text": "Pipe schedules, flanges, fittings, valves, olets, blanks & gaskets — live dimensioned drawings, inch/mm, fractions, torque data. Fully offline. Built for the field.",
+  "keywords": "pipefitter,piping,schedule,ASME,weldolet,gasket,torque,NPS,welder,blind,dimensions,calculator",
+  "description": "The piping reference that field crews and designers actually need — every\nlookup driven by a live dimensioned drawing, working entirely offline.\n\nSEVEN MODULES\n• Pipe Schedule — ASME B36.10M & B36.19M, NPS 1/8\"–48\", every schedule\n  including stainless 5S–80S, with a built-in length calculator for\n  surface area, volume, and water-filled weight\n• Fittings — B16.9 butt-weld (elbows, tees, reducers, caps, stub ends)\n  and B16.11 forged socket-weld & threaded, classes 3000/6000/9000\n• Flanges — B16.5 Class 125–2500 plus B16.47 Series A & B through 48\",\n  with drilling, bolting, and weights\n• Valves — B16.10 face-to-face and end-to-end for gate, globe, check,\n  and ball valves, RF/BW/RTJ\n• Branch Connections — MSS SP-97 Weldolet, Sockolet, Thredolet\n• Line Blanks — B16.48 spectacle blinds, paddle blanks, and spacers\n• Gaskets — B16.21 flat ring and full face with drilling\n\nBUILT FOR THE FIELD\n• Global search: type \"2 300 wn\" and jump straight to the 2\" Class 300\n  weld neck flange\n• Tap any drawing to flip decimal ⇄ trade fractions (nearest 1/16\")\n• Inch/mm everywhere, NPS or DN, your choice\n• Pressure–temperature ratings per class (material group 1.1)\n• Bolt-up data: stud counts and sizes, torque-per-stress tables, and a\n  star-pattern tightening sequence drawn for your flange's bolt count\n• Feet-inch-sixteenths trade calculator with memory\n• Favorites, recents, side-by-side schedule comparison, and shareable\n  datasheets with standard citations\n• 100% offline — nothing to sign into, nothing tracked, no ads\n\nEVERY NUMBER VERIFIED\nDimensional data is compiled from published tables of the governing\nASME/MSS standards and locked by automated cross-checks against\nindependent sources. Every value cites its standard. Always verify\ncritical dimensions against the current standard edition before\nfabrication.",
+  "whats_new": "Bug-fix release from a full on-device QA pass.\n• Flange bolt-up diagram now shows the true star tightening sequence\n• Trade calculator: +/− applies to the whole feet-inch entry, and ⌫ undoes\n  the feet key\n• Flange type follows the wheel when a class or size doesn't offer it\n• Cleaner dimension captions on Fittings, Flanges and Branch Connections\n• Search matches sizes exactly (\"sch 80 6\" is the 6\" pipe)\n• Fittings weights no longer wrap on iPhone; landscape puts the wheels\n  beside the drawing\n• Gaskets listed under Settings → Data sources; per-row flange source label",
+  "review_notes": "Reference app for industrial pipefitters and piping designers. All data\nis bundled; the app makes no network requests and requires no account.\nNo special configuration is needed for review — all seven modules are\nreachable from the home list, the calculator and settings are tabs.",
+  "screenshots": {
+    "APP_IPHONE_67": {
+      "dir": "screenshots/iphone-6.9",
+      "order": [
+        "02-pipe",
+        "01-home",
+        "03-flanges",
+        "04-fittings",
+        "05-valves",
+        "06-calculator"
+      ]
+    },
+    "APP_IPAD_PRO_3GEN_129": {
+      "dir": "screenshots/ipad-13",
+      "order": [
+        "01-home",
+        "02-pipe",
+        "03-flanges",
+        "04-fittings"
+      ]
+    }
+  }
+}
