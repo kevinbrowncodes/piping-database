@@ -164,11 +164,12 @@ Bug-fix release from a full on-device QA pass.
 • Gaskets listed under Settings → Data sources; per-row flange source label
 ```
 
-Ship flow for updates (ascpilot, from the repo root with
-`ASC_META=appstore/asc_meta.json`): bump `MARKETING_VERSION` +
-`CURRENT_PROJECT_VERSION` → `bin/upload.sh PipingDatabase 793YF22DGM PipeBase`
-→ `asc.py create-version` → wait for the build to be VALID → `asc.py
-attach-build` → `asc.py submit`.
+Ship flow for updates ([Launch](https://github.com/kevinbrowncodes/launch), formerly
+ascpilot; slug `piping-database`): bump `MARKETING_VERSION` + `CURRENT_PROJECT_VERSION`,
+set `version` and `whats_new` in `asc_meta.json`, then
+`~/Documents/GitHub/kevinbrowncodes/launch/bin/launch release piping-database` (archive,
+upload, version, metadata, attach once VALID, submit — idempotent). The meta needs
+`scheme` and `team_id` for the upload step.
 
 ## 9. Known gaps consciously shipped in 1.0
 
